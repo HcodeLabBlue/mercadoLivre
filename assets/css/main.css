@@ -37,12 +37,12 @@ a:hover {
   position: absolute;
   left: 3px;
 }
-@media only screen and (min-width: 433px) {
+@media (min-width: 433px) {
   #auth > header > nav #logo a #img-0 {
     display: none;
   }
 }
-@media only screen and (max-width: 432px) {
+@media (max-width: 432px) {
   #auth > header > nav #logo a #img-1 {
     display: none;
   }

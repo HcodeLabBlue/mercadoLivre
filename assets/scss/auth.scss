@@ -15,12 +15,12 @@
                     #img-0 {
                         position: absolute;
                         left: 3px;
-                        @media only screen and (min-width: 433px) {
+                        @media (min-width: 433px) {
                             display: none
                         }
                     }
                     #img-1 {
-                        @media only screen and (max-width: 432px) {
+                        @media (max-width: 432px) {
                             display: none
                         }
                     }
