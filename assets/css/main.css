@@ -11,22 +11,24 @@ body {
   background-color: #EDEDED;
 }
 
+a {
+  text-decoration: none;
+}
+
 #auth {
   position: relative;
 }
 #auth header {
   background-color: #FFF059;
   height: 238px;
+  display: flex;
 }
-#auth header #logo,
-#auth header #contato {
+#auth header ul {
+  justify-content: space-between;
   display: inline;
 }
-#auth header #logo {
-  background-color: red;
-}
-#auth header #contato {
-  background-color: lime;
+#auth header ul li {
+  display: inline;
 }
 #auth main {
   background-color: #EDEDED;

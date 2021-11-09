@@ -3,15 +3,13 @@
     header {
         background-color: #FFF059;
         height: 238px;
-        #logo,
-        #contato {
+        display: flex;
+        ul {
+            justify-content: space-between;
             display: inline;
         }
-        #logo {
-            background-color: red;
-        }
-        #contato {
-            background-color: rgb(0, 255, 0);
+        ul li {
+            display: inline;
         }
     }
     main {
