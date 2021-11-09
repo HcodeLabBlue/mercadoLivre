@@ -43,7 +43,7 @@ a:hover {
 }
 #auth main {
   background-color: #EDEDED;
-  height: 100%;
+  height: 755px;
   align-items: center;
   justify-content: center;
 }
@@ -93,21 +93,18 @@ a:hover {
   width: 100%;
   height: 87px;
   position: fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 0;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 #auth > footer #privacidade {
   font-size: 14px;
-  text-align: center;
   color: #000000cc;
 }
 #auth > footer #copyrigth {
   font-size: 16px;
-  text-align: center;
   color: #7e7e7e;
 }
 
