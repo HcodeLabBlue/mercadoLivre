@@ -35,7 +35,6 @@
         align-items: center;
         justify-content: center;
         #wrap {
-            background-color: #333333; // apagar
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -45,14 +44,26 @@
                 width: 424px;
                 height: 471px;
                 border-radius: 6px;
+                padding: 63px;
+                transform: translateY(-96px);
+                #input-group {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    input {
+                        display: block;
+                        color: rebeccapurple;
+                    }
+                }
             }
             #copyrigth {
                 font-size: 10px;
             }
         }
     }
-    footer {
-        background-color: #FFFFFF;
+    >footer {
+        background-color: #fff;
         width: 100%;
         height: 87px;
         position: fixed;
