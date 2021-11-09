@@ -3,6 +3,9 @@
         background-color: #FFF059;
         height: 238px;
         padding: 10px;
+        @media (max-width: 433px) {
+            height: 48px;
+        }
         >nav {
             position: relative;
             display: flex;
@@ -46,6 +49,9 @@
         justify-content: center;
         #wrap {
             transform: translateY(-210px);
+            @media (max-width: 433px) {
+                transform: translateY(-135px);
+            }
             #form {
                 background-color: #ffffff;
                 height: 407px;
@@ -56,6 +62,9 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 63px;
+                @media (max-width: 433px) {
+                    border-radius: 0;
+                }
                 #titulo {
                     font-size: 24px;
                 }

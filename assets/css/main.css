@@ -23,6 +23,11 @@ a:hover {
   height: 238px;
   padding: 10px;
 }
+@media (max-width: 433px) {
+  #auth > header {
+    height: 48px;
+  }
+}
 #auth > header > nav {
   position: relative;
   display: flex;
@@ -67,6 +72,11 @@ a:hover {
 #auth > main #wrap {
   transform: translateY(-210px);
 }
+@media (max-width: 433px) {
+  #auth > main #wrap {
+    transform: translateY(-135px);
+  }
+}
 #auth > main #wrap #form {
   background-color: #ffffff;
   height: 407px;
@@ -77,6 +87,11 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 63px;
+}
+@media (max-width: 433px) {
+  #auth > main #wrap #form {
+    border-radius: 0;
+  }
 }
 #auth > main #wrap #form #titulo {
   font-size: 24px;
