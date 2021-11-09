@@ -7,15 +7,20 @@
             position: relative;
             display: flex;
             justify-content: space-around;
+            @media only screen and (max-width: 432px) {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+            }
             #logo {
                 a {
                     #img-0 {
-                        @media only screen and (min-width: 601px) {
+                        @media only screen and (min-width: 433px) {
                             display: none
                         }
                     }
                     #img-1 {
-                        @media only screen and (max-width: 600px) {
+                        @media only screen and (max-width: 432px) {
                             display: none
                         }
                     }
@@ -24,7 +29,10 @@
             #contato {
                 a {
                     color: #333333;
-                    font-family: Georgia, 'Times New Roman', Times, serif
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    @media only screen and (max-width: 432px) {
+                        display: none
+                    }
                 }
             }
         }
