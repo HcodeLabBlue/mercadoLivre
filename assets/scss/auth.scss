@@ -46,9 +46,32 @@
                 border-radius: 6px;
                 padding: 63px;
                 transform: translateY(-96px);
-                #input-group {
+                .input-group {
                     width: 100%;
-                    border: #FFF059 1px solid; // teste
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 14px;
+                    >#input-email {
+                        border: #9D9D9D 1px solid; // teste
+                        width: 100%;
+                        padding: 23px 0;
+                        border-radius: 6px;
+                    }
+                    >#btn-continuar {
+                        background-color: #3483FA;
+                        width: 100%;
+                        padding: 23px;
+                        border-radius: 6px;
+                    }
+                    >#btn-criar-conta {
+                        background-color: #ffffff;
+                        width: 100%;
+                        padding: 23px;
+                        border-radius: 6px;
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+                    }
                 }
             }
         }
