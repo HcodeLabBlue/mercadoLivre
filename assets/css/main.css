@@ -64,12 +64,16 @@ a:hover {
   align-items: center;
   padding: 63px;
 }
+#auth > main #wrap #form #titulo {
+  font-size: 24px;
+}
 #auth > main #wrap #form .input-group {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 #auth > main #wrap #form .input-group label {
+  margin-top: 10px;
   margin-left: 8px;
 }
 #auth > main #wrap #form .input-group #input-email {

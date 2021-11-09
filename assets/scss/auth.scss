@@ -48,11 +48,15 @@
                 justify-content: space-between;
                 align-items: center;
                 padding: 63px;
+                #titulo {
+                    font-size: 24px;
+                }
                 .input-group {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
                     label {
+                        margin-top: 10px;
                         margin-left: 8px;
                     }
                     #input-email {
