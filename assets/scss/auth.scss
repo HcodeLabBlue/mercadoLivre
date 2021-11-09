@@ -16,12 +16,12 @@
                         position: absolute;
                         left: 3px;
                         @media (min-width: 433px) {
-                            display: none
+                            display: none;
                         }
                     }
                     #img-1 {
                         @media (max-width: 432px) {
-                            display: none
+                            display: none;
                         }
                     }
                 }
@@ -29,9 +29,9 @@
             #contato {
                 a {
                     color: #333333;
-                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    /* font-family: ; */
                     @media only screen and (max-width: 432px) {
-                        display: none
+                        display: none;
                     }
                 }
             }
