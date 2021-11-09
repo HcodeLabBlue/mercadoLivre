@@ -1,5 +1,4 @@
 #auth {
-    position: relative;
     header {
         background-color: #FFF059;
         height: 238px;
@@ -33,8 +32,24 @@
     main {
         background-color: #EDEDED;
         height: 100%;
-        display: block;
-        /*  */
+        align-items: center;
+        justify-content: center;
+        #wrap {
+            background-color: #333333; // apagar
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            #container-form {
+                background-color: #FFFFFF;
+                position: relative;
+                width: 424px;
+                height: 471px;
+                border-radius: 6px;
+            }
+            #copyrigth {
+                font-size: 10px;
+            }
+        }
     }
     footer {
         background-color: #FFFFFF;

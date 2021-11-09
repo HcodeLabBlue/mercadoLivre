@@ -19,9 +19,6 @@ a:hover {
   text-decoration: none;
 }
 
-#auth {
-  position: relative;
-}
 #auth header {
   background-color: #FFF059;
   height: 238px;
@@ -49,8 +46,24 @@ a:hover {
 #auth main {
   background-color: #EDEDED;
   height: 100%;
-  display: block;
-  /*  */
+  align-items: center;
+  justify-content: center;
+}
+#auth main #wrap {
+  background-color: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#auth main #wrap #container-form {
+  background-color: #FFFFFF;
+  position: relative;
+  width: 424px;
+  height: 471px;
+  border-radius: 6px;
+}
+#auth main #wrap #copyrigth {
+  font-size: 10px;
 }
 #auth footer {
   background-color: #FFFFFF;
