@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+#auth header {
+  background-color: #FFF059;
+  height: 238px;
+}
+#auth main {
+  /*  */
+}
 
 /*# sourceMappingURL=main.css.map */
