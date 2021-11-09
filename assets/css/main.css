@@ -7,12 +7,40 @@
   vertical-align: baseline;
 }
 
+body {
+  background-color: #EDEDED;
+}
+
+#auth {
+  position: relative;
+}
 #auth header {
   background-color: #FFF059;
   height: 238px;
 }
+#auth header #logo,
+#auth header #contato {
+  display: inline;
+}
+#auth header #logo {
+  background-color: red;
+}
+#auth header #contato {
+  background-color: lime;
+}
 #auth main {
+  background-color: #EDEDED;
+  height: 100%;
+  display: block;
   /*  */
+}
+#auth footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 87px;
+  display: block;
+  position: fixed;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
