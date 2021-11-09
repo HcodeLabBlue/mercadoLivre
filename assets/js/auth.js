@@ -1,0 +1,1 @@
+var btnContinuar = document.getElementById('btn-continuar');
