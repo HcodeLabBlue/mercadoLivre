@@ -17,35 +17,51 @@ a:hover {
   text-decoration: none;
 }
 
-#auth header {
+#auth > header {
   background-color: #FFF059;
   height: 238px;
   padding: 10px;
 }
-#auth header nav {
+#auth > header > nav {
   position: relative;
   display: flex;
   justify-content: space-around;
 }
 @media only screen and (min-width: 601px) {
-  #auth header nav #logo a #img-0 {
+  #auth > header > nav #logo a #img-0 {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  #auth header nav #logo a #img-1 {
+  #auth > header > nav #logo a #img-1 {
     display: none;
   }
 }
-#auth header nav #contato a {
+#auth > header > nav #contato a {
   color: #333333;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-#auth main {
-  background-color: #EDEDED;
-  height: 755px;
+#auth > main {
+  display: flex;
+  flex-direction: column;
+  background-color: #ededed;
+  min-height: 755px;
   align-items: center;
   justify-content: center;
+}
+#auth > main #wrap #form {
+  background-color: #ffffff;
+  height: 407px;
+  border-radius: 6px 6px 0 0;
+}
+#auth > main #wrap #ajuda {
+  background-color: #ffffff;
+  border-top: #ededed 2px solid;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3483FA;
 }
 #auth > footer {
   background-color: #fff;

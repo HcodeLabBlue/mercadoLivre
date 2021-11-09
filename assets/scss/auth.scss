@@ -1,9 +1,9 @@
 #auth {
-    header {
+    >header {
         background-color: #FFF059;
         height: 238px;
         padding: 10px;
-        nav {
+        >nav {
             position: relative;
             display: flex;
             justify-content: space-around;
@@ -29,11 +29,29 @@
             }
         }
     }
-    main {
-        background-color: #EDEDED;
-        height: 755px;
+    >main {
+        display: flex;
+        flex-direction: column;
+        background-color: #ededed;
+        min-height: 755px;
         align-items: center;
         justify-content: center;
+        #wrap {
+            #form {
+                background-color: #ffffff;
+                height: 407px;
+                border-radius: 6px 6px 0 0;
+            }
+            #ajuda {
+                background-color: #ffffff;
+                border-top: #ededed 2px solid;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #3483FA;
+            }
+        }
     }
     >footer {
         background-color: #fff;
