@@ -4,6 +4,20 @@
         background-color: #FFF059;
         height: 238px;
         padding: 10px;
+        nav {
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            #logo {
+                /* display: inline; */
+            }
+            #contato {
+                a {
+                    color: #333333;
+                    font-family: Georgia, 'Times New Roman', Times, serif
+                }
+            }
+        }
     }
     main {
         background-color: #EDEDED;

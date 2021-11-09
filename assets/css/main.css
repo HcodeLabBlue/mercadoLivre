@@ -13,7 +13,9 @@ body {
 
 a,
 a:link,
-a:visited {
+a:visited,
+a:active,
+a:hover {
   text-decoration: none;
 }
 
@@ -24,6 +26,18 @@ a:visited {
   background-color: #FFF059;
   height: 238px;
   padding: 10px;
+}
+#auth header nav {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+#auth header nav #logo {
+  /* display: inline; */
+}
+#auth header nav #contato a {
+  color: #333333;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 #auth main {
   background-color: #EDEDED;
