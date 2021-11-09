@@ -109,6 +109,10 @@ a:hover {
   color: #3483FA;
   border-radius: 6px;
   height: 50px;
+  text-align: center;
+}
+#auth > main #wrap #form .input-group #btn-criar-conta:hover {
+  background-color: #3483fa2c;
 }
 #auth > main #wrap #ajuda {
   background-color: #ffffff;
