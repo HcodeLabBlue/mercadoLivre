@@ -78,21 +78,22 @@ a:hover {
 }
 #auth > main #wrap #form .input-group #input-email {
   border: #9D9D9D 1px solid;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 6px;
-  padding: 23px 3px;
+  height: 50px;
+  font-size: 16px;
 }
 #auth > main #wrap #form .input-group #btn-continuar {
   background-color: #3483FA;
   color: white;
   border-radius: 6px;
-  padding: 23px 3px;
+  height: 50px;
 }
 #auth > main #wrap #form .input-group #btn-criar-conta {
-  background-color: white;
+  background-color: #ffffff;
   color: #3483FA;
   border-radius: 6px;
-  padding: 23px 3px;
+  height: 50px;
 }
 #auth > main #wrap #ajuda {
   background-color: #ffffff;
