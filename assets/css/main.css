@@ -11,7 +11,9 @@ body {
   background-color: #EDEDED;
 }
 
-a {
+a,
+a:link,
+a:visited {
   text-decoration: none;
 }
 
@@ -21,14 +23,7 @@ a {
 #auth header {
   background-color: #FFF059;
   height: 238px;
-  display: flex;
-}
-#auth header ul {
-  justify-content: space-between;
-  display: inline;
-}
-#auth header ul li {
-  display: inline;
+  padding: 10px;
 }
 #auth main {
   background-color: #EDEDED;

@@ -11,6 +11,8 @@ body {
     background-color: #EDEDED;
 }
 
-a {
+a,
+a:link,
+a:visited {
     text-decoration: none;
 }
