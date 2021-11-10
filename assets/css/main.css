@@ -27,7 +27,9 @@ a:hover {
 #auth {
   font-family: "Proxima Nova";
   height: 100vh;
+  width: 100%;
   position: relative;
+  /* MEDIA */
 }
 #auth > header {
   background-color: #FFF059;
@@ -135,6 +137,27 @@ a:hover {
 }
 #auth > footer #copyright {
   color: #858585;
+}
+@media (max-width: 460px) {
+  #auth > header {
+    display: block;
+    height: 48px;
+  }
+  #auth > header #logo-0 {
+    display: block;
+    margin-left: 10px;
+  }
+  #auth > header #logo-1 {
+    display: none;
+  }
+  #auth > header #contato {
+    display: none;
+  }
+  #auth > main #wrap-all {
+    transform: translateY(0);
+    border-radius: 0;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
