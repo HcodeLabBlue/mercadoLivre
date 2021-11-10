@@ -1,0 +1,35 @@
+#header {
+  display: flex;
+  min-width: 320px;
+  height: 160px;
+  background-color: #fff159;
+  #topo {
+    width: 100%;
+  }
+  .container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+  }
+  .logo {
+    top: 50px;
+    margin-right: 10px;
+  }
+  .search {
+    min-width: 162px;
+    max-width: 598px;
+    min-height: 32px;
+    width: 100%;
+    height: 39px;
+    margin-right: 10px;
+    padding: 7px 60px 9px 15px;
+  }
+  .search::placeholder {
+    text-transform: uppercase;
+  }
+  .includes {
+    width: 340px;
+    height: 39px;
+  }
+}
