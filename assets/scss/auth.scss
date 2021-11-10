@@ -89,6 +89,13 @@
                 justify-content: center;
                 color: #3483FA;
             }
+            #protegido {
+                background-color: transparent;
+                height: 62px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
         }
     }
     >footer {
@@ -127,7 +134,7 @@
         }
         >main {
             #wrap {
-                transform: translateY(-135px);
+                transform: translateY(-115px);
                 #form {
                     border-radius: 0;
                     width: 100%;

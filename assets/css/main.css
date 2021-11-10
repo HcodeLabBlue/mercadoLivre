@@ -113,6 +113,13 @@ a:hover {
   justify-content: center;
   color: #3483FA;
 }
+#auth > main #wrap #protegido {
+  background-color: transparent;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #auth > footer {
   background-color: #fff;
   width: 100%;
@@ -145,7 +152,7 @@ a:hover {
     display: none;
   }
   #auth > main #wrap {
-    transform: translateY(-135px);
+    transform: translateY(-115px);
   }
   #auth > main #wrap #form {
     border-radius: 0;
