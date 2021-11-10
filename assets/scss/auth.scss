@@ -112,7 +112,7 @@
     /* media */
     @media (max-width: 433px) {
         >header {
-            height: 48px;
+            height: 55px;
             >nav {
                 position: relative;
                 #logo {
@@ -124,14 +124,13 @@
                     display: none;
                 }
             }
-            >main {
-                #wrap {
-                    transform: translateY(-135px);
-                    #form {
-                        border-radius: 0;
-                        height: 100vh;
-                        width: 100%;
-                    }
+        }
+        >main {
+            #wrap {
+                transform: translateY(-135px);
+                #form {
+                    border-radius: 0;
+                    width: 100%;
                 }
             }
         }

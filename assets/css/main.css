@@ -18,48 +18,31 @@ a:hover {
   text-decoration: none;
 }
 
+#auth {
+  /* media */
+}
 #auth > header {
   background-color: #FFF059;
   height: 238px;
   padding: 10px;
-}
-@media (max-width: 433px) {
-  #auth > header {
-    height: 48px;
-  }
 }
 #auth > header > nav {
   position: relative;
   display: flex;
   justify-content: space-around;
 }
-@media only screen and (max-width: 432px) {
-  #auth > header > nav {
-    position: relative;
-  }
-}
-#auth > header > nav #logo a #img-0 {
+#auth > header > nav #logo #img-0 {
   position: absolute;
   left: 3px;
 }
 @media (min-width: 433px) {
-  #auth > header > nav #logo a #img-0 {
+  #auth > header > nav #logo #img-0 {
     display: none;
   }
 }
-@media (max-width: 432px) {
-  #auth > header > nav #logo a #img-1 {
-    display: none;
-  }
-}
-#auth > header > nav #contato a {
+#auth > header > nav #contato {
   color: #333333;
   /* font-family: ; */
-}
-@media only screen and (max-width: 432px) {
-  #auth > header > nav #contato a {
-    display: none;
-  }
 }
 #auth > main {
   display: flex;
@@ -72,11 +55,6 @@ a:hover {
 #auth > main #wrap {
   transform: translateY(-210px);
 }
-@media (max-width: 433px) {
-  #auth > main #wrap {
-    transform: translateY(-135px);
-  }
-}
 #auth > main #wrap #form {
   background-color: #ffffff;
   height: 407px;
@@ -87,11 +65,6 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 63px;
-}
-@media (max-width: 433px) {
-  #auth > main #wrap #form {
-    border-radius: 0;
-  }
 }
 #auth > main #wrap #form #titulo {
   font-size: 24px;
@@ -157,6 +130,27 @@ a:hover {
 #auth > footer #copyrigth {
   font-size: 16px;
   color: #7e7e7e;
+}
+@media (max-width: 433px) {
+  #auth > header {
+    height: 55px;
+  }
+  #auth > header > nav {
+    position: relative;
+  }
+  #auth > header > nav #logo #img-1 {
+    display: none;
+  }
+  #auth > header > nav #contato {
+    display: none;
+  }
+  #auth > main #wrap {
+    transform: translateY(-135px);
+  }
+  #auth > main #wrap #form {
+    border-radius: 0;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
