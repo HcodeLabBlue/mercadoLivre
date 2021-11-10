@@ -5,9 +5,13 @@
     >header {
         background-color: #FFF059;
         height: 238px;
+        padding-top: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        #logo-0 {
+            display: none;
+        }
         a {
             color: #050505;
         }
