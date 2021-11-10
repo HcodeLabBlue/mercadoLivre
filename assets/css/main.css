@@ -185,7 +185,7 @@ a:hover {
     font-size: 12px;
   }
   #auth > footer {
-    border-top: 1px gray solid;
+    border-top: 1px #bababa solid;
   }
 }
 
