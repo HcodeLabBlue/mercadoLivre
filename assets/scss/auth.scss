@@ -62,6 +62,9 @@
                         font-size: 16px;
                         padding: 10px;
                     }
+                    #input-email:focus {
+                        border: #3483FA 1px solid;
+                    }
                     #btn-continuar {
                         background-color: #3483FA;
                         color: white;

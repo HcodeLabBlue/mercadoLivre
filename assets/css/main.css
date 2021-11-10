@@ -94,6 +94,9 @@ a:hover {
   font-size: 16px;
   padding: 10px;
 }
+#auth > main #wrap #form .input-group #input-email:focus {
+  border: #3483FA 1px solid;
+}
 #auth > main #wrap #form .input-group #btn-continuar {
   background-color: #3483FA;
   color: white;
