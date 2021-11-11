@@ -1,4 +1,4 @@
 node_modules/
-
+*.map
+.css
 package-lock.json
-assets/css/main.css
