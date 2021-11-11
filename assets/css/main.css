@@ -138,4 +138,61 @@ a:hover {
   color: #7e7e7e;
 }
 
+header {
+  background-color: #FFF059;
+  height: 100px;
+  padding: 10px;
+}
+header > section {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+header #logo {
+  margin: 0px 10px;
+}
+header #logo a #img-0 {
+  position: absolute;
+  left: 3px;
+}
+@media (min-width: 433px) {
+  header #logo a #img-0 {
+    display: none;
+  }
+}
+@media (max-width: 432px) {
+  header #logo a #img-1 {
+    display: none;
+  }
+}
+header #search {
+  margin: 0px 40px;
+}
+header #search form {
+  background-color: #ffffff;
+  height: 40px;
+  width: 400px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+}
+header #search form #search-bar {
+  height: 20px;
+  width: 380px;
+}
+header #search form #search-bar:focus {
+  outline: 0;
+  height: 20px;
+  width: 380px;
+}
+@media (max-width: 1024px) {
+  header #disney_star_img {
+    height: 40px;
+    width: 170px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,63 @@
+header {
+        background-color: #FFF059;
+        height: 100px;
+        padding: 10px;
+        >section {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            }
+            #logo {
+                margin: 0px 10px;
+                a {
+                    #img-0 {
+                        position: absolute;
+                        left: 3px;
+                        @media (min-width: 433px) {
+                            display: none
+                        }
+                    }
+                    #img-1 {
+                        @media (max-width: 432px) {
+                            display: none
+                        }
+                    }
+                }
+            }
+            #search{
+                margin: 0px 40px;
+
+                form{
+                    background-color: #ffffff;
+                    height: 40px;
+                    width: 400px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    padding: 5px;
+                    
+                    #search-bar{
+                        height: 20px;
+                        width: 380px;   
+                    }
+
+                    #search-bar:focus {
+                        outline: 0;
+                        height: 20px;
+                        width: 380px;
+                      }
+                
+                }
+
+            }                
+                #disney_star_img{
+                    @media (max-width: 1024px){
+                    height: 40px;
+                    width: 170px;
+                    }
+                }
+            
+        }
+
