@@ -6,16 +6,15 @@
     >header {
         background-color: #FFF059;
         height: 238px;
-        padding-top: 15px;
+        padding-top: 5px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         #logo-0 {
             display: none;
         }
-        span {
-            color: #3f3f3f;
-            margin-top: 100px;
+        a {
+            color: #050505;
         }
     }
     >main {
@@ -31,31 +30,21 @@
             >#wrap-1 {
                 background-color: rgb(255, 255, 255);
                 border-radius: 6px 6px 0 0;
-                height: 443px;
+                height: 408px;
                 padding: 63px;
                 h1 {
                     color: #000000c7;
                 }
                 #input-email {
-                    margin-top: 60px;
+                    margin-top: 67px;
                     label {
                         margin-left: 5px;
-                        color: #3f3f3f;
                     }
-                    >input {
+                    input {
                         width: 100%;
                         height: 50px;
                         border-radius: 6px;
-                        border: 1px #9D9D9D solid;
-                        outline: none;
-                        padding-left: 10px;
-                        font-size: 16px;
-                        font-family: inherit;
-                        color: rgba(0, 0, 0, .8);
-                        cursor: pointer;
-                        &:focus {
-                            border: 2px solid #3483FA;
-                        }
+                        border: 2px #9D9D9D solid;
                     }
                 }
                 #btn-continuar {
@@ -65,23 +54,15 @@
                     border-radius: 6px;
                     background-color: #3483FA;
                     color: white;
-                    transition: all 0.1s linear;
-                    font-weight: bold;
-                    &:hover {
-                        cursor: pointer;
-                        background-color: #2475f0;
-                    }
                 }
                 #btn-criar-conta {
-                    margin-top: 5px;
+                    margin-top: 3px;
                     width: 100%;
                     height: 50px;
                     border-radius: 6px;
                     background-color: #ffffff;
                     color: #3483FA;
                     transition: all 0.1s linear;
-                    cursor: pointer;
-                    font-weight: bold;
                     &:hover {
                         background-color: #bdd7ff;
                     }
@@ -91,7 +72,6 @@
                 #ajuda {
                     background-color: #fdfdfd;
                     color: #3483FA;
-                    font-weight: bold;
                     width: 100%;
                     border-top: 1px #bababa solid;
                     height: 63px;
@@ -99,10 +79,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    &:hover {
-                        background-color: #f1f1f1;
-                        cursor: pointer;
-                    }
                 }
             }
             #wrap-3 {
@@ -113,12 +89,8 @@
                 height: 60px;
                 color: #9D9D9D;
                 font-size: 12px;
-                >a,
-                a:active,
-                a:hover,
-                a:link {
+                >a {
                     color: #3483FA;
-                    font-size: 10px;
                 }
             }
         }
@@ -132,23 +104,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        /* bottom: 0px; */
         a {
-            color: rgba(0, 0, 0, .8);
+            color: #050505;
         }
         #copyright {
-            color: rgba(0, 0, 0, .45);
+            color: #858585;
         }
     }
-}
-
-
-/* MEDIA 1023px */
-
-#auth {
-    @media (max-width: 1023px) {
+    /* MEDIA */
+    @media (max-width: 460px) {
         >header {
             display: block;
+            height: 48px;
             #logo-0 {
                 display: block;
                 margin-left: 10px;
@@ -159,18 +127,6 @@
             #contato {
                 display: none;
             }
-        }
-    }
-}
-
-
-/* MEDIA 460px */
-
-#auth {
-    @media (max-width: 460px) {
-        >header {
-            height: 48px;
-            padding-top: 9px;
         }
         >main {
             #wrap-all {
@@ -194,7 +150,6 @@
                         display: flex;
                         justify-content: center;
                         align-items: flex-end;
-                        font-weight: bold;
                     }
                 }
                 #wrap-3 {
@@ -205,7 +160,6 @@
                     height: 40px;
                     color: #9D9D9D;
                     font-size: 12px;
-                    font-weight: bold;
                 }
             }
         }
