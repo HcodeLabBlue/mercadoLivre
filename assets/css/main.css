@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* Error: There's already a module with namespace "reset".
  *     ,
  * 1   | @use "reset";
@@ -19,12 +20,17 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: There's already a module with namespace \"reset\".\a     \2577 \a 1   \2502  @use \"reset\";\d\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @use\a... \2502 \a 4   \2502  @use \"reset\";\d\a     \2502  ^^^^^^^^^^^^ new @use\a     \2575 \a   assets\\scss\\main.scss 4:1  root stylesheet";
 =======
+=======
+>>>>>>> parent of 05bb506 (Merge branch 'main' of https://github.com/HcodeLabBlue/mercadoLivre)
 * {
   margin: 0;
   padding: 0;
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+<<<<<<< HEAD
+>>>>>>> parent of 05bb506 (Merge branch 'main' of https://github.com/HcodeLabBlue/mercadoLivre)
+=======
 >>>>>>> parent of 05bb506 (Merge branch 'main' of https://github.com/HcodeLabBlue/mercadoLivre)
 }
 
