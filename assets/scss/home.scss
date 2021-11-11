@@ -1,0 +1,87 @@
+body{
+  background-color: #EBEBEB;
+}
+
+#main-banner {
+  width: 100%;
+
+}
+
+.container{ 
+  display: flex;
+  background-color: #FFF;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 18px;
+  border-radius: 6px;
+  #payments-fast{
+    display: none;
+  }
+  #payments-ticket{
+    display: none;
+  }
+  #payments-pix{
+    display: none;
+  }
+ 
+}
+
+.payments {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    margin-right: 20px;
+  }
+
+  .payments-itens h2{
+    width: 100%;
+    font-size: 18px;
+  }
+  .payments-itens p{
+    font-size: 14px;
+    padding-top: 4px;
+    color: #999;
+  }
+  .payments-itens a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #3483fa;
+  }
+
+}
+
+@media (min-width: 705px) {
+  .container{
+    #payments-ticket{
+      display: flex;
+      border-left: 1px solid #EEE;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .container{
+    #payments-pix{
+      display: flex;
+      border-left: 1px solid #EEE;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container{
+    width: 1200px;
+    margin: 40px auto;
+    flex-direction: row;
+    #payments-fast{
+      display: flex;
+      border-right: 1px solid #eee;
+      border-left: 4px solid #3483fa;
+    }
+  }
+}
