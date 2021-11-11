@@ -9,83 +9,84 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
-<body>
-    <section id="auth">
 
+<body>
+
+    <section id="auth">
         <header>
-            <nav>
-                <div id="logo">
-                    <a href="#">
-                        <img id="img-0" src="./assets/images/logo-0.png">
-                        <img id="img-1" src="./assets/images/logo-1.png">
-                    </a>
-                </div>
-                <div id="contato">
-                    <a href="#">Contato</a>
-                </div>
-            </nav>
+            <div id="logo">
+                <img id="logo-0" src="./assets/images/logo-0.png">
+                <img id="logo-1" src="./assets/images/logo-1.png">
+            </div>
+
+            <div id="contato">
+                <span>Contato</span>
+            </div>
         </header>
 
         <main>
+            <div id="wrap-all">
 
-            <div id="wrap">
+                <div id="wrap-1">
+                    <h1>Olá! Para continuar, digite o seu telefone, e-mail ou usuário
+                    </h1>
 
-                <div id="form">
-
-                    <div id="titulo">
-                        <p>Olá! Para continuar, digite o seu telefone, e-mail ou usuário</p>
+                    <div id="input-email">
+                        <label for="email">
+                                Telefone, e-mail ou  usuário
+                            </label>
+                        <input type="text" value="">
                     </div>
 
-                    <div class="input-group">
-                        <label for="login">Telefone, e-mail ou usuário</label>
-                        <input id="input-email" type="text" value="email@mail.com">
+                    <div>
+                        <a href="#">
+                            <input id="btn-continuar" type="button" value="Continuar">
+                        </a>
                     </div>
 
-                    <div class="input-group">
-                        <button id="btn-continuar">Continuar</s></button>
-                    </div>
-
-                    <div class="input-group">
-                        <a id="btn-criar-conta">Criar conta</a>
+                    <div>
+                        <a href="#">
+                            <input id="btn-criar-conta" type="button" value="Criar Conta">
+                        </a>
                     </div>
                 </div>
 
-                <div>
+                <div id="wrap-2">
                     <a href="#">
-                        <span id="ajuda">Preciso de ajuda para entrar</span>
+                        <input id="ajuda" type="button" value="Preciso de ajuda para entrar">
                     </a>
                 </div>
 
+                <div id="wrap-3">
+                    <div id="protegido">
+                        Protegido por reCAPTCHA -
+                        <a href="https://policies.google.com/privacy?hl=pt-BR">
+                            Privacidade
+                        </a> -
+                        <a href="https://policies.google.com/terms?hl=pt-BR">
+                            Condições
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
-            <div id="protegido">
-                Protegido por reCAPTCHA -
+
+        </main>
+        <footer>
+            <div id="privacidade">
                 <a href="#">
-                    Privacidade
-                </a> -
-                <a href="#">
-                    Condições
+                    Como cuidamos da sua privacidade
                 </a>
             </div>
 
-        </main>
-
-        <footer>
-            <section>
-                <div id="privacidade">
-                    Como cuidamos da sua privacidade
-                </div>
-                <div id="copyrigth">
-                    Copyrigth © 1999-2021 Ebazar.com.br LTDA.
-                </div>
-            </section>
+            <div id="copyright">
+                Copyright © 1999-2021 Ebazar.com.br LTDA.
+            </div>
         </footer>
-
 
     </section>
 
-
-    <script src="./assets/js/auth.js"></script>
 </body>
 
 </html>
