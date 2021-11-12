@@ -227,10 +227,77 @@ a:hover {
   }
 }
 
+#home-header {
+  display: flex;
+  min-width: 320px;
+  height: 100px;
+  background-color: #fff159;
+}
+#home-header #home-topo {
+  width: 100%;
+}
+#home-header #home-topo .home-container {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto 0 auto;
+  align-items: center;
+}
+#home-header #home-topo .home-container .home-logo {
+  top: 51px;
+  margin-right: 10px;
+  left: 5px;
+}
+#home-header #home-topo .home-container #home-form {
+  max-width: 600px;
+  width: 600px;
+}
+#home-header #home-topo .home-container #home-form .home-search {
+  min-width: 162px;
+  max-width: 578px;
+  min-height: 32px;
+  width: 80%;
+  height: 39px;
+  margin-left: 10px;
+  padding: 7px 60px 9px 15px;
+  border-radius: 2px;
+  border: 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+#home-header #home-topo .home-container #home-form .home-search::placeholder {
+  color: rgba(51, 51, 51, 0.37);
+  font-size: 16px;
+  width: 100%;
+  margin: 0;
+  font-family: inherit;
+}
+#home-header #home-topo .home-container #home-form .home-search:focus {
+  outline: 0;
+}
+#home-header #home-topo .home-container #home-form #btn-search {
+  background-color: #f7f7f7;
+  height: 40px;
+  width: 33px;
+  border-radius: 2px;
+  border: 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+#home-header #home-topo .home-container #home-form #btn-search #search-icon {
+  height: 16px;
+  width: 20px;
+}
+#home-header #home-topo .home-container .home-includes {
+  width: 340px;
+  height: 39px;
+}
+#home-header #abaixo {
+  width: 100%;
+}
 #header {
   display: flex;
   min-width: 320px;
-  height: 160px;
+  height: 100px;
   background-color: #fff159;
 }
 #header #topo {
