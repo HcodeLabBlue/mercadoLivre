@@ -28,15 +28,18 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             #img {
-                height: 140px;
-                width: 220px;
+                display: inherit;
+                margin: 33px;
             }
             #titulo {
-                margin-top: 33px;
                 font-size: 20px;
+                color: rgba(0, 0, 0, 0.774);
             }
             #ir-para-home {
                 margin-top: 33px;
+                a {
+                    color: rgba(0, 0, 0, 0.705);
+                }
             }
         }
     }
