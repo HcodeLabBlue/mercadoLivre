@@ -1,4 +1,43 @@
 #erro-404 {
     height: 100vh;
-    /*  background-color: red; */
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    >header {
+        height: 54px;
+        width: 100%;
+        background-color: #FFF159;
+        #logo {
+            margin-top: 10px;
+            margin-left: 20%;
+            position: absolute;
+        }
+    }
+    >main {
+        height: calc(100vh - 54px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #wrap {
+            /* background-color: rgb(208, 195, 221); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            #img {
+                height: 140px;
+                width: 220px;
+            }
+            #titulo {
+                margin-top: 33px;
+                font-size: 20px;
+            }
+            #ir-para-home {
+                margin-top: 33px;
+            }
+        }
+    }
 }
