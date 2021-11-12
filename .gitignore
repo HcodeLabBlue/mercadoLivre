@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-node_modules/
-*.map
-.css
-package-lock.json
-=======
 /node_modules
 /package-lock.json
 *.css
 *.map
->>>>>>> bcab0e0663ed0ac5100b1fe8f0a7eadafd3af161
+.vscode/settings.json
