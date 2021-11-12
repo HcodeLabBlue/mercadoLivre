@@ -230,7 +230,7 @@ a:hover {
 #header {
   display: flex;
   min-width: 320px;
-  height: 160px;
+  height: 100px;
   background-color: #fff159;
 }
 #header #topo {
@@ -277,6 +277,35 @@ a:hover {
 #header #topo .container .includes {
   width: 340px;
   height: 39px;
+}
+
+.top {
+  position: relative;
+  background-image: url(/assets/images/bk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  z-index: 1;
+}
+.top .logo-ml {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+.top .logo-ml img {
+  border-radius: 4px;
+}
+
+main > section .container {
+  position: relative;
+  z-index: 2;
+  margin: -100px auto 0 auto;
+  border-radius: 5px;
+  width: 70%;
+  height: 300px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=main.css.map */
