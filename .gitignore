@@ -2,4 +2,10 @@
 /package-lock.json
 *.css
 *.map
+<<<<<<< HEAD
+>>>>>>> bcab0e0663ed0ac5100b1fe8f0a7eadafd3af161
+assets/css/main.css
+*.css
+=======
 .vscode/settings.json
+>>>>>>> origin/main
