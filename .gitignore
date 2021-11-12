@@ -10,3 +10,4 @@ package-lock.json
 *.map
 >>>>>>> bcab0e0663ed0ac5100b1fe8f0a7eadafd3af161
 assets/css/main.css
+*.css
