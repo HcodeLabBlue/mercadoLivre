@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mercado Livre - Login</title>
+    <link href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.17.0/mercadolibre/favicon.svg" rel="icon" data-head-react="true"/>
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
@@ -15,12 +16,14 @@
     <section id="auth">
         <header>
             <div id="logo">
-                <img id="logo-0" src="./assets/images/logo-0.png">
-                <img id="logo-1" src="./assets/images/logo-1.png">
+                <a href="https://www.mercadolivre.com.br/">
+                    <img id="logo-0" src="./assets/images/logo-0.png">
+                    <img id="logo-1" src="./assets/images/logo-1.png">
+                </a>
             </div>
 
             <div id="contato">
-                <span>Contato</span>
+               <a href="https://www.mercadolivre.com.br/ajuda">Contato</a>
             </div>
         </header>
 
@@ -31,28 +34,28 @@
                     <h1>Olá! Para continuar, digite o seu telefone, e-mail ou usuário
                     </h1>
 
-                    <div id="input-email">
-                        <label for="email">
-                                Telefone, e-mail ou  usuário
-                            </label>
-                        <input type="text" value="">
-                    </div>
+                    <form action="#">
+                        <div class="input-email">
+                            <label for="email">Telefone, e-mail ou usuário</label>
+                        <input type="email" name="email" id="email" required />               
+                        </div>             
 
-                    <div>
-                        <a href="#">
-                            <input id="btn-continuar" type="button" value="Continuar">
+                        <div>
+                            <a href="#">
+                            <button id="btn-continuar" type="submit">Continuar</button>
+                    </form>
                         </a>
                     </div>
 
                     <div>
-                        <a href="#">
+                        <a href="https://www.mercadolivre.com.br/registration?confirmation_url=https%3A%2F%2Fwww.mercadolivre.com.br%2F&rtx=2a6d0ab4-c304-4aeb-ac4c-a2676ba244de">
                             <input id="btn-criar-conta" type="button" value="Criar Conta">
                         </a>
                     </div>
                 </div>
 
                 <div id="wrap-2">
-                    <a href="#">
+                    <a href="https://www.mercadolivre.com.br/ajuda/20546">
                         <input id="ajuda" type="button" value="Preciso de ajuda para entrar">
                     </a>
                 </div>
@@ -75,7 +78,7 @@
         </main>
         <footer>
             <div id="privacidade">
-                <a href="#">
+                <a href="https://www.mercadolivre.com.br/privacidade">
                     Como cuidamos da sua privacidade
                 </a>
             </div>
