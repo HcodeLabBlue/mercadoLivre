@@ -12,14 +12,14 @@
             display: none;
         }
         a {
-            color:rgb(70, 69, 69);
+            color: rgb(70, 69, 69);
             font-size: 14px;
             font-weight: 200;
         }
     }
     >main {
         background-color: #EDEDED;
-        height: calc(100vh - 325px);
+        height: calc(100vh - 100px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,7 +41,7 @@
                     margin-top: 50px;
                     label {
                         color: #3f3f3f;
-                        margin-left:5px;
+                        margin-left: 5px;
                     }
                     >input {
                         margin-top: 5px;
@@ -135,7 +135,7 @@
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        #privacidade{
+        #privacidade {
             margin-bottom: 7px;
             a {
                 color: rgba(0, 0, 0, .8);
