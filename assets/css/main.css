@@ -426,14 +426,18 @@ body main > #product .container .img-product .small-img .image:hover {
   background-color: #f73;
   padding: 5px;
   text-align: center;
-  color: #fff;
   border-radius: 6px;
   text-align: center;
+}
+#col_lateral #col_produto #col_colocacao #col_mais_vendido a {
+  color: #fff;
 }
 #col_lateral #col_produto #col_colocacao #col_ranking {
   font-weight: 400;
   padding: 0 0 0 8px;
   text-transform: none;
+}
+#col_lateral #col_produto #col_colocacao #col_ranking a {
   color: #3483fa;
 }
 #col_lateral #col_produto #col_precos #col_preco_anterior {

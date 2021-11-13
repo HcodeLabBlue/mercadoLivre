@@ -68,15 +68,19 @@
                 background-color: #f73;
                 padding: 5px;
                 text-align: center;
-                color: #fff; // NAO TA APLICANDO
                 border-radius: 6px;
                 text-align: center;
+                a {
+                    color: #fff;
+                }
             }
             #col_ranking {
                 font-weight: 400;
                 padding: 0 0 0 8px;
                 text-transform: none;
-                color: #3483fa; // NAO TA APLICANDO
+                a {
+                    color: #3483fa; // NAO TA APLICANDO
+                }
             }
         }
         #col_precos {
