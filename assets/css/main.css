@@ -227,16 +227,19 @@ a:hover {
   }
 }
 
-#header {
+body {
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
+}
+body #header {
   display: flex;
   min-width: 320px;
   height: 100px;
   background-color: #fff159;
 }
-#header #topo {
+body #header #topo {
   width: 100%;
 }
-#header #topo .container {
+body #header #topo .container {
   width: 100%;
   max-width: 1400px;
   display: flex;
@@ -244,15 +247,15 @@ a:hover {
   margin: 10px auto 0 auto;
   align-items: center;
 }
-#header #topo .container .logo {
+body #header #topo .container .logo {
   top: 50px;
   margin-right: 10px;
 }
-#header #topo .container form {
+body #header #topo .container form {
   max-width: 600px;
   width: 600px;
 }
-#header #topo .container form .search {
+body #header #topo .container form .search {
   min-width: 162px;
   max-width: 578px;
   min-height: 32px;
@@ -264,22 +267,21 @@ a:hover {
   border: 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
-#header #topo .container form .search::placeholder {
+body #header #topo .container form .search::placeholder {
   color: rgba(51, 51, 51, 0.37);
   font-size: 16px;
   width: 100%;
   margin: 0;
   font-family: inherit;
 }
-#header #topo .container form .search:focus {
+body #header #topo .container form .search:focus {
   outline: 0;
 }
-#header #topo .container .includes {
+body #header #topo .container .includes {
   width: 340px;
   height: 39px;
 }
-
-.top {
+body .top {
   position: relative;
   background-image: url(/assets/images/bk.jpg);
   background-repeat: no-repeat;
@@ -287,25 +289,67 @@ a:hover {
   height: 250px;
   z-index: 1;
 }
-.top .logo-ml {
+body .top .logo-ml {
   background-color: #fff;
   border-radius: 4px;
   position: absolute;
   top: 15%;
-  left: 15%;
+  left: 7.5%;
 }
-.top .logo-ml img {
+body .top .logo-ml img {
   border-radius: 4px;
 }
-
-main > section .container {
+body main > #product .container {
   position: relative;
   z-index: 2;
   margin: -100px auto 0 auto;
-  border-radius: 5px;
-  width: 70%;
+  border-radius: 4px;
+  width: 85%;
   height: 300px;
   background-color: red;
+}
+body main > #product .container .indice {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: 4px 4px 0 0;
+  background-color: #ededed;
+}
+body main > #product .container .indice .links-left span {
+  color: rgba(0, 0, 0, 0.9);
+}
+body main > #product .container .indice .links-left span a {
+  color: rgba(0, 0, 0, 0.9);
+}
+body main > #product .container .indice .links-left a {
+  text-decoration: none;
+  color: #3483fa;
+}
+body main > #product .container .indice .links-right a {
+  text-decoration: none;
+  color: #3483fa;
+}
+body main > #product .container .img-product .small-img {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  box-sizing: border-box;
+}
+body main > #product .container .img-product .small-img .image {
+  width: 100%;
+  height: auto;
+}
+body main > #product .container .img-product .small-img .image img {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+body main > #product .container .img-product .small-img .image:hover {
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 3px solid blue;
 }
 
 /*# sourceMappingURL=main.css.map */
