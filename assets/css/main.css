@@ -357,13 +357,17 @@ body main > #product .container .img-product .small-img .image:hover {
   font-family: "Proxima Nova", -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   background-color: transparent;
   width: 368px;
-  height: 1926px;
+  /* height: 1926px; */
   margin: 16px 0 0 48px;
-  display: flex;
+  position: relative;
+  /* display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; */
   /*  */
   /*  */
+  /* 
+  PRIMEIRO CARD
+   */
   /* ================= */
   /* ================= */
 }
@@ -381,7 +385,7 @@ body main > #product .container .img-product .small-img .image:hover {
   border: 0.3px solid rgba(144, 144, 144, 0.418);
 }
 #col_lateral #col_produto {
-  height: 715px;
+  /* height: 715px; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -412,6 +416,7 @@ body main > #product .container .img-product .small-img .image:hover {
   width: 22px;
 }
 #col_lateral #col_produto #col_avaliacoes {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   /*  */
@@ -422,19 +427,21 @@ body main > #product .container .img-product .small-img .image:hover {
   color: rgba(0, 0, 0, 0.55);
 }
 #col_lateral #col_produto #col_colocacao {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   /*  */
 }
 #col_lateral #col_produto #col_colocacao #col_mais_vendido {
   background-color: #f73;
-  padding: 5px;
+  padding: 3px;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 3px 4px;
   text-align: center;
 }
 #col_lateral #col_produto #col_colocacao #col_mais_vendido a {
   color: #fff;
+  font-size: 14px;
 }
 #col_lateral #col_produto #col_colocacao #col_ranking {
   font-size: 12px;
@@ -471,6 +478,9 @@ body main > #product .container .img-product .small-img .image:hover {
 }
 #col_lateral #col_produto #col_precos #col_parcelamento_wrap #col_parcelamento {
   color: #00a650;
+}
+#col_lateral #col_produto #col_meios_pagamentos {
+  margin-top: 10px;
 }
 #col_lateral #col_produto #col_meios_pagamentos a {
   color: #3483fa;
@@ -514,22 +524,21 @@ body main > #product .container .img-product .small-img .image:hover {
 #col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 #col_line_3 a {
   color: #3483fa;
 }
-#col_lateral #col_produto #col_descricao {
-  /*  */
+#col_lateral #col_produto #col_descicao_cor {
+  margin-top: 25px;
+}
+#col_lateral #col_produto #col_descicao_voltagem {
+  margin-top: 10px;
 }
 #col_lateral #col_produto #col_estoque {
-  /*  */
+  margin-top: 40px;
 }
 #col_lateral #col_produto #col_quantidade {
-  /*  */
+  margin-top: 29px;
 }
 #col_lateral #col_btn_wrap {
-  height: 114px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 20px;
 }
 #col_lateral #col_btn_wrap .col_btn {
   display: flex;
@@ -537,9 +546,6 @@ body main > #product .container .img-product .small-img .image:hover {
   justify-content: center;
   width: 100%;
   height: 50px;
-  border-radius: 6 px;
-  background-color: #ffffff00;
-  color: black;
   transition: all 0.1s linear;
   font-weight: bold;
   border-radius: 6px;
@@ -552,20 +558,21 @@ body main > #product .container .img-product .small-img .image:hover {
   background-color: #1b6ce6;
 }
 #col_lateral #col_btn_wrap #col_btn_add_carrinho {
+  margin-top: 6px;
   background-color: #d2e4ff;
   color: #3483fa;
 }
 #col_lateral #col_produto_footer {
-  height: 166px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 14px;
   /*  */
 }
 #col_lateral #col_produto_footer .col_footer_item {
   display: flex;
+  margin-top: 20px;
   /*  */
 }
 #col_lateral #col_produto_footer .col_footer_item .col_footer_icon {
@@ -577,7 +584,6 @@ body main > #product .container .img-product .small-img .image:hover {
   width: 20px;
 }
 #col_lateral #col_produto_footer .col_footer_item .col_footer_text {
-  margin: 0 0 2px;
   width: 100%;
   color: #0000008c;
 }
