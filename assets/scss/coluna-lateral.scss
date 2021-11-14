@@ -84,6 +84,8 @@
             }
         }
         #col_precos {
+            margin-top: 12px;
+            /*  */
             #col_preco_anterior {
                 margin: 2px;
                 color: rgba(0, 0, 0, .55);
@@ -102,6 +104,52 @@
                     margin-left: 10px;
                     font-size: 18px;
                     color: #00a650;
+                }
+            }
+            #col_parcelamento_wrap {
+                #col_parcelamento {
+                    color: #00a650;
+                }
+            }
+        }
+        #col_meios_pagamentos {
+            a {
+                color: #3483fa;
+            }
+        }
+        #col_frete {
+            display: flex;
+            height: 80px;
+            /*  */
+            #col_frete_icon {
+                width: 10%;
+            }
+            #col_frete_wrap {
+                #col_frete_wrap_2 {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    /*  */
+                    #col_line_1 {
+                        color: #00a650;
+                        #col_full {
+                            font-weight: bolder
+                        }
+                        #col_icon_arrow {
+                            color: rgba(0, 0, 0, 0.55);
+                        }
+                    }
+                    #col_line_2 {
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.55);
+                    }
+                    #col_line_3 {
+                        font-size: 14px;
+                        a {
+                            color: #3483fa;
+                        }
+                    }
                 }
             }
         }
