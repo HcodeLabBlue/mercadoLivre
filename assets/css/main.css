@@ -536,6 +536,10 @@ body main > #product .container .img-product .small-img .image:hover {
 #col_lateral #col_produto #col_quantidade {
   margin-top: 29px;
 }
+#col_lateral #col_produto #col_quantidade #col_quant_disponivel {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.582);
+}
 #col_lateral #col_btn_wrap {
   width: 100%;
   margin-top: 20px;
