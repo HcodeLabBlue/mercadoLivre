@@ -162,9 +162,186 @@ body {
           color: #333;  
           margin-left: 5%;        
           font-size: 24px;
-          font-weight: 400;
-          
+          font-weight: 400;          
         }
+
+
+
+
+        .carousel {
+    width:65%;
+  
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  /*height:300px;/*ajustar altura da caixa*/
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.7s ease-out;
+    transition: opacity 0.7s ease-out;
+
+            .wrapper {
+              max-width: 60rem;
+              margin: 0 auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-bottom: 3rem;
+            }
+            .box {
+              width: 15rem;
+              height: 20rem;
+              padding: 0 2rem 3rem;
+              transition:
+                transform 0.3s linear 0s,
+                filter 0.5s linear 0.3s,
+                opacity 0.5s linear 0.3s;
+              /*transform-origin: top center;*/
+            }
+            .product {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              border-radius: 0.2rem;
+              background-image: url(https://http2.mlstatic.com/D_Q_NP_755198-MLA40768066676_022020-AB.webp);
+              background-color: #fff;
+              background-position: top 3rem center;
+              background-size: 80%;
+              background-repeat: no-repeat;
+              box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+              transition:
+                box-shadow 0.5s linear,
+                height 0.1s linear 0s;
+            }
+            .name {
+              display: block;
+              padding: 1rem 0.5rem;
+            }
+            .description {
+              position: absolute;
+              bottom: 1rem;
+              left: 0;
+              right: 0;
+              display: block;
+              padding: 0 1.5rem;
+              opacity: 0;
+              transition: opacity 0.1s linear 0s;
+            }
+            .wrapper:hover .box:not(:hover)  {
+              filter: blur(3px);
+              opacity: 0.5;
+            }
+            .box:hover  {
+              transform: scale(1.1);
+              transition:
+                transform 0.3s linear 0.3s,
+                filter 0.1s linear 0s,
+                opacity 0.1s linear 0s;
+            }
+            .box:hover .product {
+              height: 23rem;
+              box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+              transition:
+                box-shadow 1s linear,
+                height 0.3s linear 0.5s;
+            }
+            .box:hover .description {
+              opacity: 1;
+              transition: opacity 0.3s linear 0.75s;
+            }
+}
+
+.carousel-item img {
+    display: block;
+    /*height:auto;/*ajustar altura da imagem interna*/
+    max-width: 100%;
+}
+
+.carousel-control {
+    background: rgba(255, 255, 255, 0.328);
+    border-radius: 50%;
+    color: #3483fa;
+    cursor: pointer;
+    display: none;
+    font-size: 60px;
+    height: 64px;
+    
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 64px;
+    z-index: 10;  
+}
+
+.carousel-control.prev {
+    left: 2%;
+  user-select: none;
+}
+
+.carousel-control.next {
+    right: 2%;
+  user-select: none;
+}
+
+.carousel-control:hover {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 19%);
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       }
     }
 
