@@ -85,8 +85,7 @@ body {
         z-index: 2;
         margin: -100px auto 0 auto;
         border-radius: 4px;
-        width: 85%;
-        height: 300px;
+        width: 85%;        
         background-color: red;
         .indice {
           display: flex;
@@ -125,8 +124,7 @@ body {
               height: 64px;
               border-radius: 5px;
               border: 2px solid #fff;
-              margin-bottom: 10px; 
-                            
+              margin-bottom: 10px;  
                   img {
                     width:100%;
                     height: 100%; 
@@ -137,9 +135,37 @@ body {
                   border: 3px solid #3483fa;
                 }
           }
-          
+          .large-img {
+            margin-top: 25px;
+            img {
+              padding: 16px;
+              margin: 24px 0 0;
+              width: 110%;
+            }
+          }          
         }
       } 
+    }
+
+    #anuncios{
+      .container{
+      width: 85%;
+      margin: auto;
+      padding: 40px 0 26px;
+      background-color: #3483fa;
+        .divisor{
+          width: 55%;
+          margin:0 0 40px 5%;          
+          border:1px solid rgb(187, 187, 187);
+        }
+        .text-1{
+          color: #333;  
+          margin-left: 5%;        
+          font-size: 24px;
+          font-weight: 400;
+          
+        }
+      }
     }
 
   }
