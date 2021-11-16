@@ -376,17 +376,140 @@ body main > #anuncios .container .text-1 {
   font-size: 24px;
   font-weight: 400;
 }
+body main > #anuncios .container .carousel {
+  width: 65%;
+}
+body main > #anuncios .container .carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /*height:300px;/*ajustar altura da caixa*/
+}
+body main > #anuncios .container .carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+body main > #anuncios .container .carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s ease-out;
+  transition: opacity 0.7s ease-out;
+}
+body main > #anuncios .container .carousel-item .wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+body main > #anuncios .container .carousel-item .box {
+  width: 15rem;
+  height: 20rem;
+  padding: 0 2rem 3rem;
+  transition: transform 0.3s linear 0s, filter 0.5s linear 0.3s, opacity 0.5s linear 0.3s;
+  /*transform-origin: top center;*/
+}
+body main > #anuncios .container .carousel-item .product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+  background-image: url(https://http2.mlstatic.com/D_Q_NP_755198-MLA40768066676_022020-AB.webp);
+  background-color: #fff;
+  background-position: top 3rem center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s linear, height 0.1s linear 0s;
+}
+body main > #anuncios .container .carousel-item .name {
+  display: block;
+  padding: 1rem 0.5rem;
+}
+body main > #anuncios .container .carousel-item .description {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 0 1.5rem;
+  opacity: 0;
+  transition: opacity 0.1s linear 0s;
+}
+body main > #anuncios .container .carousel-item .wrapper:hover .box:not(:hover) {
+  filter: blur(3px);
+  opacity: 0.5;
+}
+body main > #anuncios .container .carousel-item .box:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s linear 0.3s, filter 0.1s linear 0s, opacity 0.1s linear 0s;
+}
+body main > #anuncios .container .carousel-item .box:hover .product {
+  height: 23rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 1s linear, height 0.3s linear 0.5s;
+}
+body main > #anuncios .container .carousel-item .box:hover .description {
+  opacity: 1;
+  transition: opacity 0.3s linear 0.75s;
+}
+body main > #anuncios .container .carousel-item img {
+  display: block;
+  /*height:auto;/*ajustar altura da imagem interna*/
+  max-width: 100%;
+}
+body main > #anuncios .container .carousel-control {
+  background: rgba(255, 255, 255, 0.328);
+  border-radius: 50%;
+  color: #3483fa;
+  cursor: pointer;
+  display: none;
+  font-size: 60px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 64px;
+  z-index: 10;
+}
+body main > #anuncios .container .carousel-control.prev {
+  left: 2%;
+  user-select: none;
+}
+body main > #anuncios .container .carousel-control.next {
+  right: 2%;
+  user-select: none;
+}
+body main > #anuncios .container .carousel-control:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+body main > #anuncios .container #carousel-1:checked ~ .control-1,
+body main > #anuncios .container #carousel-2:checked ~ .control-2,
+body main > #anuncios .container #carousel-3:checked ~ .control-3 {
+  display: block;
+}
+body main > #anuncios .container .carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
 
 #col_lateral {
-  font-family: "Proxima Nova", -apple-system, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
   background-color: transparent;
   width: 368px;
-  /* height: 1926px; */
   margin: 16px 0 0 48px;
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   /*  */
   /*  */
   /* 
