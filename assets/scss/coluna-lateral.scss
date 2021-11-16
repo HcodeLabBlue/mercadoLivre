@@ -23,7 +23,7 @@
      */
     #col_produto {
         /* height: 715px; */
-        display: flex;
+        display: none; // mudar para flex
         flex-direction: column;
         justify-content: space-around;
         /*  */

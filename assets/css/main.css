@@ -533,7 +533,7 @@ body main > #anuncios .container .carousel-indicators {
 }
 #col_lateral #col_produto {
   /* height: 715px; */
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   /*  */
