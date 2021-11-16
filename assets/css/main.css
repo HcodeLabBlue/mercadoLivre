@@ -1,17 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "Proxima Nova";
   src: local("Proxima Nova"), url("../fonts/proxima-nova.otf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Proxima Nova";
+}
+
 body {
   background-color: #EDEDED;
 }
@@ -25,7 +26,6 @@ a:hover {
 }
 
 #auth {
-  font-family: "Proxima Nova";
   position: relative;
 }
 #auth > header {
