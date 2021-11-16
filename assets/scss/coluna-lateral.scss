@@ -298,6 +298,38 @@
                 }
             }
         }
+        #col_termometro {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /*  */
+            .col_termometro_def {
+                width: 100%;
+                height: 8px;
+                margin: 0 2px;
+                background-color: #1b6ce6;
+                opacity: .2;
+            }
+            #col_termometro_01 {
+                background-color: red;
+            }
+            #col_termometro_02 {
+                background-color: rgb(225, 5217, 0);
+            }
+            #col_termometro_03 {
+                background-color: yellow;
+            }
+            #col_termometro_04 {
+                background-color: rgb(217, 255, 0);
+            }
+            #col_termometro_05 {
+                background-color: #00a650;
+            }
+            .col_termometro_selecionado {
+                opacity: 1;
+                height: 10px;
+            }
+        }
     }
     /* ================= */
     #col_devolucao {
