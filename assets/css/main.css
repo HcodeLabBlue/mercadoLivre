@@ -351,31 +351,31 @@ a:hover {
   align-items: center;
   height: 35px;
 }
-#home-header .nav-container .nav-container:hover {
-  border: 2px grey;
-}
 #home-header .nav-container #nav-location {
   display: flex;
   flex-direction: row;
   min-width: 16px;
   align-items: center;
-  text-align: center;
   margin-right: 20px;
 }
 #home-header .nav-container #nav-location #location {
   width: 21px;
   height: 16px;
 }
-#home-header .nav-container #nav-span {
-  display: flex;
-  flex-direction: column;
+@media (min-width: 1023px) {
+  #home-header .nav-container #nav-span {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
 }
 #home-header .nav-container ol {
   list-style-type: none;
   width: 200px;
   display: flex;
   padding: 0;
-  margin-right: 10px;
+  margin-right: 380px;
+  margin-left: 150px;
   text-align: center;
   display: inline-flex;
 }
@@ -391,16 +391,26 @@ a:hover {
   display: none;
 }
 #home-header .nav-container ol > li > ul > li {
-  height: 40px;
+  height: 70px;
   position: relative;
 }
 #home-header .nav-container ol > li:hover > ul {
+  height: 100%;
   display: block;
+  background-color: grey;
 }
 #home-header .nav-container ol a {
   color: black;
   display: block;
   text-decoration: none;
+}
+#home-header #nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 350px;
+}
+#home-header #nav-menu a {
+  color: black;
 }
 @media (max-width: 1023px) {
   #home-header #nav-icon-kart {
