@@ -4,6 +4,7 @@
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+  font-family: "Proxima Nova";
 }
 
 @font-face {
@@ -687,11 +688,11 @@ body main > #anuncios .container .carousel-indicators {
   font-size: 12px;
   color: rgba(0, 0, 0, 0.582);
 }
-#col_lateral #col_btn_wrap {
+#col_lateral #col_produto #col_btn_wrap {
   width: 100%;
   margin-top: 20px;
 }
-#col_lateral #col_btn_wrap .col_btn {
+#col_lateral #col_produto #col_btn_wrap .col_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -701,19 +702,19 @@ body main > #anuncios .container .carousel-indicators {
   font-weight: bold;
   border-radius: 6px;
 }
-#col_lateral #col_btn_wrap #col_btn_comprar {
+#col_lateral #col_produto #col_btn_wrap #col_btn_comprar {
   background-color: #3483fa;
   color: white;
 }
-#col_lateral #col_btn_wrap #col_btn_comprar:hover {
+#col_lateral #col_produto #col_btn_wrap #col_btn_comprar:hover {
   background-color: #1b6ce6;
 }
-#col_lateral #col_btn_wrap #col_btn_add_carrinho {
+#col_lateral #col_produto #col_btn_wrap #col_btn_add_carrinho {
   margin-top: 6px;
   background-color: #d2e4ff;
   color: #3483fa;
 }
-#col_lateral #col_produto_footer {
+#col_lateral #col_produto #col_produto_footer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -721,28 +722,36 @@ body main > #anuncios .container .carousel-indicators {
   font-size: 14px;
   /*  */
 }
-#col_lateral #col_produto_footer .col_footer_item {
+#col_lateral #col_produto #col_produto_footer .col_footer_item {
   display: flex;
   margin-top: 20px;
   /*  */
 }
-#col_lateral #col_produto_footer .col_footer_item .col_footer_icon {
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_icon {
   width: 38px;
   fill: rgba(0, 0, 0, 0.55);
 }
-#col_lateral #col_produto_footer .col_footer_item .col_footer_icon svg {
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_icon svg {
   height: 20px;
   width: 20px;
 }
-#col_lateral #col_produto_footer .col_footer_item .col_footer_text {
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_text {
   width: 100%;
   color: #0000008c;
 }
-#col_lateral #col_produto_footer .col_footer_item .col_footer_text > a {
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_text > a {
   color: #3483fa;
 }
 #col_lateral #col_loja {
-  height: 308px;
+  /* height: 308px; */
+}
+#col_lateral #col_loja #col_titulo {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  width: 100%;
+  margin-bottom: 28px;
 }
 #col_lateral #col_devolucao {
   height: 875px;
