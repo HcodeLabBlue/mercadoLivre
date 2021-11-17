@@ -432,12 +432,24 @@
             }
         }
         #col_mercado_credito {
-            margin-bottom: 22px;
             /*  */
             >img {
                 width: 89px;
                 height: 23px;
             }
+        }
+        .col_tit_cartoes {
+            margin: 24px 0 10px 0;
+        }
+        #col_cartoes_credido {
+            display: flex;
+            /*  */
+            .col_cartao {
+                margin: 0 12px;
+            }
+        }
+        #col_ver_mais_pagamentos {
+            margin-top: 25px;
         }
     }
 }

@@ -937,12 +937,24 @@ body main > #anuncios .container .carousel-indicators {
   color: #fff;
 }
 #col_lateral #col_devolucao #col_mercado_credito {
-  margin-bottom: 22px;
   /*  */
 }
 #col_lateral #col_devolucao #col_mercado_credito > img {
   width: 89px;
   height: 23px;
+}
+#col_lateral #col_devolucao .col_tit_cartoes {
+  margin: 24px 0 10px 0;
+}
+#col_lateral #col_devolucao #col_cartoes_credido {
+  display: flex;
+  /*  */
+}
+#col_lateral #col_devolucao #col_cartoes_credido .col_cartao {
+  margin: 0 12px;
+}
+#col_lateral #col_devolucao #col_ver_mais_pagamentos {
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=main.css.map */
