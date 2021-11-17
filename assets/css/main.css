@@ -468,6 +468,7 @@ a:hover {
   line-height: 1.4;
   color: #4b4b4b;
   margin: 16 px 0 0;
+  text-align: center;
 }
 #home > footer #footer_wrap #footer_wrapA .footer_item .footer_sub {
   color: #999;
@@ -475,6 +476,9 @@ a:hover {
   margin: 4px 0 10px;
   line-height: 1.2;
   width: 320px;
+  text-align: center;
+}
+#home > footer #footer_wrap #footer_wrapA .footer_item .footer_link {
   text-align: center;
 }
 #home > footer #footer_wrap #footer_wrapA .footer_item .footer_link > a {
