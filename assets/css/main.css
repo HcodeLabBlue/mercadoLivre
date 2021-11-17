@@ -755,6 +755,7 @@ body main > #anuncios .container .carousel-indicators {
 #col_lateral #col_loja #col_banner_wrap {
   display: flex;
   height: 48px;
+  margin-bottom: 15px;
   /*  */
 }
 #col_lateral #col_loja #col_banner_wrap #col_banner_img {
