@@ -29,6 +29,7 @@ a:hover {
   position: relative;
 }
 #auth > header {
+  min-width: 320px;
   background-color: #FFF059;
   height: 238px;
   padding-top: 15px;
@@ -45,8 +46,9 @@ a:hover {
   font-weight: 200;
 }
 #auth > main {
+  min-width: 320px;
   background-color: #EDEDED;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,6 +153,7 @@ a:hover {
   font-size: 10px;
 }
 #auth > footer {
+  min-width: 320px;
   background-color: #FFFFFF;
   position: absolute;
   width: 100%;
@@ -195,7 +198,7 @@ a:hover {
     padding-top: 9px;
   }
   #auth > main {
-    height: calc(100vh - 135px);
+    height: calc(100vh - 80px);
   }
   #auth > main #wrap-all {
     transform: translateY(0);
@@ -206,7 +209,7 @@ a:hover {
   #auth > main #wrap-all #wrap-1 {
     border-radius: 0;
     padding: 30px;
-    height: calc(100% - 86px);
+    height: calc(100% - 115px);
   }
   #auth > main #wrap-all #wrap-2 #ajuda {
     background-color: #fdfdfd;
