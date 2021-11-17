@@ -1,6 +1,7 @@
 #auth {
     position: relative;
     >header {
+        min-width: 320px;
         background-color: #FFF059;
         height: 238px;
         padding-top: 15px;
@@ -17,8 +18,9 @@
         }
     }
     >main {
+        min-width: 320px;
         background-color: #EDEDED;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 80px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -125,6 +127,7 @@
         }
     }
     >footer {
+        min-width: 320px;
         background-color: #FFFFFF;
         position: absolute;
         width: 100%;
@@ -177,7 +180,7 @@
             padding-top: 9px;
         }
         >main {
-            height: calc(100vh - 135px);
+            height: calc(100vh - 80px);
             #wrap-all {
                 transform: translateY(0);
                 border-radius: 0;
@@ -186,7 +189,7 @@
                 #wrap-1 {
                     border-radius: 0;
                     padding: 30px;
-                    height: calc(100% - 86px);
+                    height: calc(100% - 115px);
                 }
                 #wrap-2 {
                     #ajuda {
