@@ -1,17 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "Proxima Nova";
   src: local("Proxima Nova"), url("../fonts/proxima-nova.otf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  font-family: "Proxima Nova";
+}
+
 body {
   background-color: #EDEDED;
 }
@@ -301,7 +302,7 @@ a:hover {
 }
 #erro-404 > header #logo {
   margin-top: 10px;
-  margin-left: 20%;
+  margin-left: 5%;
   position: absolute;
 }
 #erro-404 > main {
@@ -328,11 +329,20 @@ a:hover {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.774);
 }
+#erro-404 > main #wrap #titulo h5 {
+  margin-top: 10px;
+}
 #erro-404 > main #wrap #ir-para-home {
   margin-top: 33px;
 }
 #erro-404 > main #wrap #ir-para-home a {
   color: rgba(0, 0, 0, 0.705);
+}
+
+@media (max-width: 1024px) {
+  #erro-404 > header #logo {
+    margin-left: 2%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
