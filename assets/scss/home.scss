@@ -247,7 +247,7 @@
                     }
                 }
             }
-            #footer_wrapB {
+            #footer_alerta_coockie {
                 background-color: #333;
                 width: 100%;
                 height: 83px;
@@ -263,13 +263,15 @@
                     text-decoration: none;
                     color: #fff;
                 }
-                button {
+                #footer_entendi {
                     background-color: #3483FA;
                     color: #fff;
                     width: 74px;
                     height: 30px;
                     border-radius: 6px;
                     margin-left: 12px;
+                    text-align: center;
+                    padding-top: 8px;
                 }
             }
         }
@@ -286,10 +288,10 @@
                         margin-top: 25px;
                     }
                 }
-                #footer_wrapB {
+                #footer_alerta_coockie {
                     flex-direction: column;
                     /*  */
-                    button {
+                    #footer_entendi {
                         margin-left: 0px;
                         margin-top: 10px;
                     }
