@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# mercadoLivre
-
-Projeto hcodeLab - Azul
-=======
 # HCODE LAB
 
 ## TIME AZUL - 💙
@@ -35,5 +30,3 @@ Projeto hcodeLab - Azul
       - [ ] Figma
       - [ ] Feita
       - [ ] Revisada
-      - [ ] Finalizada
->>>>>>> main
