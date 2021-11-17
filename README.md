@@ -3,6 +3,7 @@
 ## TIME AZUL - 💙
 
 ## Tarefas
+
 - [x] Start no projeto
   - Assets
     - [x] Imagens
@@ -29,4 +30,3 @@
       - [ ] Figma
       - [ ] Feita
       - [ ] Revisada
-      - [ ] Finalizada

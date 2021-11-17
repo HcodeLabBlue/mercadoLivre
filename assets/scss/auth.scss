@@ -1,7 +1,7 @@
 #auth {
-    font-family: "Proxima Nova";
     position: relative;
     >header {
+        min-width: 320px;
         background-color: #FFF059;
         height: 238px;
         padding-top: 15px;
@@ -12,14 +12,15 @@
             display: none;
         }
         a {
-            color:rgb(70, 69, 69);
+            color: rgb(70, 69, 69);
             font-size: 14px;
             font-weight: 200;
         }
     }
     >main {
+        min-width: 320px;
         background-color: #EDEDED;
-        height: calc(100vh - 325px);
+        height: calc(100vh - 80px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -41,7 +42,7 @@
                     margin-top: 50px;
                     label {
                         color: #3f3f3f;
-                        margin-left:5px;
+                        margin-left: 5px;
                     }
                     >input {
                         margin-top: 5px;
@@ -126,6 +127,7 @@
         }
     }
     >footer {
+        min-width: 320px;
         background-color: #FFFFFF;
         position: absolute;
         width: 100%;
@@ -135,7 +137,7 @@
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        #privacidade{
+        #privacidade {
             margin-bottom: 7px;
             a {
                 color: rgba(0, 0, 0, .8);
@@ -178,7 +180,7 @@
             padding-top: 9px;
         }
         >main {
-            height: calc(100vh - 135px);
+            height: calc(100vh - 80px);
             #wrap-all {
                 transform: translateY(0);
                 border-radius: 0;
@@ -187,7 +189,7 @@
                 #wrap-1 {
                     border-radius: 0;
                     padding: 30px;
-                    height: calc(100% - 86px);
+                    height: calc(100% - 115px);
                 }
                 #wrap-2 {
                     #ajuda {
