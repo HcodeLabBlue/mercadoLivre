@@ -534,7 +534,6 @@ body main > #anuncios .container .carousel-indicators {
 }
 #col_lateral #col_produto {
   /* height: 715px; */
-  display: none;
   flex-direction: column;
   justify-content: space-around;
   /*  */
@@ -744,7 +743,6 @@ body main > #anuncios .container .carousel-indicators {
 }
 #col_lateral #col_loja {
   /* height: 308px; */
-  display: none;
 }
 #col_lateral #col_loja #col_titulo {
   color: rgba(0, 0, 0, 0.726);
