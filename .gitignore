@@ -2,3 +2,7 @@
 /package-lock.json
 /assets/css
 assets/css/main.css
+*.css
+*.map
+assets/css/main.css
+.vscode/settings.json

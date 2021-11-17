@@ -1,18 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  box-sizing: border-box;
-  font-family: "Proxima Nova";
-}
-
 @font-face {
   font-family: "Proxima Nova";
   src: local("Proxima Nova"), url("../fonts/proxima-nova.otf") format("truetype");
   font-style: normal;
   font-weight: 300;
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+
+  font-family: "Proxima Nova";
+}
+
 body {
   background-color: #EDEDED;
 }
@@ -26,12 +27,10 @@ a:hover {
 }
 
 #auth {
-  font-family: "Proxima Nova";
-  height: 100vh;
-  width: 100%;
   position: relative;
 }
 #auth > header {
+  min-width: 320px;
   background-color: #FFF059;
   height: 238px;
   padding-top: 15px;
@@ -42,13 +41,15 @@ a:hover {
 #auth > header #logo-0 {
   display: none;
 }
-#auth > header span {
-  color: #3f3f3f;
-  margin-top: 100px;
+#auth > header a {
+  color: #464545;
+  font-size: 14px;
+  font-weight: 200;
 }
 #auth > main {
+  min-width: 320px;
   background-color: #EDEDED;
-  height: 100vh;
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,15 +67,18 @@ a:hover {
 }
 #auth > main > #wrap-all > #wrap-1 h1 {
   color: #000000c7;
+  line-height: 1.25;
+  letter-spacing: 0.0125rem;
 }
-#auth > main > #wrap-all > #wrap-1 #input-email {
-  margin-top: 60px;
+#auth > main > #wrap-all > #wrap-1 .input-email {
+  margin-top: 50px;
 }
-#auth > main > #wrap-all > #wrap-1 #input-email label {
-  margin-left: 5px;
+#auth > main > #wrap-all > #wrap-1 .input-email label {
   color: #3f3f3f;
+  margin-left: 5px;
 }
-#auth > main > #wrap-all > #wrap-1 #input-email > input {
+#auth > main > #wrap-all > #wrap-1 .input-email > input {
+  margin-top: 5px;
   width: 100%;
   height: 50px;
   border-radius: 6px;
@@ -86,7 +90,7 @@ a:hover {
   color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
 }
-#auth > main > #wrap-all > #wrap-1 #input-email > input:focus {
+#auth > main > #wrap-all > #wrap-1 .input-email > input:focus {
   border: 2px solid #3483FA;
 }
 #auth > main > #wrap-all > #wrap-1 #btn-continuar {
@@ -101,7 +105,7 @@ a:hover {
 }
 #auth > main > #wrap-all > #wrap-1 #btn-continuar:hover {
   cursor: pointer;
-  background-color: #2475f0;
+  background-color: #2868c8;
 }
 #auth > main > #wrap-all > #wrap-1 #btn-criar-conta {
   margin-top: 5px;
@@ -150,6 +154,7 @@ a:hover {
   font-size: 10px;
 }
 #auth > footer {
+  min-width: 320px;
   background-color: #FFFFFF;
   position: absolute;
   width: 100%;
@@ -160,7 +165,10 @@ a:hover {
   align-items: center;
   font-size: 14px;
 }
-#auth > footer a {
+#auth > footer #privacidade {
+  margin-bottom: 7px;
+}
+#auth > footer #privacidade a {
   color: rgba(0, 0, 0, 0.8);
 }
 #auth > footer #copyright {
@@ -184,11 +192,14 @@ a:hover {
   }
 }
 
-/* MEDIA 460px */
-@media (max-width: 460px) {
+/* MEDIA 767px */
+@media (max-width: 767px) {
   #auth > header {
     height: 48px;
     padding-top: 9px;
+  }
+  #auth > main {
+    height: calc(100vh - 80px);
   }
   #auth > main #wrap-all {
     transform: translateY(0);
@@ -199,7 +210,7 @@ a:hover {
   #auth > main #wrap-all #wrap-1 {
     border-radius: 0;
     padding: 30px;
-    height: calc(100% - 86px);
+    height: calc(100% - 115px);
   }
   #auth > main #wrap-all #wrap-2 #ajuda {
     background-color: #fdfdfd;
@@ -228,10 +239,6 @@ a:hover {
   }
 }
 
-body {
-  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
-}
-body #header {
   display: flex;
   min-width: 320px;
   height: 100px;
@@ -953,6 +960,62 @@ body main > #anuncios .container .carousel-indicators {
 }
 #col_lateral #col_devolucao #col_ver_mais_pagamentos {
   margin-top: 25px;
+}
+
+#erro-404 {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+}
+#erro-404 > header {
+  height: 54px;
+  width: 100%;
+  background-color: #FFF159;
+}
+#erro-404 > header #logo {
+  margin-top: 10px;
+  margin-left: 5%;
+  position: absolute;
+}
+#erro-404 > main {
+  height: calc(100vh - 54px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#erro-404 > main #wrap {
+  /* background-color: rgb(208, 195, 221); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#erro-404 > main #wrap #img {
+  display: inherit;
+  margin: 33px;
+}
+#erro-404 > main #wrap #titulo {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.774);
+}
+#erro-404 > main #wrap #titulo h5 {
+  margin-top: 10px;
+}
+#erro-404 > main #wrap #ir-para-home {
+  margin-top: 33px;
+}
+#erro-404 > main #wrap #ir-para-home a {
+  color: rgba(0, 0, 0, 0.705);
+}
+
+@media (max-width: 1024px) {
+  #erro-404 > header #logo {
+    margin-left: 2%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
