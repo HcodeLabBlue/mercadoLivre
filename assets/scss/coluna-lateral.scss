@@ -239,6 +239,7 @@
     /* ================= */
     #col_loja {
         /* height: 308px; */
+        display: none; // REMOCER NO FINAL
         #col_titulo {
             color: rgba(0, 0, 0, 0.726);
             font-size: 18px;
@@ -368,7 +369,75 @@
     }
     /* ================= */
     #col_devolucao {
-        height: 875px;
+        /* height: 875px; */
         /*  */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+            line-height: 1.25;
+            margin: 0;
+        }
+        p {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+        }
+        .col_titulo {
+            color: rgba(0, 0, 0, .9);
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 28px;
+            width: 100%;
+        }
+        .col_msg {
+            font-weight: 400;
+            color: rgba(0, 0, 0, .55);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+        .col_ver_mais {
+            color: #3483fa;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        #col_dev_wrap1 {
+            border-bottom: 1px solid rgb(173, 173, 173); //????
+            margin-bottom: 30px;
+        }
+        #col_dev_wrap2 {
+            border-bottom: 1px solid rgb(173, 173, 173); //????
+            margin-bottom: 30px;
+        }
+        #col_pague_wrap {
+            background-color: #00a650;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 12px 20px;
+            width: 100%;
+            margin-bottom: 20px;
+            #col_pague_icon {
+                width: 10%;
+            }
+            #col_pague_msg {
+                color: #fff;
+            }
+        }
+        #col_mercado_credito {
+            margin-bottom: 22px;
+            /*  */
+            >img {
+                width: 89px;
+                height: 23px;
+            }
+        }
     }
 }
