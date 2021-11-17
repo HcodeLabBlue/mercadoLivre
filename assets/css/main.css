@@ -10,6 +10,7 @@
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
+
   font-family: "Proxima Nova";
 }
 
@@ -238,17 +239,15 @@ a:hover {
   }
 }
 
-/*Saulo Costa (https://github.com/saulotarsobc)*/
-#header {
   display: flex;
   min-width: 320px;
-  height: 160px;
+  height: 100px;
   background-color: #fff159;
 }
-#header #topo {
+body #header #topo {
   width: 100%;
 }
-#header #topo .container {
+body #header #topo .container {
   width: 100%;
   max-width: 1400px;
   display: flex;
@@ -256,15 +255,15 @@ a:hover {
   margin: 10px auto 0 auto;
   align-items: center;
 }
-#header #topo .container .logo {
+body #header #topo .container .logo {
   top: 50px;
   margin-right: 10px;
 }
-#header #topo .container form {
+body #header #topo .container form {
   max-width: 600px;
   width: 600px;
 }
-#header #topo .container form .search {
+body #header #topo .container form .search {
   min-width: 162px;
   max-width: 578px;
   min-height: 32px;
@@ -276,19 +275,691 @@ a:hover {
   border: 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
-#header #topo .container form .search::placeholder {
+body #header #topo .container form .search::placeholder {
   color: rgba(51, 51, 51, 0.37);
   font-size: 16px;
   width: 100%;
   margin: 0;
   font-family: inherit;
 }
-#header #topo .container form .search:focus {
+body #header #topo .container form .search:focus {
   outline: 0;
 }
-#header #topo .container .includes {
+body #header #topo .container .includes {
   width: 340px;
   height: 39px;
+}
+body .top {
+  position: relative;
+  background-image: url(/assets/images/bk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  z-index: 1;
+}
+body .top .logo-ml {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 15%;
+  left: 7.5%;
+}
+body .top .logo-ml img {
+  border-radius: 4px;
+}
+body main > #product .container {
+  position: relative;
+  z-index: 2;
+  margin: -100px auto 0 auto;
+  border-radius: 4px;
+  width: 85%;
+  background-color: red;
+}
+body main > #product .container .indice {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  border-radius: 4px 4px 0 0;
+  background-color: #ededed;
+}
+body main > #product .container .indice .links-left span {
+  color: rgba(0, 0, 0, 0.9);
+}
+body main > #product .container .indice .links-left span a {
+  color: rgba(0, 0, 0, 0.9);
+}
+body main > #product .container .indice .links-left a {
+  text-decoration: none;
+  color: #3483fa;
+}
+body main > #product .container .indice .links-right a {
+  text-decoration: none;
+  color: #3483fa;
+}
+body main > #product .container .img-product {
+  display: flex;
+}
+body main > #product .container .img-product .small-img {
+  margin: 15px;
+}
+body main > #product .container .img-product .small-img .image {
+  height: 64px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  margin-bottom: 10px;
+}
+body main > #product .container .img-product .small-img .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+}
+body main > #product .container .img-product .small-img .image:hover {
+  border: 3px solid #3483fa;
+}
+body main > #product .container .img-product .large-img {
+  margin-top: 25px;
+}
+body main > #product .container .img-product .large-img img {
+  padding: 16px;
+  margin: 24px 0 0;
+  width: 110%;
+}
+body main > #anuncios .container {
+  width: 85%;
+  margin: auto;
+  padding: 40px 0 26px;
+  background-color: #3483fa;
+}
+body main > #anuncios .container .divisor {
+  width: 55%;
+  margin: 0 0 40px 5%;
+  border: 1px solid #bbbbbb;
+}
+body main > #anuncios .container .text-1 {
+  color: #333;
+  margin-left: 5%;
+  font-size: 24px;
+  font-weight: 400;
+}
+body main > #anuncios .container .carousel {
+  width: 65%;
+}
+body main > #anuncios .container .carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /*height:300px;/*ajustar altura da caixa*/
+}
+body main > #anuncios .container .carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 100;
+}
+body main > #anuncios .container .carousel-item {
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.7s ease-out;
+  transition: opacity 0.7s ease-out;
+}
+body main > #anuncios .container .carousel-item .wrapper {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+body main > #anuncios .container .carousel-item .box {
+  width: 15rem;
+  height: 20rem;
+  padding: 0 2rem 3rem;
+  transition: transform 0.3s linear 0s, filter 0.5s linear 0.3s, opacity 0.5s linear 0.3s;
+  /*transform-origin: top center;*/
+}
+body main > #anuncios .container .carousel-item .product {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.2rem;
+  background-image: url(https://http2.mlstatic.com/D_Q_NP_755198-MLA40768066676_022020-AB.webp);
+  background-color: #fff;
+  background-position: top 3rem center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s linear, height 0.1s linear 0s;
+}
+body main > #anuncios .container .carousel-item .name {
+  display: block;
+  padding: 1rem 0.5rem;
+}
+body main > #anuncios .container .carousel-item .description {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 0 1.5rem;
+  opacity: 0;
+  transition: opacity 0.1s linear 0s;
+}
+body main > #anuncios .container .carousel-item .wrapper:hover .box:not(:hover) {
+  filter: blur(3px);
+  opacity: 0.5;
+}
+body main > #anuncios .container .carousel-item .box:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s linear 0.3s, filter 0.1s linear 0s, opacity 0.1s linear 0s;
+}
+body main > #anuncios .container .carousel-item .box:hover .product {
+  height: 23rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 1s linear, height 0.3s linear 0.5s;
+}
+body main > #anuncios .container .carousel-item .box:hover .description {
+  opacity: 1;
+  transition: opacity 0.3s linear 0.75s;
+}
+body main > #anuncios .container .carousel-item img {
+  display: block;
+  /*height:auto;/*ajustar altura da imagem interna*/
+  max-width: 100%;
+}
+body main > #anuncios .container .carousel-control {
+  background: rgba(255, 255, 255, 0.328);
+  border-radius: 50%;
+  color: #3483fa;
+  cursor: pointer;
+  display: none;
+  font-size: 60px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  cursor: pointer;
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 64px;
+  z-index: 10;
+}
+body main > #anuncios .container .carousel-control.prev {
+  left: 2%;
+  user-select: none;
+}
+body main > #anuncios .container .carousel-control.next {
+  right: 2%;
+  user-select: none;
+}
+body main > #anuncios .container .carousel-control:hover {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+}
+body main > #anuncios .container #carousel-1:checked ~ .control-1,
+body main > #anuncios .container #carousel-2:checked ~ .control-2,
+body main > #anuncios .container #carousel-3:checked ~ .control-3 {
+  display: block;
+}
+body main > #anuncios .container .carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+#col_lateral {
+  background-color: transparent;
+  width: 368px;
+  margin: 16px 0 0 48px;
+  position: relative;
+  /*  */
+  /*  */
+  /* 
+  PRIMEIRO CARD
+   */
+  /* ================= */
+  /* ================= */
+}
+#col_lateral a,
+#col_lateral a:hover,
+#col_lateral a:link,
+#col_lateral a:visited {
+  text-decoration: none;
+}
+#col_lateral .col_default {
+  border-radius: 6px;
+  width: 100%;
+  padding: 24px 16px;
+  background-color: white;
+  border: 0.3px solid rgba(144, 144, 144, 0.418);
+}
+#col_lateral #col_produto {
+  /* height: 715px; */
+  flex-direction: column;
+  justify-content: space-around;
+  /*  */
+}
+#col_lateral #col_produto #col_novo_usado {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 14px;
+  font-weight: 400;
+}
+#col_lateral #col_produto #col_titulo {
+  display: flex;
+  /*  */
+}
+#col_lateral #col_produto #col_titulo #col_nome {
+  width: 90%;
+}
+#col_lateral #col_produto #col_titulo #col_favorito {
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  /*  */
+}
+#col_lateral #col_produto #col_titulo #col_favorito .col_coracao {
+  fill: #3483fa;
+  width: 22px;
+}
+#col_lateral #col_produto #col_avaliacoes {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  /*  */
+  /* #col_estrelas {} */
+}
+#col_lateral #col_produto #col_avaliacoes #col_opnioes {
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.55);
+}
+#col_lateral #col_produto #col_colocacao {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  /*  */
+}
+#col_lateral #col_produto #col_colocacao #col_mais_vendido {
+  background-color: #f73;
+  padding: 3px;
+  text-align: center;
+  border-radius: 3px 4px;
+  text-align: center;
+}
+#col_lateral #col_produto #col_colocacao #col_mais_vendido a {
+  color: #fff;
+  font-size: 14px;
+}
+#col_lateral #col_produto #col_colocacao #col_ranking {
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 0 0 8px;
+  text-transform: none;
+  /*  */
+}
+#col_lateral #col_produto #col_colocacao #col_ranking a {
+  color: #3483fa;
+}
+#col_lateral #col_produto #col_precos {
+  margin-top: 10px;
+}
+#col_lateral #col_produto #col_precos #col_preco_anterior {
+  margin: 2px;
+  color: rgba(0, 0, 0, 0.55);
+  text-decoration: line-through;
+}
+#col_lateral #col_produto #col_precos #col_preco_atual_wrap {
+  display: flex;
+  align-items: center;
+  /*  */
+}
+#col_lateral #col_produto #col_precos #col_preco_atual_wrap #col_preco_atual {
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 100;
+}
+#col_lateral #col_produto #col_precos #col_preco_atual_wrap #col_preco_desconto {
+  margin-left: 10px;
+  font-size: 18px;
+  color: #00a650;
+}
+#col_lateral #col_produto #col_precos #col_parcelamento_wrap #col_parcelamento {
+  color: #00a650;
+}
+#col_lateral #col_produto #col_meios_pagamentos {
+  margin-top: 10px;
+}
+#col_lateral #col_produto #col_meios_pagamentos a {
+  color: #3483fa;
+}
+#col_lateral #col_produto #col_frete {
+  margin-top: 10px;
+  display: flex;
+  height: 80px;
+  /*  */
+}
+#col_lateral #col_produto #col_frete #col_frete_icon {
+  width: 10%;
+}
+#col_lateral #col_produto #col_frete #col_frete_icon svg {
+  fill: #00a650;
+  margin-top: 5px;
+}
+#col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /*  */
+}
+#col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 #col_line_1 {
+  color: #00a650;
+}
+#col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 #col_line_1 #col_full {
+  font-weight: bolder;
+}
+#col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 #col_line_1 #col_icon_arrow {
+  color: rgba(0, 0, 0, 0.55);
+}
+#col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 #col_line_2 {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.55);
+}
+#col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 #col_line_3 {
+  font-size: 14px;
+}
+#col_lateral #col_produto #col_frete #col_frete_wrap #col_frete_wrap_2 #col_line_3 a {
+  color: #3483fa;
+}
+#col_lateral #col_produto #col_descicao_cor {
+  margin-top: 25px;
+}
+#col_lateral #col_produto #col_descicao_voltagem {
+  margin-top: 10px;
+}
+#col_lateral #col_produto #col_estoque {
+  margin-top: 40px;
+}
+#col_lateral #col_produto #col_quantidade {
+  margin-top: 29px;
+}
+#col_lateral #col_produto #col_quantidade #col_quant_disponivel {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.582);
+}
+#col_lateral #col_produto #col_btn_wrap {
+  width: 100%;
+  margin-top: 20px;
+}
+#col_lateral #col_produto #col_btn_wrap .col_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  transition: all 0.1s linear;
+  font-weight: bold;
+  border-radius: 6px;
+}
+#col_lateral #col_produto #col_btn_wrap #col_btn_comprar {
+  background-color: #3483fa;
+  color: white;
+}
+#col_lateral #col_produto #col_btn_wrap #col_btn_comprar:hover {
+  background-color: #1b6ce6;
+}
+#col_lateral #col_produto #col_btn_wrap #col_btn_add_carrinho {
+  margin-top: 6px;
+  background-color: #d2e4ff;
+  color: #3483fa;
+}
+#col_lateral #col_produto #col_produto_footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  /*  */
+}
+#col_lateral #col_produto #col_produto_footer .col_footer_item {
+  display: flex;
+  margin-top: 20px;
+  /*  */
+}
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_icon {
+  width: 38px;
+  fill: rgba(0, 0, 0, 0.55);
+}
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_icon svg {
+  height: 20px;
+  width: 20px;
+}
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_text {
+  width: 100%;
+  color: #0000008c;
+}
+#col_lateral #col_produto #col_produto_footer .col_footer_item .col_footer_text > a {
+  color: #3483fa;
+}
+#col_lateral #col_loja {
+  /* height: 308px; */
+}
+#col_lateral #col_loja #col_titulo {
+  color: rgba(0, 0, 0, 0.726);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  width: 100%;
+}
+#col_lateral #col_loja #col_banner_wrap {
+  display: flex;
+  height: 48px;
+  margin-bottom: 15px;
+  /*  */
+}
+#col_lateral #col_loja #col_banner_wrap #col_banner_img {
+  width: 50px;
+  /*  */
+}
+#col_lateral #col_loja #col_banner_wrap #col_banner_img img {
+  width: 48px;
+  height: 48px;
+}
+#col_lateral #col_loja #col_banner_wrap #col_banner_tit_sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*  */
+}
+#col_lateral #col_loja #col_banner_wrap #col_banner_tit_sub #col_banner_tit {
+  color: #000;
+  font-size: 14px;
+  font-weight: 100;
+}
+#col_lateral #col_loja #col_banner_wrap #col_banner_tit_sub #col_banner_sub {
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(128, 128, 128, 0.808);
+}
+#col_lateral #col_loja #col_premiacao {
+  margin-bottom: 20px;
+  display: flex;
+  height: 29px;
+  /*  */
+}
+#col_lateral #col_loja #col_premiacao #col_medalha {
+  margin: 2px 10px 0 0;
+  text-align: center;
+  width: 20px;
+}
+#col_lateral #col_loja #col_premiacao #col_premiacao_tit_sub {
+  /*  */
+}
+#col_lateral #col_loja #col_premiacao #col_premiacao_tit_sub #col_premiacao_tit {
+  color: #00a650;
+  font-size: 16px;
+  font-weight: 400;
+}
+#col_lateral #col_loja #col_premiacao #col_premiacao_tit_sub #col_premiacao_sub {
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 14px;
+}
+#col_lateral #col_loja #col_termometro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /*  */
+}
+#col_lateral #col_loja #col_termometro .col_termometro_def {
+  width: 100%;
+  height: 8px;
+  margin: 0 2px;
+  background-color: #1b6ce6;
+  opacity: 0.2;
+}
+#col_lateral #col_loja #col_termometro #col_termometro_01 {
+  background-color: red;
+}
+#col_lateral #col_loja #col_termometro #col_termometro_02 {
+  background-color: #e1ff00;
+}
+#col_lateral #col_loja #col_termometro #col_termometro_03 {
+  background-color: yellow;
+}
+#col_lateral #col_loja #col_termometro #col_termometro_04 {
+  background-color: #d9ff00;
+}
+#col_lateral #col_loja #col_termometro #col_termometro_05 {
+  background-color: #00a650;
+}
+#col_lateral #col_loja #col_termometro .col_termometro_selecionado {
+  opacity: 1;
+  height: 10px;
+}
+#col_lateral #col_loja #col_reputacao {
+  display: flex;
+  width: 100%;
+  height: 72px;
+  margin-top: 17px;
+  /*  */
+}
+#col_lateral #col_loja #col_reputacao .col_reputacao_item {
+  width: 33.3%;
+}
+#col_lateral #col_loja #col_reputacao .col_reputacao_tit {
+  color: #000;
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+#col_lateral #col_loja #col_reputacao .col_reputacao_sub {
+  line-height: 1;
+  margin-top: 8px;
+  font-size: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.699);
+  padding: 0 8px;
+}
+#col_lateral #col_loja #col_reputacao #col_reputacao_02 {
+  border-left: 2px solid #adadad;
+  border-right: 2px solid #adadad;
+}
+#col_lateral #col_loja #col_mais_dados {
+  color: #3483fa;
+  margin-top: 24px;
+}
+#col_lateral #col_devolucao {
+  /* height: 875px; */
+  /*  */
+}
+#col_lateral #col_devolucao h1,
+#col_lateral #col_devolucao h2,
+#col_lateral #col_devolucao h3,
+#col_lateral #col_devolucao h4,
+#col_lateral #col_devolucao h5,
+#col_lateral #col_devolucao h6 {
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+}
+#col_lateral #col_devolucao p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+#col_lateral #col_devolucao .col_titulo {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  width: 100%;
+}
+#col_lateral #col_devolucao .col_msg {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.55);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+#col_lateral #col_devolucao .col_ver_mais {
+  color: #3483fa;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+#col_lateral #col_devolucao #col_dev_wrap1 {
+  border-bottom: 1px solid #adadad;
+  margin-bottom: 30px;
+}
+#col_lateral #col_devolucao #col_dev_wrap2 {
+  border-bottom: 1px solid #adadad;
+  margin-bottom: 30px;
+}
+#col_lateral #col_devolucao #col_pague_wrap {
+  background-color: #00a650;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 12px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+#col_lateral #col_devolucao #col_pague_wrap #col_pague_icon {
+  width: 10%;
+}
+#col_lateral #col_devolucao #col_pague_wrap #col_pague_msg {
+  color: #fff;
+}
+#col_lateral #col_devolucao #col_mercado_credito {
+  /*  */
+}
+#col_lateral #col_devolucao #col_mercado_credito > img {
+  width: 89px;
+  height: 23px;
+}
+#col_lateral #col_devolucao .col_tit_cartoes {
+  margin: 24px 0 10px 0;
+}
+#col_lateral #col_devolucao #col_cartoes_credido {
+  display: flex;
+  /*  */
+}
+#col_lateral #col_devolucao #col_cartoes_credido .col_cartao {
+  margin: 0 12px;
+}
+#col_lateral #col_devolucao #col_ver_mais_pagamentos {
+  margin-top: 25px;
 }
 
 #erro-404 {
