@@ -9,7 +9,7 @@
         background-color: #FFF159;
         #logo {
             margin-top: 10px;
-            margin-left: 20%;
+            margin-left: 5%;
             position: absolute;
         }
     }
@@ -34,6 +34,9 @@
             #titulo {
                 font-size: 20px;
                 color: rgba(0, 0, 0, 0.774);
+                    h5 {
+                        margin-top: 10px;
+                    }
             }
             #ir-para-home {
                 margin-top: 33px;
@@ -42,5 +45,15 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 1024px){
+    #erro-404 {    
+        >header {        
+            #logo {
+            margin-left: 2%;
+            }
+        }   
     }
 }
