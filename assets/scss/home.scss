@@ -198,8 +198,67 @@
     }
     /* BY SAULO */
     >main {
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
+        /*  */
+        #main_wrap_categorias {
+            max-width: 1187px;
+            margin: auto;
+            /*  */
+            .main_group {
+                margin-top: 96px;
+                width: 100%;
+                /*  */
+                .main_group_tit {
+                    font-size: 26px;
+                    font-weight: 300;
+                    margin: 0 0 0 8px;
+                    color: #666;
+                }
+                .main_group_ver_todos {
+                    align-self: baseline;
+                    color: #3483fa;
+                    font-size: 16px;
+                    margin: auto 0 2px;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                .main_group_content {
+                    margin-top: 30px;
+                    /*  */
+                }
+                /* ############ Categorias populares */
+                #categorias_populares {
+                    margin-bottom: 63px;
+                    /*  */
+                    .categorias_populares_line {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .categorias_populares_item {
+                        background-color: #fff;
+                        width: 170px;
+                        height: 170px;
+                        border: .2px solid #AAAAAA;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 25px 0px;
+                    }
+                    .categorias_populares_item_logo {
+                        img {
+                            width: 48px;
+                            height: 48px;
+                        }
+                    }
+                    .categorias_populares_item_tit {
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
     /* by saulo */
     >footer {
@@ -272,12 +331,19 @@
                     margin-left: 12px;
                     text-align: center;
                     padding-top: 8px;
+                    cursor: pointer;
                 }
             }
         }
     }
     /* by saulo */
     @media (max-width: 995px) {
+        >header {
+            /*  */
+        }
+        >main {
+            /*  */
+        }
         >footer {
             #footer_wrap {
                 #footer_wrapA {
