@@ -272,22 +272,21 @@
                 height: 1px;
             }
              ::-webkit-scrollbar-thumb {
-                background: #B3AFB3;
+                background: #ffffff00;
                 border-radius: 0px;
             }
              ::-webkit-scrollbar-thumb:hover {
-                background: #B3AFB3;
+                background: #ffffff00;
             }
              ::-webkit-scrollbar-track {
-                background: #F0F0F0;
+                background: #ffffff00;
                 border-radius: 0px;
-                box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+                box-shadow: inset 0px 0px 0px 0px #ffffff00;
             }
             /* CROLL */
             .main_group {
                 margin-top: 96px;
                 width: 100%;
-                /* background-color: #9ab6e1; */ //REMOVER DPS
                 /*  */
                 .main_group_tit {
                     font-size: 26px;
@@ -309,7 +308,7 @@
                 }
                 /* ############ Categorias populares */
                 #categorias_pop_wrap {
-                    width: 100%;
+                    /*  width: 100%; */
                     overflow-x: scroll;
                     margin-bottom: 50px;
                     /*  */
@@ -339,7 +338,7 @@
                             .item_cat_tit {
                                 color: #333;
                                 font-size: 15px;
-                                padding: 12 px;
+                                padding: 12px;
                                 text-align: center;
                             }
                             /* HOVER */
@@ -387,7 +386,7 @@
                         font-weight: 500;
                         line-height: 1.4;
                         color: #4b4b4b;
-                        margin: 16 px 0 0;
+                        margin: 16px 0 0;
                         text-align: center;
                     }
                     .footer_sub {
