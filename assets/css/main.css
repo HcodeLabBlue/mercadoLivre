@@ -321,11 +321,11 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
-#erro-404 > main #wrap #img {
-  display: inherit;
-  margin: 33px;
+#erro-404 > main #wrap img {
+  width: 100%;
 }
 #erro-404 > main #wrap #titulo {
+  margin-top: 40px;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.774);
 }
@@ -333,16 +333,12 @@ a:hover {
   margin-top: 33px;
 }
 #erro-404 > main #wrap #ir-para-home a {
-  width: 200px;
-  height: 200px;
   padding: 10px 50px;
   border-radius: 10px;
-  border: none;
   background: #fff159;
   color: #050505;
-  font-weight: 200;
+  text-decoration: none;
   font-size: 18px;
-  margin: 30px auto;
 }
 
 /*# sourceMappingURL=main.css.map */
