@@ -10,7 +10,6 @@
   border: 0;
   vertical-align: baseline;
   box-sizing: border-box;
-
   font-family: "Proxima Nova";
 }
 
@@ -239,6 +238,11 @@ a:hover {
   }
 }
 
+/*Saulo Costa (https://github.com/saulotarsobc)*/
+body {
+  font-family: "Proxima Nova", -apple-system, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif, sans-serif;
+}
+body #header {
   display: flex;
   min-width: 320px;
   height: 100px;
@@ -413,8 +417,8 @@ body main > #anuncios .container .carousel-item .wrapper {
 }
 body main > #anuncios .container .carousel-item .box {
   width: 15rem;
-  height: 20rem;
-  padding: 0 2rem 3rem;
+  height: 15rem;
+  padding: 1px;
   transition: transform 0.3s linear 0s, filter 0.5s linear 0.3s, opacity 0.5s linear 0.3s;
   /*transform-origin: top center;*/
 }
@@ -423,7 +427,6 @@ body main > #anuncios .container .carousel-item .product {
   width: 100%;
   height: 100%;
   border-radius: 0.2rem;
-  background-image: url(https://http2.mlstatic.com/D_Q_NP_755198-MLA40768066676_022020-AB.webp);
   background-color: #fff;
   background-position: top 3rem center;
   background-size: 80%;
@@ -431,19 +434,53 @@ body main > #anuncios .container .carousel-item .product {
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s linear, height 0.1s linear 0s;
 }
-body main > #anuncios .container .carousel-item .name {
-  display: block;
-  padding: 1rem 0.5rem;
+body main > #anuncios .container .carousel-item .product a {
+  text-decoration: none;
+  color: #000;
 }
-body main > #anuncios .container .carousel-item .description {
+body main > #anuncios .container .carousel-item .product .name {
+  display: block;
+  padding: 18px 5px 0 5px;
+  text-align: center;
+  line-height: 18px;
+}
+body main > #anuncios .container .carousel-item .product .name img {
+  margin: 10px auto 0 auto;
+  width: 180px;
+}
+body main > #anuncios .container .carousel-item .product .description {
   position: absolute;
-  bottom: 1rem;
-  left: 0;
+  bottom: 100px;
+  left: 5px;
   right: 0;
   display: block;
-  padding: 0 1.5rem;
+  padding: 18px 15px 0 5px;
   opacity: 0;
   transition: opacity 0.1s linear 0s;
+}
+body main > #anuncios .container .carousel-item .product .description s {
+  font-size: 11px;
+  color: #707070;
+}
+body main > #anuncios .container .carousel-item .product .description .desconto {
+  font-size: 13px;
+  color: #00a650;
+}
+body main > #anuncios .container .carousel-item .product .description .frete {
+  margin-top: 8px;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  color: #00a650;
+  align-items: center;
+}
+body main > #anuncios .container .carousel-item .product .description .frete img {
+  width: 12px;
+}
+body main > #anuncios .container .carousel-item .product .description .frete span {
+  font-weight: bold;
+  font-style: italic;
+  color: #00a650;
 }
 body main > #anuncios .container .carousel-item .wrapper:hover .box:not(:hover) {
   filter: blur(3px);
@@ -468,7 +505,7 @@ body main > #anuncios .container .carousel-item img {
   max-width: 100%;
 }
 body main > #anuncios .container .carousel-control {
-  background: rgba(255, 255, 255, 0.328);
+  background: #fff;
   border-radius: 50%;
   color: #3483fa;
   cursor: pointer;
@@ -477,6 +514,7 @@ body main > #anuncios .container .carousel-control {
   height: 64px;
   position: absolute;
   top: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -webkit-transform: translate(0, -50%);
   cursor: pointer;
   -ms-transform: translate(0, -50%);

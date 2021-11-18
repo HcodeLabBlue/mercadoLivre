@@ -214,21 +214,29 @@ body {
               width: 100%;
               height: 100%;
               border-radius: 0.2rem;
-              background-image: url(https://http2.mlstatic.com/D_Q_NP_755198-MLA40768066676_022020-AB.webp);
               background-color: #fff;
               background-position: top 3rem center;
               background-size: 80%;
               background-repeat: no-repeat;
               box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
               transition:
-                box-shadow 0.5s linear,
-                height 0.1s linear 0s;
-            }
+              box-shadow 0.5s linear,
+              height 0.1s linear 0s;
+
+                a{
+                  text-decoration: none;
+                  color: #000;;
+                }
+            
             .name {
               display: block;
               padding: 18px 5px 0 5px;
               text-align: center;
               line-height: 18px;
+              img {
+                margin: 10px auto 0 auto;
+                width: 180px;
+              }
             }
             .description {
               position: absolute;
@@ -248,7 +256,25 @@ body {
                   font-size: 13px;
                   color:#00a650;
                 }
+
+                .frete{
+                  margin-top: 8px;
+                  font-size: 13px;
+                  display: flex;
+                  flex-direction: row;
+                  color:#00a650;
+                  align-items: center;
+                  img{
+                    width: 12px;
+                  }
+                  span{
+                    font-weight: bold;
+                    font-style: italic;
+                    color:#00a650;
+                  }
+                }
             }
+          }
             .wrapper:hover .box:not(:hover)  {
               filter: blur(3px);
               opacity: 0.5;
@@ -280,16 +306,16 @@ body {
 }
 
 .carousel-control {
-    background: rgba(255, 255, 255, 0.328);
+    background: #fff;
     border-radius: 50%;
     color: #3483fa;
     cursor: pointer;
     display: none;
     font-size: 60px;
-    height: 64px;
-    
+    height: 64px;    
     position: absolute;
     top: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     -webkit-transform: translate(0, -50%);
     cursor: pointer;
     -ms-transform: translate(0, -50%);
