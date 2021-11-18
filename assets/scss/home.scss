@@ -229,13 +229,6 @@
                 }
                 /* ############ Categorias populares */
                 #categorias_populares {
-                    margin-bottom: 63px;
-                    /*  */
-                    .categorias_populares_line {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                    }
                     .categorias_populares_item {
                         background-color: #fff;
                         width: 170px;
@@ -246,6 +239,7 @@
                         align-items: center;
                         justify-content: space-around;
                         padding: 25px 0px;
+                        transition: all .1s ease-in-out;
                         /* HOVER */
                         &:hover {
                             background-color: #3483fa;
@@ -254,20 +248,6 @@
                         &:hover svg {
                             fill: #fff;
                         }
-                    }
-                    .categorias_populares_item_logo {
-                        svg {
-                            width: 48px;
-                            height: 48px;
-                            fill: #3483fa;
-                        }
-                        img {
-                            width: 48px;
-                            height: 48px;
-                        }
-                    }
-                    .categorias_populares_item_tit {
-                        text-align: center;
                     }
                 }
             }
