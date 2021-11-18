@@ -1,46 +1,55 @@
 #erro-404 {
-    height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  > header {
+    height: 54px;
     width: 100%;
-    background-color: #ffffff;
-    position: relative;
-    >header {
-        height: 54px;
-        width: 100%;
-        background-color: #FFF159;
-        #logo {
-            margin-top: 10px;
-            margin-left: 20%;
-            position: absolute;
-        }
+    background-color: #fff159;
+    #logo {
+      margin-top: 10px;
+      margin-left: 20%;
+      position: absolute;
     }
-    >main {
-        height: calc(100vh - 54px);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        #wrap {
-            /* background-color: rgb(208, 195, 221); */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
-            #img {
-                display: inherit;
-                margin: 33px;
-            }
-            #titulo {
-                font-size: 20px;
-                color: rgba(0, 0, 0, 0.774);
-            }
-            #ir-para-home {
-                margin-top: 33px;
-                a {
-                    color: rgba(0, 0, 0, 0.705);
-                }
-            }
+  }
+  > main {
+    height: calc(100vh - 54px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #wrap {
+      /* background-color: rgb(208, 195, 221); */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      #img {
+        display: inherit;
+        margin: 33px;
+      }
+      #titulo {
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.774);
+      }
+      #ir-para-home {
+        margin-top: 33px;
+        a {
+          width: 200px;
+          height: 200px;
+          padding: 10px 50px;
+          border-radius: 10px;
+          border: none;
+          background: #fff159;
+          color: rgb(5, 5, 5);
+          font-weight: 200;
+          font-size: 18px;
+          margin: 30px auto;
         }
+      }
     }
+  }
 }
