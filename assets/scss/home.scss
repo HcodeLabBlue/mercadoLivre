@@ -296,29 +296,24 @@
                     /*  */
                     .categorias_lin {
                         display: flex;
-                        max-width: 1190px;
+                        width: 2800px;
                         /*  */
                         .categorias_item {
                             width: 170px;
                             height: 170px;
                             margin: 1px;
                             background-color: #fff;
-                            /* 
-                            width: 170px;
-                            height: 170px;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: space-around;
                             padding: 25px 0px;
+                            width: 170px;
                             transition: all .1s ease-in-out;
+                            /* HOVER */
                             &:hover {
                                 background-color: #3483fa;
                                 color: #fff;
                             }
                             &:hover svg {
                                 fill: #fff;
-                            } */
+                            }
                         }
                     }
                 }
