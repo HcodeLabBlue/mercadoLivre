@@ -494,8 +494,58 @@ a:hover {
   margin-right: 20px;
 }
 #home > main {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
+  /*  */
+}
+#home > main #main_wrap_categorias {
+  max-width: 1187px;
+  margin: auto;
+  /*  */
+}
+#home > main #main_wrap_categorias .main_group {
+  margin-top: 96px;
+  width: 100%;
+  /*  */
+  /* ############ Categorias populares */
+}
+#home > main #main_wrap_categorias .main_group .main_group_tit {
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0 0 0 8px;
+  color: #666;
+}
+#home > main #main_wrap_categorias .main_group .main_group_ver_todos {
+  align-self: baseline;
+  color: #3483fa;
+  font-size: 16px;
+  margin: auto 0 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#home > main #main_wrap_categorias .main_group .main_group_content {
+  margin-top: 30px;
+  /*  */
+}
+#home > main #main_wrap_categorias .main_group #categorias_populares .categorias_populares_item {
+  background-color: #fff;
+  width: 170px;
+  height: 170px;
+  margin: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 0px;
+  transition: all 0.1s ease-in-out;
+  /* HOVER */
+}
+#home > main #main_wrap_categorias .main_group #categorias_populares .categorias_populares_item:hover {
+  background-color: #3483fa;
+  color: #fff;
+}
+#home > main #main_wrap_categorias .main_group #categorias_populares .categorias_populares_item:hover svg {
+  fill: #fff;
 }
 #home > footer #footer_wrap {
   width: 100%;
@@ -568,8 +618,15 @@ a:hover {
   margin-left: 12px;
   text-align: center;
   padding-top: 8px;
+  cursor: pointer;
 }
 @media (max-width: 995px) {
+  #home > header {
+    /*  */
+  }
+  #home > main {
+    /*  */
+  }
   #home > footer #footer_wrap #footer_wrapA {
     flex-direction: column;
     align-items: center;
