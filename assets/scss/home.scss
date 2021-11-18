@@ -246,8 +246,20 @@
                         align-items: center;
                         justify-content: space-around;
                         padding: 25px 0px;
+                        &:hover {
+                            background-color: #3483fa;
+                            color: #fff;
+                        }
+                        &:hover svg {
+                            fill: #fff;
+                        }
                     }
                     .categorias_populares_item_logo {
+                        svg {
+                            width: 48px;
+                            height: 48px;
+                            fill: #3483fa;
+                        }
                         img {
                             width: 48px;
                             height: 48px;
