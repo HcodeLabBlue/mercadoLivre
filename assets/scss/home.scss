@@ -256,7 +256,6 @@
             }
         }
     }
-    /* BY SAULO */
     >main {
         min-height: 100vh;
         width: 100%;
@@ -266,7 +265,7 @@
             margin: auto;
             /*  */
             /* CADA CATEGORIA DO MAIN VAI PEGA ESSA CONFIG*/
-            /* CROLL */
+            /* SCROLL */
              ::-webkit-scrollbar {
                 width: 1px;
                 height: 1px;
@@ -283,7 +282,7 @@
                 border-radius: 0px;
                 box-shadow: inset 0px 0px 0px 0px #ffffff00;
             }
-            /* CROLL */
+            /* SCROLL */
             .main_group {
                 margin-top: 96px;
                 width: 100%;
@@ -305,6 +304,75 @@
                 .main_group_content {
                     margin-top: 30px;
                     /*  */
+                }
+                /* ############ Você pode se interessar */
+                #categorias_int_wrap {
+                    width: 100%;
+                    height: 256px;
+                    display: flex;
+                    justify-content: space-between;
+                    /*  */
+                    .int_card {
+                        width: 49.5%;
+                        display: flex;
+                        cursor: pointer;
+                        transition: all .1s ease-in-out;
+                        &:hover {
+                            -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                            box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                        }
+                        /*  */
+                        .int_card_wrap_1 {
+                            width: 60%;
+                            background-color: #fff;
+                            padding: 0 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            /*  */
+                            .int_tit {
+                                font-family: monospace;
+                                font-size: 15px;
+                                letter-spacing: 4px;
+                                margin-bottom: 17px;
+                                font-weight: 400;
+                                color: #525252;
+                            }
+                            .int_sub {
+                                font-size: 28px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.1;
+                                text-transform: uppercase;
+                                letter-spacing: normal;
+                                color: #4b4b4b;
+                                margin-bottom: 25px;
+                            }
+                            .int_btn_ver_mais {
+                                /*  */
+                                a {
+                                    width: 100%;
+                                    background-color: #3483FA;
+                                    color: #fff;
+                                    border-radius: 3px;
+                                    padding: 14px 25px;
+                                    text-align: center;
+                                    /*  */
+                                }
+                            }
+                        }
+                        .int_card_wrap_2 {
+                            width: 40%;
+                            background-color: #fff;
+                            /*  */
+                            img {
+                                /*  */
+                                height: 100%;
+                                float: right;
+                            }
+                        }
+                    }
                 }
                 /* ############ Categorias populares */
                 #categorias_pop_wrap {
@@ -336,7 +404,7 @@
                                 }
                             }
                             .item_cat_tit {
-                                color: #333;
+                                color: rgb(83, 83, 83);
                                 font-size: 15px;
                                 padding: 12px;
                                 text-align: center;
@@ -361,7 +429,6 @@
             }
         }
     }
-    /* by saulo */
     >footer {
         #footer_wrap {
             width: 100%;
@@ -437,7 +504,6 @@
             }
         }
     }
-    /* by saulo */
     @media (max-width: 995px) {
         >header {
             /*  */
