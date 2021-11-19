@@ -310,12 +310,12 @@
                 /* ############ Você pode se interessar */
                 #categorias_int_wrap {
                     width: 100%;
-                    height: 256px;
                     display: flex;
                     justify-content: space-between;
                     /*  */
                     .int_card {
                         width: 49.5%;
+                        height: 251px;
                         display: flex;
                         cursor: pointer;
                         transition: all .1s ease-in-out;
@@ -430,6 +430,60 @@
                 }
             }
         }
+        /* media query */
+        @media (max-width: 1168px) {
+            .main_group_content {
+                /*  */
+                #categorias_int_wrap {
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    height: 515px;
+                    /*  */
+                    .int_card {
+                        width: 70% !important;
+                    }
+                }
+            }
+        }
+        @media (max-width: 805px) {
+            .main_group_content {
+                #categorias_int_wrap {
+                    .int_card {
+                        width: 98% !important;
+                    }
+                }
+            }
+        }
+        @media (max-width: 580px) {
+            .main_group_content {
+                #categorias_int_wrap {
+                    height: 760px;
+                    background-color: #83ffcf;
+                    .int_card {
+                        width: 80% !important;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 5px;
+                        /*  */
+                        .int_card_wrap_1 {
+                            width: 100% !important;
+                            /*  */
+                            img {
+                                float: none !important;
+                            }
+                        }
+                        .int_card_wrap_2 {
+                            width: 100% !important;
+                            /*  */
+                            img {
+                                float: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     >footer {
         #footer_wrap {
@@ -505,15 +559,7 @@
                 }
             }
         }
-    }
-    @media (max-width: 995px) {
-        >header {
-            /*  */
-        }
-        >main {
-            /*  */
-        }
-        >footer {
+        @media (max-width: 995px) {
             #footer_wrap {
                 #footer_wrapA {
                     flex-direction: column;
