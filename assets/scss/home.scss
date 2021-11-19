@@ -307,6 +307,170 @@
                     margin-top: 30px;
                     /*  */
                 }
+                /* ############ Confira */
+                #categorias_conf_wrap {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    /*  */
+                    .conf_card {
+                        width: 70%;
+                        height: 251px;
+                        display: flex;
+                        cursor: pointer;
+                        margin: 5px;
+                        transition: all .1s ease-in-out;
+                        &:hover {
+                            -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                            box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                        }
+                        /*  */
+                        .conf_card_wrap_1 {
+                            width: 60%;
+                            background-color: #fff;
+                            padding: 0 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            /*  */
+                            .conf_tit {
+                                font-family: monospace;
+                                font-size: 15px;
+                                letter-spacing: 4px;
+                                margin-bottom: 17px;
+                                font-weight: 400;
+                                color: #525252;
+                            }
+                            .conf_sub {
+                                font-size: 28px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.1;
+                                text-transform: uppercase;
+                                letter-spacing: normal;
+                                color: #4b4b4b;
+                                margin-bottom: 25px;
+                            }
+                            .conf_btn_ver_mais {
+                                /*  */
+                                a {
+                                    width: 100%;
+                                    background-color: #3483FA;
+                                    color: #fff;
+                                    border-radius: 3px;
+                                    padding: 14px 25px;
+                                    text-align: center;
+                                    /*  */
+                                }
+                            }
+                        }
+                        .conf_card_wrap_2 {
+                            width: 40%;
+                            background-color: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            /*  */
+                            img {
+                                /*  */
+                                width: 100%;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+                @media (max-width: 992px) {
+                    #categorias_conf_wrap {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+                @media (max-width: 576px) {
+                    #categorias_conf_wrap {
+                        .conf_card {
+                            flex-direction: column;
+                            height: 520px;
+                            /*  */
+                            .conf_card_wrap_1 {
+                                height: 286px;
+                                width: 100%;
+                                /*  */
+                                .conf_tit {
+                                    /*  */
+                                }
+                                .conf_sub {
+                                    /*  */
+                                }
+                                .conf_btn_ver_mais {
+                                    /*  */
+                                    a {
+                                        /*  */
+                                    }
+                                }
+                            }
+                            .conf_card_wrap_2 {
+                                width: 100%;
+                                /*  */
+                                img {
+                                    /*  */
+                                }
+                            }
+                        }
+                    }
+                }
+                /* ############ Categorias populares */
+                #categorias_pop_wrap {
+                    width: 100%;
+                    overflow-x: scroll;
+                    margin-bottom: 50px;
+                    /*  */
+                    .categorias_lin {
+                        display: flex;
+                        width: 2550px;
+                        /*  */
+                        .categorias_item {
+                            width: 170px;
+                            height: 170px;
+                            margin: 1px;
+                            background-color: #fff;
+                            padding: 25px 0px;
+                            width: 170px;
+                            transition: all .08s ease-in-out;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+                            .item_logo {
+                                svg {
+                                    stroke: #3483FA;
+                                    height: 48px;
+                                    width: 48px;
+                                }
+                            }
+                            .item_cat_tit {
+                                color: rgb(83, 83, 83);
+                                font-size: 15px;
+                                padding: 12px;
+                                text-align: center;
+                            }
+                            /* HOVER */
+                            &:hover {
+                                background-color: #3483fa;
+                                color: #fff;
+                            }
+                            &:hover {
+                                svg {
+                                    /* fill: #fff; */
+                                    stroke: #fff;
+                                }
+                                .item_cat_tit {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
                 /* ############ Você pode se interessar */
                 #categorias_int_wrap {
                     width: 100%;
