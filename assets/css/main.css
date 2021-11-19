@@ -311,15 +311,15 @@ body .top .logo-ml {
 body .top .logo-ml img {
   border-radius: 4px;
 }
-body main > #product .container {
+body main #product .container {
   position: relative;
   z-index: 2;
   margin: -100px auto 0 auto;
   border-radius: 4px;
   width: 85%;
-  background-color: red;
+  background-color: white;
 }
-body main > #product .container .indice {
+body main #product .container .indice {
   display: flex;
   justify-content: space-between;
   padding: 16px;
@@ -329,85 +329,151 @@ body main > #product .container .indice {
   border-radius: 4px 4px 0 0;
   background-color: #ededed;
 }
-body main > #product .container .indice .links-left span {
+body main #product .container .indice .links-left span {
   color: rgba(0, 0, 0, 0.9);
 }
-body main > #product .container .indice .links-left span a {
+body main #product .container .indice .links-left span a {
   color: rgba(0, 0, 0, 0.9);
 }
-body main > #product .container .indice .links-left a {
+body main #product .container .indice .links-left a {
   text-decoration: none;
   color: #3483fa;
 }
-body main > #product .container .indice .links-right a {
+body main #product .container .indice .links-right a {
   text-decoration: none;
   color: #3483fa;
 }
-body main > #product .container .img-product {
+body main #product .container #info-product {
+  display: flex;
+  justify-content: space-around;
+}
+body main #product .container #info-product .dados-product .img-product {
   display: flex;
 }
-body main > #product .container .img-product .small-img {
-  margin: 15px;
+body main #product .container #info-product .dados-product .img-product .small-img {
+  margin-top: 22px;
+  margin-left: 3%;
 }
-body main > #product .container .img-product .small-img .image {
+body main #product .container #info-product .dados-product .img-product .small-img .image {
   height: 64px;
   border-radius: 5px;
   border: 2px solid #fff;
   margin-bottom: 10px;
 }
-body main > #product .container .img-product .small-img .image img {
+body main #product .container #info-product .dados-product .img-product .small-img .image img {
   width: 100%;
   height: 100%;
   border-radius: 2px;
 }
-body main > #product .container .img-product .small-img .image:hover {
+body main #product .container #info-product .dados-product .img-product .small-img .image:hover {
   border: 3px solid #3483fa;
 }
-body main > #product .container .img-product .large-img {
+body main #product .container #info-product .dados-product .img-product .large-img {
   margin-top: 25px;
 }
-body main > #product .container .img-product .large-img img {
+body main #product .container #info-product .dados-product .img-product .large-img img {
   padding: 16px;
   margin: 24px 0 0;
-  width: 110%;
+  width: 120%;
 }
-body main > #anuncios .container {
-  width: 85%;
-  margin: auto;
-  padding: 40px 0 26px;
-  background-color: #3483fa;
+body main .dados-product .divisor {
+  width: 95%;
+  margin: 40px 0 40px 3%;
+  border: 0.5px solid rgba(187, 187, 187, 0.37);
 }
-body main > #anuncios .container .divisor {
-  width: 55%;
-  margin: 0 0 40px 5%;
+body main .dados-product .text-1 {
+  color: #333;
+  margin-left: 3%;
+  margin-bottom: 55px;
+  font-size: 24px;
+}
+body main .dados-product .link .link-anuncios {
+  margin-left: 3%;
+  text-decoration: none;
+  color: #3483fa;
+}
+body main .dados-product #anuncios .divisor {
+  width: 95%;
+  margin: 40px 0 40px 3%;
   border: 1px solid #bbbbbb;
 }
-body main > #anuncios .container .text-1 {
+body main .dados-product #anuncios .text-1 {
   color: #333;
-  margin-left: 5%;
+  margin-left: 3%;
+  margin-bottom: 55px;
   font-size: 24px;
-  font-weight: 400;
 }
-body main > #anuncios .container .carousel {
-  width: 65%;
+body main .dados-product .caracteristicas-do-produto {
+  background-color: #fff;
 }
-body main > #anuncios .container .carousel-inner {
+body main .dados-product .caracteristicas-do-produto .tamanho-tela {
+  display: flex;
+}
+body main .dados-product .caracteristicas-do-produto .tamanho-tela .tamanho {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body main .dados-product .caracteristicas-do-produto .tamanho-tela .tamanho .pequeno {
+  background-color: #3483fa;
+  height: 8px;
+  width: 100%;
+  margin-left: 2px;
+  font-size: 11px;
+}
+body main .dados-product .caracteristicas-do-produto .tamanho-tela .tamanho div {
+  background-color: rgba(0, 0, 0, 0.07);
+  height: 8px;
+  width: 100%;
+  margin-left: 2px;
+  margin-bottom: 7px;
+}
+body main .dados-product .caracteristicas-do-produto .tamanho-tela .tamanho .grande {
+  background-color: rgba(0, 0, 0, 0.07);
+  height: 8px;
+  width: 100%;
+  font-size: 12px;
+}
+body main .dados-product .caracteristicas-do-produto .outras-infos {
+  padding-top: 50px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+body main .dados-product .caracteristicas-do-produto .outras-infos div {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+body main .dados-product .caracteristicas-do-produto .descricao-do-produto p {
+  margin: 1em;
+  color: #666;
+  font-size: 20px;
+}
+body main .dados-product .carousel {
+  margin-left: 3%;
+  width: 92%;
+}
+body main .dados-product .carousel-inner {
   position: relative;
   overflow: hidden;
   width: 100%;
-  /*height:300px;/*ajustar altura da caixa*/
+  /*height:100px;ajustar altura da caixa*/
 }
-body main > #anuncios .container .carousel-open:checked + .carousel-item {
+body main .dados-product .carousel-open:checked + .carousel-item {
   position: static;
   opacity: 100;
 }
-body main > #anuncios .container .carousel-item {
+body main .dados-product .carousel-item {
   position: absolute;
   opacity: 0;
   -webkit-transition: opacity 0.7s ease-out;
   transition: opacity 0.7s ease-out;
 }
-body main > #anuncios .container .carousel-item .wrapper {
+body main .dados-product .carousel-item .wrapper {
   max-width: 60rem;
   margin: 0 auto;
   display: flex;
@@ -415,14 +481,14 @@ body main > #anuncios .container .carousel-item .wrapper {
   justify-content: center;
   margin-bottom: 3rem;
 }
-body main > #anuncios .container .carousel-item .box {
+body main .dados-product .carousel-item .box {
   width: 15rem;
   height: 15rem;
   padding: 1px;
   transition: transform 0.3s linear 0s, filter 0.5s linear 0.3s, opacity 0.5s linear 0.3s;
   /*transform-origin: top center;*/
 }
-body main > #anuncios .container .carousel-item .product {
+body main .dados-product .carousel-item .product {
   position: relative;
   width: 100%;
   height: 100%;
@@ -434,23 +500,23 @@ body main > #anuncios .container .carousel-item .product {
   box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.5s linear, height 0.1s linear 0s;
 }
-body main > #anuncios .container .carousel-item .product a {
+body main .dados-product .carousel-item .product a {
   text-decoration: none;
   color: #000;
 }
-body main > #anuncios .container .carousel-item .product .name {
+body main .dados-product .carousel-item .product .name {
   display: block;
   padding: 18px 5px 0 5px;
   text-align: center;
   line-height: 18px;
 }
-body main > #anuncios .container .carousel-item .product .name img {
+body main .dados-product .carousel-item .product .name img {
   margin: 10px auto 0 auto;
   width: 180px;
 }
-body main > #anuncios .container .carousel-item .product .description {
+body main .dados-product .carousel-item .product .description {
   position: absolute;
-  bottom: 100px;
+  bottom: 10px;
   left: 5px;
   right: 0;
   display: block;
@@ -458,15 +524,15 @@ body main > #anuncios .container .carousel-item .product .description {
   opacity: 0;
   transition: opacity 0.1s linear 0s;
 }
-body main > #anuncios .container .carousel-item .product .description s {
+body main .dados-product .carousel-item .product .description s {
   font-size: 11px;
   color: #707070;
 }
-body main > #anuncios .container .carousel-item .product .description .desconto {
+body main .dados-product .carousel-item .product .description .desconto {
   font-size: 13px;
   color: #00a650;
 }
-body main > #anuncios .container .carousel-item .product .description .frete {
+body main .dados-product .carousel-item .product .description .frete {
   margin-top: 8px;
   font-size: 13px;
   display: flex;
@@ -474,37 +540,37 @@ body main > #anuncios .container .carousel-item .product .description .frete {
   color: #00a650;
   align-items: center;
 }
-body main > #anuncios .container .carousel-item .product .description .frete img {
+body main .dados-product .carousel-item .product .description .frete img {
   width: 12px;
 }
-body main > #anuncios .container .carousel-item .product .description .frete span {
+body main .dados-product .carousel-item .product .description .frete span {
   font-weight: bold;
   font-style: italic;
   color: #00a650;
 }
-body main > #anuncios .container .carousel-item .wrapper:hover .box:not(:hover) {
+body main .dados-product .carousel-item .wrapper:hover .box:not(:hover) {
   filter: blur(3px);
   opacity: 0.5;
 }
-body main > #anuncios .container .carousel-item .box:hover {
+body main .dados-product .carousel-item .box:hover {
   transform: scale(1.1);
   transition: transform 0.3s linear 0.3s, filter 0.1s linear 0s, opacity 0.1s linear 0s;
 }
-body main > #anuncios .container .carousel-item .box:hover .product {
-  height: 23rem;
+body main .dados-product .carousel-item .box:hover .product {
+  height: 280px;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
   transition: box-shadow 1s linear, height 0.3s linear 0.5s;
 }
-body main > #anuncios .container .carousel-item .box:hover .description {
+body main .dados-product .carousel-item .box:hover .description {
   opacity: 1;
   transition: opacity 0.3s linear 0.75s;
 }
-body main > #anuncios .container .carousel-item img {
+body main .dados-product .carousel-item img {
   display: block;
   /*height:auto;/*ajustar altura da imagem interna*/
   max-width: 100%;
 }
-body main > #anuncios .container .carousel-control {
+body main .dados-product .carousel-control {
   background: #fff;
   border-radius: 50%;
   color: #3483fa;
@@ -523,23 +589,23 @@ body main > #anuncios .container .carousel-control {
   width: 64px;
   z-index: 10;
 }
-body main > #anuncios .container .carousel-control.prev {
-  left: 2%;
+body main .dados-product .carousel-control.prev {
+  left: -4%;
   user-select: none;
 }
-body main > #anuncios .container .carousel-control.next {
-  right: 2%;
+body main .dados-product .carousel-control.next {
+  right: -4%;
   user-select: none;
 }
-body main > #anuncios .container .carousel-control:hover {
+body main .dados-product .carousel-control:hover {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
 }
-body main > #anuncios .container #carousel-1:checked ~ .control-1,
-body main > #anuncios .container #carousel-2:checked ~ .control-2,
-body main > #anuncios .container #carousel-3:checked ~ .control-3 {
+body main .dados-product #carousel-1:checked ~ .control-1,
+body main .dados-product #carousel-2:checked ~ .control-2,
+body main .dados-product #carousel-3:checked ~ .control-3 {
   display: block;
 }
-body main > #anuncios .container .carousel-indicators {
+body main .dados-product .carousel-indicators {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -553,8 +619,8 @@ body main > #anuncios .container .carousel-indicators {
 
 #col_lateral {
   background-color: transparent;
-  width: 368px;
-  margin: 16px 0 0 48px;
+  width: 390px;
+  padding: 24px 16px;
   position: relative;
   /*  */
   /*  */
