@@ -307,12 +307,26 @@
                     margin-top: 30px;
                     /*  */
                 }
-                /* ############ As melhores lojas te esperam */
-                #main_stories {
-                    background-color: #fff159;
+                /* ######################## As melhores lojas te esperam */
+                #main_stories_wrap {
+                    background-color: #4400ff;
+                    width: 100%;
                     /*  */
+                    .storie_card {
+                        background-color: #ffffff;
+                        width: 284px;
+                        height: 340px;
+                        border-radius: 10px;
+                        /*  */
+                        .storie_banner {
+                            background-color: #3483FA;
+                            width: 100%;
+                            height: 95px;
+                            border-radius: 5px 5px 0 0;
+                        }
+                    }
                 }
-                /* ############ Confira */
+                /* ######################## Confira */
                 #categorias_conf_wrap {
                     width: 100%;
                     display: flex;
@@ -404,7 +418,7 @@
                         }
                     }
                 }
-                /* ############ Categorias populares */
+                /* ######################## Categorias populares */
                 #categorias_pop_wrap {
                     width: 100%;
                     overflow-x: scroll;
@@ -456,7 +470,7 @@
                         }
                     }
                 }
-                /* ############ Você pode se interessar */
+                /* ######################## Você pode se interessar */
                 #categorias_int_wrap {
                     width: 100%;
                     display: flex;
@@ -568,7 +582,7 @@
                         }
                     }
                 }
-                /* ############ Categorias populares */
+                /* ######################## Categorias populares */
                 #categorias_pop_wrap {
                     width: 100%;
                     overflow-x: scroll;
