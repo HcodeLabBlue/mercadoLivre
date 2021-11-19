@@ -307,6 +307,11 @@
                     margin-top: 30px;
                     /*  */
                 }
+                /* ############ As melhores lojas te esperam */
+                #main_stories {
+                    background-color: #fff159;
+                    /*  */
+                }
                 /* ############ Confira */
                 #categorias_conf_wrap {
                     width: 100%;
@@ -353,7 +358,6 @@
                                 margin-bottom: 25px;
                             }
                             .conf_btn_ver_mais {
-                                /*  */
                                 a {
                                     width: 100%;
                                     background-color: #3483FA;
@@ -373,7 +377,6 @@
                             justify-content: center;
                             /*  */
                             img {
-                                /*  */
                                 width: 100%;
                                 float: right;
                             }
@@ -391,30 +394,12 @@
                         .conf_card {
                             flex-direction: column;
                             height: 520px;
-                            /*  */
                             .conf_card_wrap_1 {
                                 height: 286px;
                                 width: 100%;
-                                /*  */
-                                .conf_tit {
-                                    /*  */
-                                }
-                                .conf_sub {
-                                    /*  */
-                                }
-                                .conf_btn_ver_mais {
-                                    /*  */
-                                    a {
-                                        /*  */
-                                    }
-                                }
                             }
                             .conf_card_wrap_2 {
                                 width: 100%;
-                                /*  */
-                                img {
-                                    /*  */
-                                }
                             }
                         }
                     }
