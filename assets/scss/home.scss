@@ -11,8 +11,6 @@
         font-family: "Proxima Nova";
     }
     /*  */
-    
-
     #home-header {
         display: flex;
         min-width: 480px;
@@ -28,14 +26,11 @@
                 margin: 10px auto 0 auto;
                 align-items: center;
                 height: 35px;
-
-                    .home-logo {
-                        top: 51px;
-                        margin: 0px 20px;
-                        left: 15px;
-                    }
-
-                
+                .home-logo {
+                    top: 51px;
+                    margin: 0px 20px;
+                    left: 15px;
+                }
                 #home-form {
                     max-width: 670px;
                     margin-right: 20px;
@@ -45,7 +40,6 @@
                     display: flex;
                     align-items: center;
                     margin: 0px 30px;
-                       
                     .home-search {
                         min-width: 162px;
                         max-width: 625px;
@@ -67,29 +61,27 @@
                     .home-search:focus {
                         outline: 0;
                     }
-                    #btn-search {                            
-                            background-color: #f7f7f7;
-                            height: 39px;
-                            width: 33px;
-                            border-radius: 0px 2px 2px 0px;
-                            border: 0 rgba(0, 0, 0, 0.2);
-                            box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
-                            #search-icon {
-                                height: 16px;
-                                width: 20px;
-                            }
+                    #btn-search {
+                        background-color: #f7f7f7;
+                        height: 39px;
+                        width: 33px;
+                        border-radius: 0px 2px 2px 0px;
+                        border: 0 rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+                        #search-icon {
+                            height: 16px;
+                            width: 20px;
                         }
-                    
+                    }
                 }
                 .home-includes {
-                        width: 340px;
-                        height: 39px;
-                        margin-right: 20px;
-                    }
-                .mobile-includes{
+                    width: 340px;
+                    height: 39px;
+                    margin-right: 20px;
+                }
+                .mobile-includes {
                     display: none;
                 }
-                
             }
         }
         .nav-container {
@@ -166,7 +158,6 @@
             .home-menu ul li:hover ul {
                 visibility: visible;
                 background-color: #999;
-                
             }
             .home-menu ul ul li a:hover {
                 background-color: #3483FA;
@@ -180,7 +171,6 @@
             .home-menu ul ul li a {
                 background-color: #999;
                 width: 200px;
-                
             }
             @media(max-width:1180px) {
                 .home-menu {
@@ -210,9 +200,6 @@
             }
         }
     }
-
-
-
     >main {
         min-height: 100vh;
         width: 100%;
@@ -247,7 +234,7 @@
                 .main_group_tit {
                     font-size: 26px;
                     font-weight: 300;
-                    margin: 0 0 0 8px;
+                    margin: 0 0 0 42px;
                     color: #666;
                 }
                 .main_group_ver_todos {
@@ -259,14 +246,18 @@
                     cursor: pointer;
                 }
                 .main_group_content {
-                    margin-top: 30px 32px 0 32px;
+                    margin: 30px 32px 0 32px;
                     position: relative;
                     /*  */
+                    &:hover .btn_next {
+                        display: block;
+                    }
                 }
                 .btn_next {
                     position: absolute;
                     right: -32px;
                     top: 40%;
+                    display: none;
                 }
                 /* ######################## As melhores lojas te esperam */
                 #main_stories {
@@ -754,67 +745,63 @@
         }
     }
 }
-        @media(max-width:1180px) {
-            #home{
-                #home-header { 
-                    #home-topo{
-                        .home-container{
-                            justify-content: center;
-                            
-                            #home-form {
-                                flex-direction: row-reverse;
-                                justify-content: flex-end;
-                                margin-left: none;
-                            }
 
-                            .home-includes{
-                                display: none;
-                            }
-                            .mobile-includes {
-                                display: flex;
-                                flex-direction: row;
-                                margin-right: 20px;
-                                img {
-                                    margin: 20px;
-                                    width: 30px;
-                                }
-                            }
+@media(max-width:1180px) {
+    #home {
+        #home-header {
+            #home-topo {
+                .home-container {
+                    justify-content: center;
+                    #home-form {
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                        margin-left: none;
+                    }
+                    .home-includes {
+                        display: none;
+                    }
+                    .mobile-includes {
+                        display: flex;
+                        flex-direction: row;
+                        margin-right: 20px;
+                        img {
+                            margin: 20px;
+                            width: 30px;
                         }
                     }
-                            #nav-location {
-                                width: 100%;
-                                #nav-span {
-                                    width: 100%;
-                                    span {
-                                        color: rgb(77, 77, 77);
-                                        width: 500px;
-                        } 
-                    }
-
                 }
+            }
+            #nav-location {
+                width: 100%;
+                #nav-span {
+                    width: 100%;
+                    span {
+                        color: rgb(77, 77, 77);
+                        width: 500px;
+                    }
                 }
             }
         }
-
-        @media (max-width: 995px) {
-            #footer_wrap {
-                #footer_wrapA {
-                    flex-direction: column;
-                    align-items: center;
-                    /*  */
-                    .footer_item {
-                        margin-top: 25px;
-                    }
-                }
-                #footer_alerta_coockie {
-                    flex-direction: column;
-                    /*  */
-                    #footer_entendi {
-                        margin-left: 0px;
-                        margin-top: 10px;
-                    }
-                }
-            }
-        
     }
+}
 
+@media (max-width: 995px) {
+    #footer_wrap {
+        #footer_wrapA {
+            flex-direction: column;
+            align-items: center;
+            /*  */
+            .footer_item {
+                margin-top: 25px;
+            }
+        }
+        #footer_alerta_coockie {
+            flex-direction: column;
+            /*  */
+            #footer_entendi {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
