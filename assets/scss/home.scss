@@ -259,25 +259,111 @@
                     cursor: pointer;
                 }
                 .main_group_content {
-                    margin-top: 30px;
+                    margin-top: 30px 32px 0 32px;
+                    position: relative;
                     /*  */
                 }
+                .btn_next {
+                    position: absolute;
+                    right: -32px;
+                    top: 40%;
+                }
                 /* ######################## As melhores lojas te esperam */
-                #main_stories_wrap {
-                    background-color: #b1b1b1;
+                #main_stories {
                     width: 100%;
+                    overflow-y: scroll;
+                    padding: 10px;
                     /*  */
-                    .storie_card {
-                        background-color: #ffffff;
-                        width: 284px;
+                    #main_stories_wrap {
+                        /*  width: 1200%; */
                         height: 340px;
-                        border-radius: 10px;
+                        display: flex;
                         /*  */
-                        .storie_banner {
-                            background-color: #3483FA;
-                            width: 100%;
-                            height: 95px;
-                            border-radius: 5px 5px 0 0;
+                        .storie_card {
+                            background-color: #ffffff;
+                            width: 284px;
+                            height: 340px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            margin-right: 10px;
+                            transition: all .1s ease-in-out;
+                            &:hover {
+                                -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                                box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                            }
+                            &:hover .storie_content .storie_ver_loja a {
+                                color: #3483fa;
+                            }
+                            /*  */
+                            .storie_banner {
+                                overflow: hidden;
+                                width: 100%;
+                                height: 95px;
+                                border-radius: 5px 5px 0 0;
+                                z-index: 1;
+                                /*  */
+                                img {
+                                    //arrumar isso
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                            .storie_avatar {
+                                width: 100%;
+                                height: 40px;
+                                /*  */
+                                img {
+                                    //arrumar isso
+                                    transform: translate(96px, -50px);
+                                    border-radius: 10px;
+                                    width: 80px;
+                                    height: 80px;
+                                    /* shadow */
+                                    -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                                    box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                                }
+                            }
+                            .storie_content {
+                                background-color: #fff;
+                                height: 205px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                padding: 26px;
+                                .storie_tit {
+                                    color: #333;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                    height: 35px;
+                                }
+                                .storie_pordutos {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    /*  */
+                                    .storie_produto_thumb {
+                                        width: 70px;
+                                        height: 70px;
+                                        border: 4px solid rgb(228, 228, 228);
+                                        padding: 2px;
+                                        margin: 2px;
+                                        border-radius: 10px;
+                                        /*  */
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                                .storie_ver_loja {
+                                    text-align: center;
+                                    a {
+                                        text-decoration: none;
+                                        font-size: 13px;
+                                        color: rgb(143, 143, 143);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
