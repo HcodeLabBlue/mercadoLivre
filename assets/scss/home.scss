@@ -24,6 +24,7 @@
         }
       }
     }
+<<<<<<< HEAD
   }
   #home-header {
     display: flex;
@@ -190,6 +191,13 @@
         padding: 0;
         width: 100%;
         height: 36px;
+=======
+    /*  */
+    #home-header {
+        display: flex;
+        min-width: 480px;
+        height: 100px;
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
         background-color: #fff159;
       }
       .home-menu ul {
@@ -343,6 +351,7 @@
               .storie_banner {
                 overflow: hidden;
                 width: 100%;
+<<<<<<< HEAD
                 height: 95px;
                 border-radius: 5px 5px 0 0;
                 z-index: 1;
@@ -407,6 +416,69 @@
                     font-size: 13px;
                     color: rgb(143, 143, 143);
                   }
+=======
+                max-width: 1400px;
+                display: flex;
+                justify-content: inherit;
+                margin: 10px auto 0 auto;
+                align-items: center;
+                height: 35px;
+                .home-logo {
+                    top: 51px;
+                    margin: 0px 20px;
+                    left: 15px;
+                }
+                #home-form {
+                    max-width: 670px;
+                    margin-right: 20px;
+                    width: 670px;
+                    height: 35px;
+                    left: 3px;
+                    display: flex;
+                    align-items: center;
+                    margin: 0px 30px;
+                    .home-search {
+                        min-width: 162px;
+                        max-width: 625px;
+                        min-height: 32px;
+                        width: 100%;
+                        height: 39px;
+                        padding: 7px 60px 9px 15px;
+                        border-radius: 2px 0px 0px 2px;
+                        border: 0 rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+                    }
+                    .home-search::placeholder {
+                        color: rgba(51, 51, 51, 0.37);
+                        font-size: 16px;
+                        width: 100%;
+                        margin: 0;
+                        font-family: inherit;
+                    }
+                    .home-search:focus {
+                        outline: 0;
+                    }
+                    #btn-search {
+                        background-color: #f7f7f7;
+                        height: 39px;
+                        width: 33px;
+                        border-radius: 0px 2px 2px 0px;
+                        border: 0 rgba(0, 0, 0, 0.2);
+                        box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+                        #search-icon {
+                            height: 16px;
+                            width: 20px;
+                        }
+                    }
+                }
+                .home-includes {
+                    width: 340px;
+                    height: 39px;
+                    margin-right: 20px;
+                }
+                .mobile-includes {
+                    display: none;
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
                 }
               }
             }
@@ -422,12 +494,45 @@
             width: 70%;
             height: 251px;
             display: flex;
+<<<<<<< HEAD
             cursor: pointer;
             margin: 5px;
             transition: all 0.1s ease-in-out;
             &:hover {
               -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
               box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+=======
+            max-width: 1400px;
+            justify-content: flex-start;
+            margin: 10px auto 0 auto;
+            align-items: center;
+            height: 35px;
+            #nav-location {
+                display: flex;
+                flex-direction: row;
+                min-width: 16px;
+                width: 220px;
+                align-items: center;
+                margin-left: 20px;
+                margin-right: 30px;
+                #location {
+                    width: 21px;
+                    height: 16px;
+                    margin: 0px 5px;
+                }
+                @media (min-width:1180px) {
+                    #nav-span {
+                        display: flex;
+                        flex-direction: column;
+                        color: rgb(77, 77, 77);
+                        span {
+                            width: 135px;
+                            padding-right: 20px;
+                            display: flex;
+                        }
+                    }
+                }
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
             }
             /*  */
             .conf_card_wrap_1 {
@@ -469,6 +574,7 @@
                 }
               }
             }
+<<<<<<< HEAD
             .conf_card_wrap_2 {
               width: 40%;
               background-color: #fff;
@@ -477,6 +583,14 @@
               justify-content: center;
               /*  */
               img {
+=======
+            .home-menu {
+                font-size: 14px;
+                display: flex;
+                justify-content: flex-start;
+                margin: 0;
+                padding: 0;
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
                 width: 100%;
                 float: right;
               }
@@ -538,6 +652,7 @@
                 font-size: 15px;
                 padding: 12px;
                 text-align: center;
+<<<<<<< HEAD
               }
               /* HOVER */
               &:hover {
@@ -548,6 +663,36 @@
                 svg {
                   /* fill: #fff; */
                   stroke: #fff;
+=======
+                background-color: #fff159;
+                color: rgb(77, 77, 77);
+            }
+            .home-menu ul ul {
+                background-color: #999;
+                position: absolute;
+                visibility: hidden;
+            }
+            .home-menu ul li:hover ul {
+                visibility: visible;
+                background-color: #999;
+            }
+            .home-menu ul ul li a:hover {
+                background-color: #3483FA;
+                color: #f7f7f7;
+                width: 200px;
+            }
+            .home-menu ul ul li {
+                float: none;
+                width: 200px;
+            }
+            .home-menu ul ul li a {
+                background-color: #999;
+                width: 200px;
+            }
+            @media(max-width:1180px) {
+                .home-menu {
+                    display: none;
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
                 }
                 .item_cat_tit {
                   color: #fff;
@@ -566,12 +711,29 @@
             width: 70%;
             height: 251px;
             display: flex;
+<<<<<<< HEAD
             cursor: pointer;
             margin: 5px;
             transition: all 0.1s ease-in-out;
             &:hover {
               -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
               box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+=======
+            justify-content: left;
+            min-width: 250px;
+            a {
+                padding-right: 10px;
+                color: rgb(77, 77, 77);
+            }
+        }
+        #nav-icon-kart {
+            @media(max-width: 1180px) {
+                display: none;
+            }
+            img {
+                width: 30px;
+                margin-right: 20px;
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
             }
             /*  */
             .int_card_wrap_1 {
@@ -645,16 +807,380 @@
                 height: 286px;
                 width: 100%;
                 /*  */
+<<<<<<< HEAD
                 .int_tit {
                   /*  */
                 }
                 .int_sub {
                   /*  */
+=======
+                .main_group_tit {
+                    font-size: 26px;
+                    font-weight: 300;
+                    margin: 0 0 0 42px;
+                    color: #666;
+                }
+                .main_group_ver_todos {
+                    align-self: baseline;
+                    color: #3483fa;
+                    font-size: 16px;
+                    margin: auto 0 2px;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+                .main_group_content {
+                    margin: 30px 32px 0 32px;
+                    position: relative;
+                    /*  */
+                    &:hover .btn_next {
+                        display: block;
+                    }
+                }
+                .btn_next {
+                    position: absolute;
+                    right: -32px;
+                    top: 40%;
+                    display: none;
+                }
+                /* ######################## Benefícios do Mercado Pontos */
+                #main_ben {
+                    width: 100%;
+                    overflow-y: scroll;
+                    /*  */
+                    #main_ben_wrap {
+                        display: flex;
+                        width: 1515px;
+                        /*  */
+                        #banner_01 {
+                            background-image: url('../images/characters-carousel-widget@2x.jpg');
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                        }
+                        #banner_02 {
+                            background-image: url('../images/friends-widget@2x.jpg');
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                        }
+                        #banner_03 {
+                            background-image: url('../images/paramount-widget-mlb@2x.jpg');
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                        }
+                        #banner_04 {
+                            background-image: url('../images/deezer-widget-mlb@2x.jpg');
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                        }
+                        /*  */
+                        .ben_card {
+                            width: 363px;
+                            height: 250px;
+                            border-radius: 10px;
+                            margin: 0 7px;
+                            color: #fff;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                            padding: 15px;
+                            .ben_card_content {
+                                position: relative;
+                                display: flex;
+                                width: 100%;
+                                /*  */
+                                /* .card_banner {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                } */
+                                .card_content_thumb {
+                                    overflow: none;
+                                    width: 80px;
+                                    height: 80px;
+                                    /*  */
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 10px;
+                                        /*  */
+                                    }
+                                }
+                                .card_content_info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-left: 16px;
+                                    justify-content: space-around;
+                                    /*  */
+                                    .info_medium {
+                                        font-size: 19px;
+                                        font-weight: 600;
+                                        line-height: 1.09;
+                                    }
+                                    .info_channel {
+                                        font-size: 18px;
+                                        line-height: 1.11;
+                                        letter-spacing: .4px;
+                                    }
+                                    .info_btn {
+                                        padding: 8px 8px 0 0;
+                                        .info_btn_link {
+                                            padding: 9px 6px 6px 9px;
+                                            border-radius: 8px;
+                                            background-color: #0daa58;
+                                            font-size: 14px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /* ######################## As melhores lojas te esperam */
+                #main_stories {
+                    width: 100%;
+                    overflow-y: scroll;
+                    padding: 10px;
+                    /*  */
+                    #main_stories_wrap {
+                        /*  width: 1200%; */
+                        height: 340px;
+                        display: flex;
+                        /*  */
+                        .storie_card {
+                            background-color: #ffffff;
+                            width: 284px;
+                            height: 340px;
+                            border-radius: 10px;
+                            cursor: pointer;
+                            margin-right: 10px;
+                            transition: all .1s ease-in-out;
+                            &:hover {
+                                -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                                box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                            }
+                            &:hover .storie_content .storie_ver_loja a {
+                                color: #3483fa;
+                            }
+                            /*  */
+                            .storie_banner {
+                                overflow: hidden;
+                                width: 100%;
+                                height: 95px;
+                                border-radius: 5px 5px 0 0;
+                                z-index: 1;
+                                /*  */
+                                img {
+                                    //arrumar isso
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                            .storie_avatar {
+                                width: 100%;
+                                height: 40px;
+                                /*  */
+                                img {
+                                    //arrumar isso
+                                    transform: translate(96px, -50px);
+                                    border-radius: 10px;
+                                    width: 80px;
+                                    height: 80px;
+                                    /* shadow */
+                                    -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                                    box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                                }
+                            }
+                            .storie_content {
+                                background-color: #fff;
+                                height: 205px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-around;
+                                padding: 26px;
+                                .storie_tit {
+                                    color: #333;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                    height: 35px;
+                                }
+                                .storie_pordutos {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    /*  */
+                                    .storie_produto_thumb {
+                                        width: 70px;
+                                        height: 70px;
+                                        border: 4px solid rgb(228, 228, 228);
+                                        padding: 2px;
+                                        margin: 2px;
+                                        border-radius: 10px;
+                                        /*  */
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                                .storie_ver_loja {
+                                    text-align: center;
+                                    a {
+                                        text-decoration: none;
+                                        font-size: 13px;
+                                        color: rgb(143, 143, 143);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                /* ######################## Confira */
+                #categorias_conf_wrap {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    /*  */
+                    .conf_card {
+                        width: 70%;
+                        height: 251px;
+                        display: flex;
+                        cursor: pointer;
+                        margin: 5px;
+                        transition: all .1s ease-in-out;
+                        &:hover {
+                            -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                            box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                        }
+                        .conf_card_wrap_1 {
+                            width: 60%;
+                            background-color: #fff;
+                            padding: 0 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            /*  */
+                            .conf_tit {
+                                font-family: monospace;
+                                font-size: 15px;
+                                letter-spacing: 4px;
+                                margin-bottom: 17px;
+                                font-weight: 400;
+                                color: #525252;
+                            }
+                            .conf_sub {
+                                font-size: 28px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.1;
+                                text-transform: uppercase;
+                                letter-spacing: normal;
+                                color: #4b4b4b;
+                                margin-bottom: 25px;
+                            }
+                            .conf_btn_ver_mais {
+                                a {
+                                    width: 100%;
+                                    background-color: #3483FA;
+                                    color: #fff;
+                                    border-radius: 3px;
+                                    padding: 14px 25px;
+                                    text-align: center;
+                                    /*  */
+                                }
+                            }
+                        }
+                        .conf_card_wrap_2 {
+                            width: 40%;
+                            background-color: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            /*  */
+                            img {
+                                width: 100%;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+                @media (max-width: 992px) {
+                    #categorias_conf_wrap {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+                @media (max-width: 576px) {
+                    #categorias_conf_wrap {
+                        .conf_card {
+                            flex-direction: column;
+                            height: 520px;
+                            .conf_card_wrap_1 {
+                                height: 286px;
+                                width: 100%;
+                            }
+                            .conf_card_wrap_2 {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                /* ######################## Categorias populares */
+                #categorias_pop_wrap {
+                    width: 100%;
+                    overflow-x: scroll;
+                    margin-bottom: 50px;
+                    /*  */
+                    .categorias_lin {
+                        display: flex;
+                        width: 2550px;
+                        /*  */
+                        .categorias_item {
+                            width: 170px;
+                            height: 170px;
+                            margin: 1px;
+                            background-color: #fff;
+                            padding: 25px 0px;
+                            transition: all .08s ease-in-out;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+                            .item_logo {
+                                svg {
+                                    stroke: #3483FA;
+                                    height: 48px;
+                                    width: 48px;
+                                }
+                            }
+                            .item_cat_tit {
+                                color: rgb(83, 83, 83);
+                                font-size: 15px;
+                                padding: 12px;
+                                text-align: center;
+                            }
+                            /* HOVER */
+                            &:hover {
+                                background-color: #3483fa;
+                                color: #fff;
+                            }
+                            &:hover {
+                                svg {
+                                    /* fill: #fff; */
+                                    stroke: #fff;
+                                }
+                                .item_cat_tit {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
                 }
                 .int_btn_ver_mais {
                   /*  */
                   a {
                     /*  */
+<<<<<<< HEAD
                   }
                 }
               }
@@ -663,6 +1189,92 @@
                 /*  */
                 img {
                   /*  */
+=======
+                    .int_card {
+                        width: 70%;
+                        height: 251px;
+                        display: flex;
+                        cursor: pointer;
+                        margin: 5px;
+                        transition: all .1s ease-in-out;
+                        &:hover {
+                            -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                            box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                        }
+                        .int_card_wrap_1 {
+                            width: 60%;
+                            background-color: #fff;
+                            padding: 0 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            /*  */
+                            .int_tit {
+                                font-family: monospace;
+                                font-size: 15px;
+                                letter-spacing: 4px;
+                                margin-bottom: 17px;
+                                font-weight: 400;
+                                color: #525252;
+                            }
+                            .int_sub {
+                                font-size: 28px;
+                                font-weight: 600;
+                                font-style: normal;
+                                font-stretch: normal;
+                                line-height: 1.1;
+                                text-transform: uppercase;
+                                letter-spacing: normal;
+                                color: #4b4b4b;
+                                margin-bottom: 25px;
+                            }
+                            .int_btn_ver_mais {
+                                a {
+                                    width: 100%;
+                                    background-color: #3483FA;
+                                    color: #fff;
+                                    border-radius: 3px;
+                                    padding: 14px 25px;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        .int_card_wrap_2 {
+                            width: 40%;
+                            background-color: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            /*  */
+                            img {
+                                width: 100%;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+                @media (max-width: 992px) {
+                    #categorias_int_wrap {
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+                @media (max-width: 576px) {
+                    #categorias_int_wrap {
+                        .int_card {
+                            flex-direction: column;
+                            height: 520px;
+                            /*  */
+                            .int_card_wrap_1 {
+                                height: 286px;
+                                width: 100%;
+                            }
+                            .int_card_wrap_2 {
+                                width: 100%;
+                            }
+                        }
+                    }
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
                 }
               }
             }
@@ -720,6 +1332,7 @@
             }
           }
         }
+<<<<<<< HEAD
       }
     }
   }
@@ -764,6 +1377,45 @@
             > a {
               color: #3483fa;
               font-size: 14px;
+=======
+    }
+}
+
+@media(max-width:1180px) {
+    #home {
+        #home-header {
+            #home-topo {
+                .home-container {
+                    justify-content: center;
+                    #home-form {
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                        margin-left: none;
+                    }
+                    .home-includes {
+                        display: none;
+                    }
+                    .mobile-includes {
+                        display: flex;
+                        flex-direction: row;
+                        margin-right: 20px;
+                        img {
+                            margin: 20px;
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+            #nav-location {
+                width: 100%;
+                #nav-span {
+                    width: 100%;
+                    span {
+                        color: rgb(77, 77, 77);
+                        width: 500px;
+                    }
+                }
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
             }
           }
         }
@@ -864,5 +1516,30 @@
         text-align: center;
       }
     }
+<<<<<<< HEAD
   }
 }
+=======
+}
+
+@media (max-width: 995px) {
+    #footer_wrap {
+        #footer_wrapA {
+            flex-direction: column;
+            align-items: center;
+            /*  */
+            .footer_item {
+                margin-top: 25px;
+            }
+        }
+        #footer_alerta_coockie {
+            flex-direction: column;
+            /*  */
+            #footer_entendi {
+                margin-left: 0px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+>>>>>>> abcba53d7776564fc123f72fcd1716e713652510
