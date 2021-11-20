@@ -15,8 +15,10 @@
         <header id="home-header">
             <section id="home-topo">
                 <div class="home-container">
-                    <img class="home-logo-1" src="assets/images/logo-1.png" alt="Logo Mercado Livre " />
-                    <img class="home-logo-2" src="/assets/images/logo-0.png" alt="Logo">
+                    <picture>
+                        <source class="home-logo" srcset="/assets/images/logo-0.png" alt="Logo mercado livre" media="(max-width: 1180px)" />
+                        <img class="home-logo" src="./assets/images/logo-1.png" alt="Logo mercado livre">
+                    </picture>
                     <form id="home-form" action="">
                         <input class="home-search" type="search" name="busca" placeholder="Buscar produtos, marcas e muito mais..." />
                         <button id="btn-search" type="submit">
@@ -25,13 +27,13 @@
                     </form>
                     <img class="home-includes" src="https://http2.mlstatic.com/D_NQ_723553-MLA48160168214_112021-OO.webp" alt="" />
                     <div class="mobile-includes">
-                        <img src="/assets/images/menu.png" alt="menu">
-                        <img src="/assets/images/shopping-cart.png" alt="Carrinho">
+                        <img src="/assets/images/menu-ico.svg" alt="menu">
+                        <img src="/assets/images/shopping-cart.svg" alt="Carrinho">
                     </div>
                 </div>
                 <div class="nav-container">
                     <a id="nav-location" href="/auth.html">
-                        <img src="/assets/images/location.png" alt="localização" id="location">
+                        <img src="/assets/images/location-ico.svg"   alt="localização" id="location">
                         <div id="nav-span">
                             <span>Enviar para</span>
                             <span>São Paulo - SP</span>
@@ -55,7 +57,7 @@
                                     <li><a href="#">Beleza e Cuidado Pessoal</a> </li>
                                     <li><a href="#">Moda</a> </li>
                                     <li><a href="#">Bebês</a> </li>
-                                    <li><a href="#">Brinquedos</a> </li>]
+                                    <li><a href="#">Brinquedos</a> </li>
                                     <li><a href="#">Imóveis</a> </li>
                                     <li><a href="#">Compra Internacional</a></li>
                                     <li><a href="#">Produtos Sustentáveis</a> </li>
@@ -63,9 +65,9 @@
                                     <li><a href="#">Ver mais categorias</a> </li>
                                 </ul>
                             </li>
-                            <li><a href="#">Ofertas do dia</a></li>
-                            <li><a href="#">histórico</a></li>
-                            <li><a href="#">Supermercado</a></li>
+                            <li><a id="abig" href="#">Ofertas do dia</a></li>
+                            <li><a href="#">Histórico</a></li>
+                            <li><a id="abig" href="#">Supermercado</a></li>
                             <li><a href="#">Moda</a></li>
                             <li><a href="#">Vender</a></li>
                             <li><a href="#">Contato</a></li>
@@ -80,7 +82,7 @@
 
                     <i id="nav-icon-kart">
               <a href="#">
-              <img src="/assets/images/shopping-cart.png" alt="Carrinho de compras"></i>
+              <img src="/assets/images/shopping-cart.svg" alt="Carrinho de compras"></i>
                     </a>
 
                 </div>
