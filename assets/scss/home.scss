@@ -304,8 +304,14 @@
                     cursor: pointer;
                 }
                 .main_group_content {
-                    margin-top: 30px;
+                    margin-top: 30px 32px 0 32px;
+                    position: relative;
                     /*  */
+                }
+                .btn_next {
+                    position: absolute;
+                    right: -32px;
+                    top: 40%;
                 }
                 /* ######################## As melhores lojas te esperam */
                 #main_stories {
