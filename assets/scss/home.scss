@@ -259,6 +259,77 @@
                     top: 40%;
                     display: none;
                 }
+                /* ######################## Benefícios do Mercado Pontos */
+                #main_ben {
+                    width: 100%;
+                    overflow-y: scroll;
+                    /*  */
+                    #main_ben_wrap {
+                        display: flex;
+                        width: 1600px;
+                        /*  */
+                        .ben_card {
+                            width: 385px;
+                            height: 250px;
+                            border-radius: 10px;
+                            margin: 0 7px;
+                            background-color: rgb(28, 58, 75);
+                            color: #fff;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                            padding: 15px;
+                            .ben_card_content {
+                                position: relative;
+                                display: flex;
+                                width: 100%;
+                                /*  */
+                                /* .card_banner {
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 100%;
+                                } */
+                                .card_content_thumb {
+                                    overflow: none;
+                                    width: 80px;
+                                    height: 80px;
+                                    /*  */
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                        border-radius: 10px;
+                                        /*  */
+                                    }
+                                }
+                                .card_content_info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-left: 16px;
+                                    justify-content: space-around;
+                                    /*  */
+                                    .info_medium {
+                                        font-size: 22px;
+                                        font-weight: 600;
+                                        line-height: 1.09;
+                                    }
+                                    .info_channel {
+                                        font-size: 18px;
+                                        line-height: 1.11;
+                                        letter-spacing: .4px;
+                                    }
+                                    .info_btn {
+                                        padding: 8px 8px 0 0;
+                                        .info_btn_link {
+                                            padding: 5px;
+                                            border-radius: 8px;
+                                            background-color: #0daa58;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
                 /* ######################## As melhores lojas te esperam */
                 #main_stories {
                     width: 100%;
