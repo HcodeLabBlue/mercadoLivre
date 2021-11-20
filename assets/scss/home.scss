@@ -269,9 +269,24 @@
                         width: 1515px;
                         /*  */
                         #banner_01 {
-                            background-image: url(../images/characters-carousel-widget@2x.jpg);
+                            background-image: url('../images/characters-carousel-widget@2x.jpg');
                             background-repeat: no-repeat;
                             background-size: 100%;
+                        }
+                        #banner_02 {
+                            background-image: url('../images/friends-widget@2x.jpg');
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                        }
+                        #banner_03 {
+                            background-image: url('../images/paramount-widget-mlb@2x.jpg');
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                        }
+                        #banner_04 {
+                            background-image: url('../images/deezer-widget-mlb@2x.jpg');
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
                         }
                         /*  */
                         .ben_card {
@@ -279,7 +294,6 @@
                             height: 250px;
                             border-radius: 10px;
                             margin: 0 7px;
-                            background-color: rgb(28, 58, 75);
                             color: #fff;
                             display: flex;
                             align-items: flex-end;
