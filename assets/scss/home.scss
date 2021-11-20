@@ -266,10 +266,16 @@
                     /*  */
                     #main_ben_wrap {
                         display: flex;
-                        width: 1600px;
+                        width: 1515px;
+                        /*  */
+                        #banner_01 {
+                            background-image: url(../images/characters-carousel-widget@2x.jpg);
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                        }
                         /*  */
                         .ben_card {
-                            width: 385px;
+                            width: 363px;
                             height: 250px;
                             border-radius: 10px;
                             margin: 0 7px;
@@ -308,7 +314,7 @@
                                     justify-content: space-around;
                                     /*  */
                                     .info_medium {
-                                        font-size: 22px;
+                                        font-size: 19px;
                                         font-weight: 600;
                                         line-height: 1.09;
                                     }
@@ -320,9 +326,10 @@
                                     .info_btn {
                                         padding: 8px 8px 0 0;
                                         .info_btn_link {
-                                            padding: 5px;
+                                            padding: 9px 6px 6px 9px;
                                             border-radius: 8px;
                                             background-color: #0daa58;
+                                            font-size: 14px;
                                         }
                                     }
                                 }
@@ -446,7 +453,6 @@
                             -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
                             box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
                         }
-                        /*  */
                         .conf_card_wrap_1 {
                             width: 60%;
                             background-color: #fff;
@@ -537,7 +543,6 @@
                             margin: 1px;
                             background-color: #fff;
                             padding: 25px 0px;
-                            width: 170px;
                             transition: all .08s ease-in-out;
                             display: flex;
                             flex-direction: column;
@@ -590,7 +595,6 @@
                             -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
                             box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
                         }
-                        /*  */
                         .int_card_wrap_1 {
                             width: 60%;
                             background-color: #fff;
@@ -619,7 +623,6 @@
                                 margin-bottom: 25px;
                             }
                             .int_btn_ver_mais {
-                                /*  */
                                 a {
                                     width: 100%;
                                     background-color: #3483FA;
@@ -627,7 +630,6 @@
                                     border-radius: 3px;
                                     padding: 14px 25px;
                                     text-align: center;
-                                    /*  */
                                 }
                             }
                         }
@@ -639,7 +641,6 @@
                             justify-content: center;
                             /*  */
                             img {
-                                /*  */
                                 width: 100%;
                                 float: right;
                             }
@@ -661,78 +662,9 @@
                             .int_card_wrap_1 {
                                 height: 286px;
                                 width: 100%;
-                                /*  */
-                                .int_tit {
-                                    /*  */
-                                }
-                                .int_sub {
-                                    /*  */
-                                }
-                                .int_btn_ver_mais {
-                                    /*  */
-                                    a {
-                                        /*  */
-                                    }
-                                }
                             }
                             .int_card_wrap_2 {
                                 width: 100%;
-                                /*  */
-                                img {
-                                    /*  */
-                                }
-                            }
-                        }
-                    }
-                }
-                /* ######################## Categorias populares */
-                #categorias_pop_wrap {
-                    width: 100%;
-                    overflow-x: scroll;
-                    margin-bottom: 50px;
-                    /*  */
-                    .categorias_lin {
-                        display: flex;
-                        width: 2550px;
-                        /*  */
-                        .categorias_item {
-                            width: 170px;
-                            height: 170px;
-                            margin: 1px;
-                            background-color: #fff;
-                            padding: 25px 0px;
-                            width: 170px;
-                            transition: all .08s ease-in-out;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: space-around;
-                            align-items: center;
-                            .item_logo {
-                                svg {
-                                    stroke: #3483FA;
-                                    height: 48px;
-                                    width: 48px;
-                                }
-                            }
-                            .item_cat_tit {
-                                color: rgb(83, 83, 83);
-                                font-size: 15px;
-                                padding: 12px;
-                                text-align: center;
-                            }
-                            /* HOVER */
-                            &:hover {
-                                background-color: #3483fa;
-                                color: #fff;
-                            }
-                            &:hover {
-                                svg {
-                                    /* fill: #fff; */
-                                    stroke: #fff;
-                                }
-                                .item_cat_tit {
-                                    color: #fff;
-                                }
                             }
                         }
                     }
