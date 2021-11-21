@@ -10,7 +10,6 @@
     * {
         font-family: "Proxima Nova";
     }
-    /*  */
     #home-header {
         display: flex;
         min-width: 480px;
@@ -203,11 +202,9 @@
     >main {
         min-height: 100vh;
         width: 100%;
-        /*  */
         #main_wrap_categorias {
             max-width: 1187px;
             margin: auto;
-            /*  */
             /* CADA CATEGORIA DO MAIN VAI PEGA ESSA CONFIG*/
             /* SCROLL */
              ::-webkit-scrollbar {
@@ -230,7 +227,6 @@
             .main_group {
                 margin-top: 96px;
                 width: 100%;
-                /*  */
                 .main_group_tit {
                     font-size: 26px;
                     font-weight: 300;
@@ -248,7 +244,6 @@
                 .main_group_content {
                     margin: 30px 32px 0 32px;
                     position: relative;
-                    /*  */
                     &:hover .btn_next {
                         display: block;
                     }
@@ -259,15 +254,59 @@
                     top: 40%;
                     display: none;
                 }
+                /* ######################## Ofertas do dia */
+                .offers-container {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+                    margin-top: 28px;
+                    .offers-cards {
+                        display: flex;
+                        flex-direction: column;
+                        height: 330px;
+                        width: 219px;
+                        background: white;
+                        &:hover {
+                            -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                            box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                        }
+                        img {
+                            margin-bottom: 21px;
+                        }
+                        .group-text {
+                            margin-left: 16px;
+                            display: flex;
+                            flex-direction: column;
+                            .frete {
+                                font-weight: bold;
+                            }
+                            .text-green {
+                                color: green;
+                            }
+                            .group-first {
+                                display: flex;
+                                gap: 10px;
+                            }
+                            p {
+                                margin-bottom: 10px;
+                            }
+                            h2 {
+                                margin-bottom: 10px;
+                                color: #333;
+                                font-size: 24px;
+                                font-weight: 600;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
                 /* ######################## Benefícios do Mercado Pontos */
                 #main_ben {
                     width: 100%;
                     overflow-y: scroll;
-                    /*  */
                     #main_ben_wrap {
                         display: flex;
                         width: 1515px;
-                        /*  */
                         #banner_01 {
                             background-image: url('../images/characters-carousel-widget@2x.jpg');
                             background-repeat: no-repeat;
@@ -288,7 +327,6 @@
                             background-repeat: no-repeat;
                             background-size: 100% 100%;
                         }
-                        /*  */
                         .ben_card {
                             width: 363px;
                             height: 250px;
@@ -303,22 +341,14 @@
                                 position: relative;
                                 display: flex;
                                 width: 100%;
-                                /*  */
-                                /* .card_banner {
-                                    position: absolute;
-                                    width: 100%;
-                                    height: 100%;
-                                } */
                                 .card_content_thumb {
                                     overflow: none;
                                     width: 80px;
                                     height: 80px;
-                                    /*  */
                                     img {
                                         width: 100%;
                                         height: 100%;
                                         border-radius: 10px;
-                                        /*  */
                                     }
                                 }
                                 .card_content_info {
@@ -326,7 +356,6 @@
                                     flex-direction: column;
                                     margin-left: 16px;
                                     justify-content: space-around;
-                                    /*  */
                                     .info_medium {
                                         font-size: 19px;
                                         font-weight: 600;
@@ -356,12 +385,9 @@
                     width: 100%;
                     overflow-y: scroll;
                     padding: 10px;
-                    /*  */
                     #main_stories_wrap {
-                        /*  width: 1200%; */
                         height: 340px;
                         display: flex;
-                        /*  */
                         .storie_card {
                             background-color: #ffffff;
                             width: 284px;
@@ -377,16 +403,13 @@
                             &:hover .storie_content .storie_ver_loja a {
                                 color: #3483fa;
                             }
-                            /*  */
                             .storie_banner {
                                 overflow: hidden;
                                 width: 100%;
                                 height: 95px;
                                 border-radius: 5px 5px 0 0;
                                 z-index: 1;
-                                /*  */
                                 img {
-                                    //arrumar isso
                                     height: 100%;
                                     width: 100%;
                                 }
@@ -394,9 +417,7 @@
                             .storie_avatar {
                                 width: 100%;
                                 height: 40px;
-                                /*  */
                                 img {
-                                    //arrumar isso
                                     transform: translate(96px, -50px);
                                     border-radius: 10px;
                                     width: 80px;
@@ -423,7 +444,6 @@
                                 .storie_pordutos {
                                     display: flex;
                                     justify-content: space-between;
-                                    /*  */
                                     .storie_produto_thumb {
                                         width: 70px;
                                         height: 70px;
@@ -431,7 +451,6 @@
                                         padding: 2px;
                                         margin: 2px;
                                         border-radius: 10px;
-                                        /*  */
                                         img {
                                             width: 100%;
                                             height: 100%;
@@ -455,7 +474,6 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
-                    /*  */
                     .conf_card {
                         width: 70%;
                         height: 251px;
@@ -474,7 +492,6 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            /*  */
                             .conf_tit {
                                 font-family: monospace;
                                 font-size: 15px;
@@ -502,7 +519,6 @@
                                     border-radius: 3px;
                                     padding: 14px 25px;
                                     text-align: center;
-                                    /*  */
                                 }
                             }
                         }
@@ -512,7 +528,6 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            /*  */
                             img {
                                 width: 100%;
                                 float: right;
@@ -546,11 +561,9 @@
                     width: 100%;
                     overflow-x: scroll;
                     margin-bottom: 50px;
-                    /*  */
                     .categorias_lin {
                         display: flex;
                         width: 2550px;
-                        /*  */
                         .categorias_item {
                             width: 170px;
                             height: 170px;
@@ -575,14 +588,12 @@
                                 padding: 12px;
                                 text-align: center;
                             }
-                            /* HOVER */
                             &:hover {
                                 background-color: #3483fa;
                                 color: #fff;
                             }
                             &:hover {
                                 svg {
-                                    /* fill: #fff; */
                                     stroke: #fff;
                                 }
                                 .item_cat_tit {
@@ -597,7 +608,6 @@
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
-                    /*  */
                     .int_card {
                         width: 70%;
                         height: 251px;
@@ -616,7 +626,6 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            /*  */
                             .int_tit {
                                 font-family: monospace;
                                 font-size: 15px;
@@ -653,7 +662,6 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            /*  */
                             img {
                                 width: 100%;
                                 float: right;
@@ -672,7 +680,6 @@
                         .int_card {
                             flex-direction: column;
                             height: 520px;
-                            /*  */
                             .int_card_wrap_1 {
                                 height: 286px;
                                 width: 100%;
@@ -689,12 +696,10 @@
     >footer {
         #footer_wrap {
             width: 100%;
-            /*  */
             #footer_wrapA {
                 background-color: #fff;
                 padding: 60px 0;
                 display: flex;
-                /*  */
                 .footer_item {
                     width: 33.33%;
                     height: 100%;
@@ -702,10 +707,6 @@
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    /*  */
-                    .footer_icon {
-                        /*  */
-                    }
                     .footer_tit {
                         font-size: 14px;
                         font-weight: 500;
@@ -738,7 +739,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                /*  */
                 #msg {
                     color: #fff;
                     text-align: center;
@@ -807,14 +807,12 @@
         #footer_wrapA {
             flex-direction: column;
             align-items: center;
-            /*  */
             .footer_item {
                 margin-top: 25px;
             }
         }
         #footer_alerta_coockie {
             flex-direction: column;
-            /*  */
             #footer_entendi {
                 margin-left: 0px;
                 margin-top: 10px;
