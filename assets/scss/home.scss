@@ -12,7 +12,7 @@
     }
     #home-header {
         display: flex;
-        min-width: 480px;
+        min-width: 500px;
         height: 100px;
         background-color: #fff159;
         #home-topo {
@@ -105,17 +105,15 @@
                     height: 16px;
                     margin: 0px 5px;
                 }
-                @media (min-width:1180px) {
-                    #nav-span {
+                #nav-span {
                         display: flex;
                         flex-direction: column;
                         color: rgb(77, 77, 77);
-                        span {
-                            width: 135px;
-                            padding-right: 20px;
-                            display: flex;
-                        }
-                    }
+                            span {
+                                width: 135px;
+                                padding-right: 20px;
+                                display: flex;
+                            }
                 }
             }
             #nav-location:hover {
@@ -153,6 +151,7 @@
                 background-color: #999;
                 position: absolute;
                 visibility: hidden;
+                z-index: 1;
             }
             .home-menu ul li:hover ul {
                 visibility: visible;
@@ -171,14 +170,7 @@
                 background-color: #999;
                 width: 200px;
             }
-            @media(max-width:1180px) {
-                .home-menu {
-                    display: none;
-                }
-                #nav-menu {
-                    display: none;
-                }
-            }
+
         }
         #nav-menu {
             display: flex;
@@ -190,9 +182,6 @@
             }
         }
         #nav-icon-kart {
-            @media(max-width: 1180px) {
-                display: none;
-            }
             img {
                 width: 30px;
                 margin-right: 20px;
@@ -950,18 +939,39 @@
                     }
                 }
             }
-            #nav-location {
+            .nav-container{
                 width: 100%;
-                #nav-span {
+                #nav-location {
                     width: 100%;
-                    span {
-                        color: rgb(77, 77, 77);
-                        width: 500px;
+                    #nav-span {
+                        width: 100%;
+                        flex-direction: row;
+                        #Sending{
+                            width: auto;
+                            padding-right: 5px;
+                        }
+                        span {
+                            color: rgb(77, 77, 77);
+                            width: 500px;
+                            padding-right: 0;
+                        }
                     }
                 }
+                .home-menu {
+                    display: none;
+                }
+                #nav-menu {
+                    display: none;
+                }
+                #nav-icon-kart {
+                    display: none;
+                }
+                
             }
+
         }
     }
+
 }
 
 @media (max-width: 995px) {
