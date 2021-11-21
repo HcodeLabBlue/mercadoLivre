@@ -202,28 +202,64 @@
     >main {
         min-height: 100vh;
         width: 100%;
+        /* CADA CATEGORIA DO MAIN VAI PEGA ESSA CONFIG*/
+        /* SCROLL */
+         ::-webkit-scrollbar {
+            width: 1px;
+            height: 1px;
+        }
+         ::-webkit-scrollbar-thumb {
+            background: #ffffff00;
+            border-radius: 0px;
+        }
+         ::-webkit-scrollbar-thumb:hover {
+            background: #ffffff00;
+        }
+         ::-webkit-scrollbar-track {
+            background: #ffffff00;
+            border-radius: 0px;
+            box-shadow: inset 0px 0px 0px 0px #ffffff00;
+        }
+        /* SCROLL */
+        /*  */
+        #main_banner {
+            width: 100%;
+            height: 338px;
+            position: relative;
+            /*  */
+            .btn_banner {
+                position: absolute;
+                top: 30%;
+            }
+            #btn_banner_prev {
+                left: 0px;
+            }
+            #btn_banner_next {
+                right: 0px;
+            }
+            /*  */
+            #main_banner_wrap {
+                background-color: #5f5f5f;
+                height: 100%;
+                margin: auto;
+                max-width: 1463px;
+                display: flex;
+                overflow: scroll;
+                cursor: url('../images/icon_scroll.svg') 0 0, auto;
+                /*  */
+                >img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            @media (max-width: 968px) {
+                height: 210px;
+            }
+        }
         #main_wrap_categorias {
             max-width: 1187px;
             margin: auto;
-            /* CADA CATEGORIA DO MAIN VAI PEGA ESSA CONFIG*/
-            /* SCROLL */
-             ::-webkit-scrollbar {
-                width: 1px;
-                height: 1px;
-            }
-             ::-webkit-scrollbar-thumb {
-                background: #ffffff00;
-                border-radius: 0px;
-            }
-             ::-webkit-scrollbar-thumb:hover {
-                background: #ffffff00;
-            }
-             ::-webkit-scrollbar-track {
-                background: #ffffff00;
-                border-radius: 0px;
-                box-shadow: inset 0px 0px 0px 0px #ffffff00;
-            }
-            /* SCROLL */
             .main_group {
                 margin-top: 96px;
                 width: 100%;
@@ -254,48 +290,137 @@
                     top: 40%;
                     display: none;
                 }
-                /* ######################## Ofertas do dia */
-                .offers-container {
+                /* ######################## Meios de Pagamento */
+                #meios_pagamentos_wrap {
+                    position: relative;
+                    background-color: #fff;
+                    border-radius: 5px;
                     display: flex;
-                    flex-direction: row;
-                    gap: 16px;
-                    margin-top: 28px;
-                    .offers-cards {
+                    min-width: 340px;
+                    /*  */
+                    #btn_plus {
+                        position: absolute;
+                        right: 30px;
+                        top: 18px;
+                    }
+                    .pg_card {
+                        width: 250px;
+                        height: 90px;
+                        align-items: center;
+                        padding: 10px;
+                        white-space: nowrap;
                         display: flex;
-                        flex-direction: column;
-                        height: 330px;
-                        width: 219px;
-                        background: white;
-                        &:hover {
-                            -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
-                            box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                        /*  */
+                        .pg_icon {
+                            width: 48px;
+                            height: 48px;
+                            /*  */
+                            img {
+                                width: 100%;
+                            }
                         }
-                        img {
-                            margin-bottom: 21px;
+                        .pg_msg {
+                            padding-left: 15px;
+                            .pg_tit {
+                                margin-bottom: 5px;
+                                font-size: 15 px;
+                            }
+                            .pg_sub {
+                                cursor: pointer;
+                                font-size: 14px;
+                                >a {
+                                    color: #3483FA;
+                                }
+                            }
                         }
-                        .group-text {
-                            margin-left: 16px;
+                    }
+                    #pg_card_01 {
+                        border-right: 1px solid rgb(216, 216, 216);
+                        position: relative;
+                        /*  */
+                        .pg_msg_01::before {
+                            background-color: #3483fa;
+                            bottom: 4px;
+                            content: "";
+                            left: 4px;
+                            position: absolute;
+                            top: 4px;
+                            width: 4px;
+                        }
+                        .pg_msg_01 {
+                            .pg_tit_01 {
+                                margin-bottom: 5px;
+                                font-size: 18px;
+                            }
+                            .pg_sub_01 {
+                                cursor: pointer;
+                                font-size: 14px;
+                                color: #a1a1a1;
+                            }
+                        }
+                    }
+                    @media (max-width: 1050px) {
+                        #pg_card_04 {
+                            display: none;
+                        }
+                    }
+                    @media (max-width: 905px) {
+                        #pg_card_03 {
+                            display: none;
+                        }
+                    }
+                    @media (max-width: 660px) {
+                        #pg_card_02 {
+                            display: none;
+                        }
+                    }
+                }
+                /* ######################## Ofertas do dia */
+                #offers-wrap {
+                    width: 100%;
+                    overflow-y: scroll;
+                    .offers-container {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 16px;
+                        margin-top: 28px;
+                        .offers-cards {
                             display: flex;
                             flex-direction: column;
-                            .frete {
-                                font-weight: bold;
+                            height: 330px;
+                            width: 219px;
+                            background: white;
+                            &:hover {
+                                -webkit-box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
+                                box-shadow: 4px 6px 11px -1px rgba(0, 0, 0, 0.33);
                             }
-                            .text-green {
-                                color: green;
+                            img {
+                                margin-bottom: 21px;
                             }
-                            .group-first {
+                            .group-text {
+                                margin-left: 16px;
                                 display: flex;
-                                gap: 10px;
-                            }
-                            p {
-                                margin-bottom: 10px;
-                            }
-                            h2 {
-                                margin-bottom: 10px;
-                                color: #333;
-                                font-size: 24px;
-                                font-weight: 600;
-                                text-align: center;
+                                flex-direction: column;
+                                .frete {
+                                    font-weight: bold;
+                                }
+                                .text-green {
+                                    color: #09D068;
+                                }
+                                .group-first {
+                                    display: flex;
+                                    gap: 10px;
+                                }
+                                p {
+                                    margin-bottom: 10px;
+                                }
+                                h2 {
+                                    margin-bottom: 10px;
+                                    color: #333;
+                                    font-size: 24px;
+                                    font-weight: 600;
+                                    text-align: center;
+                                }
                             }
                         }
                     }
@@ -695,11 +820,12 @@
     }
     >footer {
         #footer_wrap {
-            width: 100%;
+            background-color: #fff;
             #footer_wrapA {
-                background-color: #fff;
                 padding: 60px 0;
                 display: flex;
+                margin: auto;
+                max-width: 1300px;
                 .footer_item {
                     width: 33.33%;
                     height: 100%;
@@ -736,7 +862,7 @@
                 background-color: #333;
                 width: 100%;
                 height: 83px;
-                display: flex;
+                display: none;
                 align-items: center;
                 justify-content: center;
                 #msg {
@@ -757,6 +883,42 @@
                     text-align: center;
                     padding-top: 8px;
                     cursor: pointer;
+                }
+            }
+            #footer_wrap_02 {
+                width: 100%;
+                height: 64px;
+                border-top: 1px solid rgb(233, 233, 233);
+                padding: 5px;
+                /*  */
+                #more_info {
+                    max-width: 1300px;
+                    height: 100%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    /*  */
+                    #more_info_links {
+                        a {
+                            font-size: 13px;
+                            color: #333;
+                            margin-left: 12px;
+                            line-height: 1;
+                            font-weight: 400;
+                        }
+                    }
+                    .more_info_seccond {
+                        font-size: 13px;
+                        color: rgb(167, 167, 167);
+                        margin-left: 12px;
+                    }
+                    #more_info_copyrigth {
+                        /*  */
+                    }
+                    #more_info_endereco {
+                        /*  */
+                    }
                 }
             }
         }
@@ -818,5 +980,8 @@
                 margin-top: 10px;
             }
         }
+    }
+    #footer_wrap_02 {
+        display: none;
     }
 }
