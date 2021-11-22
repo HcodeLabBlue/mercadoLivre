@@ -13,9 +13,9 @@
   - Páginas
     - Login
       - [x] Figma
-      - [ ] Feita
-      - [ ] Revisada
-      - [ ] Finalizada
+      - [X] Feita
+      - [X] Revisada
+      - [X] Finalizada
     - Home
       - [x] Figma
       - [ ] Feita
@@ -27,6 +27,6 @@
       - [ ] Revisada
       - [ ] Finalizada
     - 404 Error
-      - [ ] Figma
-      - [ ] Feita
-      - [ ] Revisada
+      - [X] Figma
+      - [X] Feita
+      - [X] Revisada
