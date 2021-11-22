@@ -926,6 +926,11 @@
             #home-topo {
                 .home-container {
                     justify-content: center;
+                    .home-logo {
+                        top: 51px;
+                        margin: 0px 20px;
+                        left: 15px;
+                    }
                     #home-form {
                         flex-direction: row-reverse;
                         justify-content: flex-end;
