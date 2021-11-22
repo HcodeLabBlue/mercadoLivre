@@ -214,6 +214,7 @@
         #main_banner {
             width: 100%;
             height: 338px;
+            min-width: 500px;
             position: relative;
             /*  */
             .btn_banner {
@@ -252,6 +253,7 @@
             .main_group {
                 margin-top: 96px;
                 width: 100%;
+                min-width: 500px;
                 .main_group_tit {
                     font-size: 26px;
                     font-weight: 300;
@@ -262,13 +264,14 @@
                     align-self: baseline;
                     color: #3483fa;
                     font-size: 16px;
-                    margin: auto 0 2px;
+                    margin: 0 0 0 32px;
                     text-decoration: none;
                     cursor: pointer;
                 }
                 .main_group_content {
                     margin: 30px 32px 0 32px;
                     position: relative;
+                    min-width: 430px;
                     &:hover .btn_next {
                         display: block;
                     }
@@ -809,6 +812,7 @@
     }
     >footer {
         #footer_wrap {
+            min-width: 500px;
             background-color: #fff;
             #footer_wrapA {
                 padding: 60px 0;
@@ -914,7 +918,7 @@
     }
 }
 
-@media(max-width:1180px) {
+@media(max-width:1025px) {
     #home {
         #home-header {
             #home-topo {
@@ -947,7 +951,7 @@
                         width: 100%;
                         flex-direction: row;
                         #Sending{
-                            width: auto;
+                            width: 120px;
                             padding-right: 5px;
                         }
                         span {
