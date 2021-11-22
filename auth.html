@@ -5,7 +5,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mercado Livre - Login</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/manifest.json" />
+    <meta name="msapplication-TileColor" content="#FFF059" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#FFF059" />
+    <title>Olá! Para continuar, digite o seu telefone, e-mail ou usuário</title>
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
@@ -15,12 +32,14 @@
     <section id="auth">
         <header>
             <div id="logo">
-                <img id="logo-0" src="./assets/images/logo-0.png">
-                <img id="logo-1" src="./assets/images/logo-1.png">
+                <a href="https://www.mercadolivre.com.br/">
+                    <img id="logo-0" src="./assets/images/logo-0.png">
+                    <img id="logo-1" src="./assets/images/logo-1.png">
+                </a>
             </div>
 
             <div id="contato">
-                <span>Contato</span>
+               <a href="https://www.mercadolivre.com.br/ajuda">Contato</a>
             </div>
         </header>
 
@@ -31,28 +50,28 @@
                     <h1>Olá! Para continuar, digite o seu telefone, e-mail ou usuário
                     </h1>
 
-                    <div id="input-email">
-                        <label for="email">
-                                Telefone, e-mail ou  usuário
-                            </label>
-                        <input type="text" value="">
-                    </div>
+                    <form action="#">
+                        <div class="input-email">
+                            <label for="email">Telefone, e-mail ou usuário</label>
+                        <input type="email" name="email" id="email" required />               
+                        </div>             
 
-                    <div>
-                        <a href="#">
-                            <input id="btn-continuar" type="button" value="Continuar">
+                        <div>
+                            <a href="#">
+                            <button id="btn-continuar" type="submit">Continuar</button>
+                    </form>
                         </a>
                     </div>
 
                     <div>
-                        <a href="#">
+                        <a href="https://www.mercadolivre.com.br/registration?confirmation_url=https%3A%2F%2Fwww.mercadolivre.com.br%2F&rtx=2a6d0ab4-c304-4aeb-ac4c-a2676ba244de">
                             <input id="btn-criar-conta" type="button" value="Criar Conta">
                         </a>
                     </div>
                 </div>
 
                 <div id="wrap-2">
-                    <a href="#">
+                    <a href="https://www.mercadolivre.com.br/ajuda/20546">
                         <input id="ajuda" type="button" value="Preciso de ajuda para entrar">
                     </a>
                 </div>
@@ -75,7 +94,7 @@
         </main>
         <footer>
             <div id="privacidade">
-                <a href="#">
+                <a href="https://www.mercadolivre.com.br/privacidade">
                     Como cuidamos da sua privacidade
                 </a>
             </div>
