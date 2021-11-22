@@ -396,7 +396,7 @@ a:hover {
   background-color: #999;
   position: absolute;
   visibility: hidden;
-  z-index: 1;
+  z-index: 3;
 }
 #home #home-header .nav-container .home-menu ul li:hover ul {
   visibility: visible;
@@ -1356,7 +1356,7 @@ a:hover {
   background-color: #999;
   position: absolute;
   visibility: hidden;
-  z-index: 1;
+  z-index: 3;
 }
 #home-header .nav-container .home-menu ul li:hover ul {
   visibility: visible;
