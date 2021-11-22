@@ -271,6 +271,9 @@ a:hover {
   align-items: center;
   height: 35px;
 }
+#home #home-header #home-topo .home-container picture {
+  margin-left: 3%;
+}
 #home #home-header #home-topo .home-container .home-logo {
   top: 51px;
   margin: 0px 20px;
@@ -1147,6 +1150,11 @@ a:hover {
   #home #home-header #home-topo .home-container {
     justify-content: center;
   }
+  #home #home-header #home-topo .home-container .home-logo {
+    top: 51px;
+    margin: 0px 20px;
+    left: 15px;
+  }
   #home #home-header #home-topo .home-container #home-form {
     flex-direction: row-reverse;
     justify-content: flex-end;
@@ -1230,6 +1238,9 @@ a:hover {
   margin: 10px auto 0 auto;
   align-items: center;
   height: 35px;
+}
+#home-header #home-topo .home-container picture {
+  margin-left: 3%;
 }
 #home-header #home-topo .home-container .home-logo {
   top: 51px;
