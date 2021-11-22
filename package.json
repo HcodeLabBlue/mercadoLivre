@@ -18,7 +18,5 @@
         "url": "https://github.com/HcodeLabBlue/mercadoLivre/issues"
     },
     "homepage": "https://github.com/HcodeLabBlue/mercadoLivre#readme",
-    "dependencies": {
-        "sass": "^1.43.4"
-    }
+    "dependencies": {}
 }
