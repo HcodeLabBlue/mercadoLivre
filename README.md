@@ -18,14 +18,14 @@
       - [X] Finalizada
     - Home
       - [x] Figma
-      - [ ] Feita
-      - [ ] Revisada
-      - [ ] Finalizada
+      - [x] Feita
+      - [x] Revisada
+      - [x] Finalizada
     - Produto
       - [x] Figma
-      - [ ] Feita
-      - [ ] Revisada
-      - [ ] Finalizada
+      - [x] Feita
+      - [x] Revisada
+      - [x] Finalizada
     - 404 Error
       - [X] Figma
       - [X] Feita
