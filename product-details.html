@@ -1,57 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="pt-br">
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192"  href="assets/images/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/manifest.json" />
-    <meta name="msapplication-TileColor" content="#FFF059" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-    <meta name="theme-color" content="#FFF059" />
-    <title>Mercado Livre | Melhores ofertas</title>
-  </head>
-  <body>
-    <header id="header">
-      <section id="topo">
-        <div class="container">
-          <img
-            class="logo"
-            src="assets/images/logo-1.png"
-            alt="Logo Mercado Livre"
-          />
+    <title>Mercado Livre - Home</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
 
-          <form action="">
-            <input
-              class="search"
-              type="search"
-              name="busca"
-              id="busca"
-              placeholder="Buscar produtos, marcas e muito mais..."
-            />
-            <button></button>
-          </form>
-          <img
-            class="includes"
-            src="https://http2.mlstatic.com/D_NQ_723553-MLA48160168214_112021-OO.webp"
-            alt=""
-          />
-        </div>
-      </section>      
-    </header>
+<body>
+
+    <section id="home">
+        <header id="home-header">
+            <section id="home-topo">
+                <div class="home-container">
+                    <picture>
+                        <source class="home-logo" srcset="/assets/images/logo-0.png" alt="Logo mercado livre" media="(max-width: 1180px)" />
+                        <img class="home-logo" src="./assets/images/logo-1.png" alt="Logo mercado livre">
+                    </picture>
+                    <form id="home-form" action="">
+                        <input class="home-search" type="search" name="busca" placeholder="Buscar produtos, marcas e muito mais..." />
+                        <button id="btn-search" type="submit">
+                  <img src="/assets/images/scope.png" alt="Search" id="search-icon">
+              </button>
+                    </form>
+                    <img class="home-includes" src="https://http2.mlstatic.com/D_NQ_723553-MLA48160168214_112021-OO.webp" alt="" />
+                    <div class="mobile-includes">
+                        <img src="/assets/images/menu-ico.svg" alt="menu">
+                        <img src="/assets/images/shopping-cart.svg" alt="Carrinho">
+                    </div>
+                </div>
+                <div class="nav-container">
+                    <a id="nav-location" href="/auth.html">
+                        <img src="/assets/images/location-ico.svg" alt="localização" id="location">
+                        <div id="nav-span">
+                            <span id="Sending">Enviar para</span>
+                            <span>São Paulo - SP</span>
+                        </div>
+                    </a>
+
+                    <nav class="home-menu">
+                        <ul>
+                            <li><a href="#">Categorias</a>
+                                <ul>
+                                    <li><a href="#">Veículos</a> </li>
+                                    <li><a href="#">Tecnologia</a> </li>
+                                    <li><a href="#">Casa e Móveis</a> </li>
+                                    <li><a href="#">Eletrodomésticos</a> </li>
+                                    <li><a href="#">Esportes e Fitness</a> </li>
+                                    <li><a href="#">Ferramentas</a> </li>
+                                    <li><a href="#">Construção</a> </li>
+                                    <li><a href="#">Indústria e Comércio</a></li>
+                                    <li><a href="#">Saúde</a> </li>
+                                    <li><a href="#">Acessórios para Veículos</a> </li>
+                                    <li><a href="#">Beleza e Cuidado Pessoal</a> </li>
+                                    <li><a href="#">Moda</a> </li>
+                                    <li><a href="#">Bebês</a> </li>
+                                    <li><a href="#">Brinquedos</a> </li>
+                                    <li><a href="#">Imóveis</a> </li>
+                                    <li><a href="#">Compra Internacional</a></li>
+                                    <li><a href="#">Produtos Sustentáveis</a> </li>
+                                    <li><a href="#">Lojas Oficiais</a> </li>
+                                    <li><a href="#">Ver mais categorias</a> </li>
+                                </ul>
+                            </li>
+                            <li><a id="abig" href="#">Ofertas do dia</a></li>
+                            <li><a href="#">Histórico</a></li>
+                            <li><a id="abig" href="#">Supermercado</a></li>
+                            <li><a href="#">Vender</a></li>
+                            <li><a href="#">Contato</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav id="nav-menu">
+                        <a href="#">Crie a sua conta</a>
+                        <a href="./auth.html">Entre</a>
+                        <a href="#">Compras</a>
+                    </nav>
+
+                    <i id="nav-icon-kart">
+              <a href="#">
+              <img src="/assets/images/shopping-cart.svg" alt="Carrinho de compras"></i>
+                    </a>
+
+                </div>
+            </section>
+
+        </header>
 
       <div class="top">
         <div class="logo-ml">
@@ -554,7 +590,7 @@
                                 </div>
                             </div>
                     </div>   
-
+                    <div class="comentarios">
                     <ul class="tab-container">
                             <li>
                                 <input class="tab-toggle" id="tab-1" type="radio" name="toggle" checked /> 
@@ -646,28 +682,8 @@
                                 </ul>    
                             </li>
                         </ul>
-
-
-                       <div id="footer_wrap_02">
-                    <div id="more_info">
-                        <div id="more_info_links">
-                            <a href="https://web.archive.org/web/20210814142820/https://careers-meli.mercadolibre.com/pt?utm_campaign=site-mlb&utm_source=mercadolibre&utm_medium=mercadolibre">Trabalhe conosco</a>
-                            <a href="https://web.archive.org/web/20210814142820/https://www.mercadolivre.com.br/ajuda/Termos-e-condicoes-gerais-de-uso_1409">Termos e condições</a>
-                            <a href="https://web.archive.org/web/20210814142820/https://www.mercadolivre.com.br/privacidade">Como cuidamos da sua privacidade</a>
-                            <a href="https://web.archive.org/web/20210814142820/https://www.mercadolivre.com.br/ajuda">Contato</a>
-                        </div>
-
-                        <div id="more_info_copyrigth" class="more_info_seccond">
-                            Copyright © 1999-2021 Ebazar.com.br LTDA.
-                        </div>
-
-                        <div id="more_info_endereco" class="more_info_seccond">
-                            CNPJ n.º 03.007.331/0001-41 / Av. das Nações Unidas, nº 3.003, Bonfim, Osasco/SP - CEP 06233-903 - empresa do grupo Mercado Livre.
-                        </div>
-                    </div>
-                </div>
-
-                        
+                    </div>              
+                    
 
                 </div>
 
@@ -712,7 +728,16 @@
                     <a href="#">6º em Televisores</a>
                 </div>
             </div>
+            <div class="large-img-lateral">
+                        <img src="assets/images/img-tv-large.webp" alt="">
+                      </div>
 
+                      <div id="col_descicao_cor_lateral">
+                Cor: <b>Preto</b>
+            </div>
+            <div id="col_descicao_voltagem_lateral">
+                Voltagem: <b>110V/220V</b>
+            </div>
             <div id="col_precos">
                 <div id="col_preco_anterior">
                     R$1.299
@@ -925,8 +950,141 @@
             </div>
 
             <div id="col_mais_dados">
-                Ver mais dados de Mercado Livre
+                <a href="http://">Ver mais dados de Mercado Livre</a> 
             </div>
+
+            <div class="caracteristicas-do-produto-lateral">
+                    <p class="text-1">Características do produto</p>
+                        <div class="tamanho-tela">
+                            <img src="assets/images/television_size_v3.svg" alt="">
+                            <div class="info">
+                                <p>Tamanho da tela: 23.6 "</p>
+                                <p>(563.1 mm x 58 mm x 340.9 mm/)</p>
+                                <div class="tamanho">
+                                    <div class="pequeno"><br>PEQUENO</div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div class="grande"><br>GRANDE</div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="outras-infos">
+                                    <div>
+                                    <img src="assets/images/resolution_type.svg" alt=""><span>Resolução: <strong>HD</strong></span></div>
+                                    <div><img src="assets/images/smart.svg" alt=""><span>É smart: <strong>Sim</strong></span></div>
+                                    <div><img src="assets/images/hdmi.svg" alt=""><span>Quantidade de portas HDMI: <strong>2</strong></span></div>
+                                    <div><img src="assets/images/screen_type.svg" alt=""><span>Tipo de tela: <strong>LED</strong></span></div>
+                                    <div><img src="assets/images/integrated_apps.svg" alt=""><span>Aplicativos incorporados: <strong>Web browser,Youtube,Amazon</strong></span></div>
+                        </div>
+
+                        <div class="link">
+                            <a class="link-anuncios" href="#">Ver mais características <img src="assets/images/arrow-down.svg" alt=""></a>
+                        </div>
+
+                         <div class="divisor"></div>
+
+                        <div class="descricao-do-produto">
+                            <p class="text-1">Descrição</p>
+
+                            <p>PRODUTO ORIGINAL!</p>
+                            
+                            
+                            <p>USE COMO TELEVISOR, MONITOR PARA TRABALHO OU LAZER! TENHA UMA VERDADEIRA EXPERIÊNCIA DIGITAL!</p>
+                            
+                            
+                            <p>A Smart TV LG acompanha o novo sistema webOS 3.5, que vem com tudo para você aproveitar ao máximo! Navegue por sites, assista a vídeos em streaming, acesse aplicativos e muito mais!</p>
+                            
+                            
+                            <p>Com o Wi-Fi Integrado a Smart Tv LG permitirá que você a conecte a sua rede de preferência, e já poderá começar a navegar por qualquer site ou aplicativo!</p>
+                            
+                            
+                            <p>Além de habilitar a função Screen Share para espelhamento sem fio de diversos aparelhos (smartphones, tablets ou notebooks).
+                            
+                            Um modelo que irá lhe proporcionar muita versatilidade durante o uso!</p>
+                            <p>Uma qualidade LG que você encontra aqui no Mercado Livre!</p>
+                            
+                        </div>
+                                
+                             <div class="especificacoes">   
+                                <p>ESPECIFICAÇÕES:</p>
+                                <p>- Tela: Tamanho: 23.6"</p>
+                                <p>- Modelo: 24tl520s</p>
+                                <p>- Tipo de Tela: VA</p>
+                                <p>- Brilho: 250 cd m2</p>
+                                <p>- Resolução Máxima: 1366 x 768</p>
+                                <p>- Pixel Pitch: 0.3817 x 0.3817 mm</p>
+                                <p>- Tempo de Resposta: 8.5 ms</p>
+                                <p>- Ângulo de visão: 178o 178o</p>
+                                <p>- Classificação Fiscal 21.070.00</p>
+                                <p>- Código EAN 789329991145-3</p>
+                                <p>- Contraste Dinâmico: 5.000.000:1</p>
+                                <p>- Suporte de Cores: 16.7 milhões de cores</p>
+                                <p>- VESA (para fixação em suporte): 75 x 75 mm</p>
+                                <p>- Frequência de Resposta: H: 30 - 83 kHz - V: 58 - 62 Hz</p>
+                            </div>
+                                    <br/><br/>
+                                <div class="especificacoes">
+                                    <p>Recursos:</p>
+                                    <p>- Alto-Falantes: 5W x2 estéreo</p>
+                                    <p>- Netflix - Sim</p>
+                                    <p>- Comando de voz - Não</p>
+                                    <p>- Conversor integrado - Sim</p>
+                                    <p>- Suporte (pés) - Sim</p>
+                                    <p>- Sistema Smart webOS 3.5</p>
+                                    <p>- Controle Remoto</p>
+                                    <p>- Screen Share (miracast & WiDi)</p>
+                                    <p>- Virtual Surround Plus</p>
+                                    <p>- Time Machine Ready</p>
+                                    <p>- Modo de Imagem</p>
+                                    <p>- Plug & Play</p>
+                                    <p>- HDCP</p>
+                                </div>
+                                        <br/><br/>
+                                <div class="especificacoes">
+                                    <p>Entrada e Saídas:</p>
+                                    <p>- 2x HDMI</p>
+                                    <p>- Componente Composto</p>
+                                    <p>- USB 2.0</p>
+                                    <p>- Entrada TV Digital (cabo)</p>
+                                    <p>- Entrada Antena</p>
+                                    <p>- Áudio out</p>
+                                </div>
+ 
+                                    <br/><br/>
+                                <div class="especificacoes">
+                                        <p>Conectividade:</p>
+                                        <p>- HDMI, USB, WiFi</p>
+                                    </div>
+
+                                    <br/><br/>
+                                <div class="especificacoes">
+                                    <p>Energia:</p>
+                                    <p>- Fonte: Adaptador Externo</p>
+                                    <p>- Consumo de Energia: 2</p>
+                                    <p>- Bivolt</p>
+                                </div>
+
+                                    <br/><br/>
+                                <div class="especificacoes">
+                                    <p>DIMENSÕES:</p>
+                                    <p>- Altura: 34,0cm</p>
+                                    <p>- Largura: 56,3 cm</p>
+                                    <p>- Profundidade: 5,8 cm</p>
+                                    <p>- Peso líq. Aproximado: 3,3 Kg</p>
+                                    </div>
+
+                                    <br/><br/>
+                                <div class="especificacoes">
+                                    <p>O QUE VEM INCLUSO?</p>
+                                    <p>1 Smart TV LG</p>
+                                    <p>1 Fonte de Alimentação</p>
+                                    <p>1 Controle Remoto</p>
+                                    </div>                        
+
+                    </div>
 
         </div>
         <!--  -->
@@ -941,7 +1099,7 @@
                 </div>
 
                 <div class="col_ver_mais">
-                    Ver mais sobre devoluções
+                   <a href="https://produto.mercadolivre.com.br/MLB-1661286570-smart-tv-lg-led-236-24tl520s-wi-fi-2-hdmi-1-usb-_JM?searchVariation=64347539743#searchVariation=64347539743&position=24&search_layout=stack&type=item&tracking_id=2c23cf45-21e7-4a3b-b613-bccc631f962e"> Ver mais sobre devoluções</a>
                 </div>
             </div>
 
@@ -953,7 +1111,7 @@
                     Garantia
                 </div>
 
-                <div class="col_titulo">
+                <div class="col_msg-2">
                     Compra Garantida com o Mercado Pago
                 </div>
 
@@ -970,7 +1128,7 @@
                 </div>
 
                 <div class="col_ver_mais">
-                    Saiba mais sobre garantia
+                   <a href="https://produto.mercadolivre.com.br/MLB-1661286570-smart-tv-lg-led-236-24tl520s-wi-fi-2-hdmi-1-usb-_JM?searchVariation=64347539743#searchVariation=64347539743&position=24&search_layout=stack&type=item&tracking_id=2c23cf45-21e7-4a3b-b613-bccc631f962e">Saiba mais sobre garantia</a>
                 </div>
             </div>
             <!--  -->
@@ -1055,9 +1213,155 @@
             </div>
 
             <div class="col_ver_mais" id="col_ver_mais_pagamentos">
-                Conheça outros meios de pagamento
+               <a href="https://produto.mercadolivre.com.br/MLB-1661286570-smart-tv-lg-led-236-24tl520s-wi-fi-2-hdmi-1-usb-_JM?searchVariation=64347539743#searchVariation=64347539743&position=24&search_layout=stack&type=item&tracking_id=2c23cf45-21e7-4a3b-b613-bccc631f962e"> Conheça outros meios de pagamento</a>
             </div>
 
+            <div class="pergunstas-respostas-lateral">
+                        <p class="text-1">Perguntas e respostas</p>
+                        <p class="text-2">Qual informação você precisa?</p>
+
+                        <div class="btn-perguntas">
+                            <a href="https://www.mercadolivre.com.br/gz/shipping-calculator?item_id=MLB1661286570&new_version=true&modal=false&informative=true">Custo e prazo de envio</a>
+                            <a href="https://produto.mercadolivre.com.br/noindex/freeReturn/fashion?itemId=MLB1661286570&quantity=1&new_version=true&modal=false">Devoluções grátis</a>
+                            <a href="https://produto.mercadolivre.com.br/noindex/services/MLB1661286570/payments?new_version=true&modal=false">Meios de pagamento</a>
+                            <a href="https://produto.mercadolivre.com.br/noindex/warranty/MLB1661286570?new_version=true&modal=false">Garantia</a>
+                        </div>
+
+                        <p class="text-2 pergunte">Pergunte ao vendedor</p>
+
+                        <div class="input-btn">
+                            <form action="">
+                            <input type="text" name="" id="" placeholder="Escreva sua pergunta...">
+                            <button type="submit">Perguntar</button>
+                            </form>
+                        </div>
+
+                            <p class="text-2 pergunte">Ultimas perguntas feitas</p>
+                            
+                                <p class="question">Boa tarde sobre a entrega nao pode danificar e dar trantorno na devolucao</p>
+                                <p class="answer">Olá, SIVA2894353! Boa tarde, tudo bem? Por gentileza me passa mais detalhes da sua dúvida, você também pode entrar em contato através do campo de mensagens: No aplicativo procure o produto que comprou e clique nela procure mensagem com o vendedor e clica lá, assim consigo ter acesso sobre as informações da sua compra e todas as ferramentas necessárias para te ajudar melhor. Ficamos no aguardo e à disposição! 19/11/2021</p>
+
+                                <p  class="question">Posso fazer as aulas do Hcodelab com ela?</p>
+                                <p class="answer">Olá, MARIAHELENASPINELLIDESOUZA, tudo bem? Sim, você vai adorar! Mas você vai precisar de um notebook ou computador para praticar as atividades das aulas! Aguardamos a sua compra e ficamos à disposição! :D 19/11/2021</p>
+
+                                <p  class="question">Vem com app da Hcode?</p>
+                                <p class="answer">Olá, PEC5949531, tudo bem? Não, mas a Smart Tv LG permitirá que você a conecte a sua rede de preferência, e já poderá começar a navegar por qualquer site ou aplicativo! Aguardamos sua compra e dúvidas à disposição! :) 19/11/2021</p> 
+                                <div class="col_ver_mais">
+                    <a href="https://produto.mercadolivre.com.br/noindex/questions/MLB1661286570?scroll_to_question=10&new_version=true"> Ver todas as perguntas</a>
+                </div>                      
+                    </div>
+
+                    <div class="opiniao-produto-lateral">
+                        
+
+                         <div class="divisor"></div>
+
+                         <p class="text-1">Opiniões sobre o produto</p>
+                            <div class="media-estrelas">
+                                <div class="nota">
+                                    <span class="nota-valor">4.8</span>
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <p class="media">Média entre 2002 opiniões</p>
+                                </div>
+                            </div>
+                    </div>   
+                        <div class="comentarios-lateral">
+                    <ul class="tab-container">
+                            <li>
+                                <input class="tab-toggle" id="tab-1" type="radio" name="toggle" checked /> 
+                                <label data-title="Tab 1" class="tab l-b" for="tab-1">Todos</label>            
+                                <ul class="tab-content-container">
+                                <li class="tab-content">
+                                    <div class="nota">                                    
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                        <p class="title">TOP!</p>
+                                        <p>Recomendadíssima!. Mesmo sendo resolução hd, a imagem fica excelente quando configurada no modo cinema. Se não ficar muito próxima dos olhos a imagem é praticamente igual à um tela 4k. Tem muitos recursos para ajuste de cores e tonalidades personalisadas. A recepção wifi é extremamente eficiente, ganha de qualquer smartphone. Além da entrada usb para acessar filmes, fotos e músicas diretamente do pendrive, tem as entradas auxiliares para dvd, bluray, e hdmi para conectar o computador e usar a tv como monitor. Ao contrário do que alguns comentaram o som é alto e de excelente qualidade estéreo, com muitas opções de equalização. Enfim, uma excelente smarttv , só espero que tudo isso dure. Estou usando um filtro de linha para proteger contra surtos elétricos. Mas, pelo que tenho visto e perguntado em resenhas, a lg melhorou muito no quesito durabilidade. Até agora só tenho a elogiar!.</p>
+                                        <div class="like-dislike">
+                                        <div class="like">
+                                        <svg class="like-svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" d="M6.15 5.464l.86-.334L9.576 0l1.017.509a3 3 0 0 1 1.473 3.719l-.286.777h2.8a2.4 2.4 0 0 1 2.243 3.256l-1.205 3.159a4.2 4.2 0 0 1-4.682 2.635l-3.546-.65H6.15v1.2H2v-10.2h4.15v1.06zm0 1.288v5.453h1.294l.108.01 3.6.66a3 3 0 0 0 3.343-1.883L15.7 7.833a1.2 1.2 0 0 0-1.12-1.628h-4.52l.88-2.392a1.8 1.8 0 0 0-.829-2.202l-2.234 4.47-1.728.67zM3.2 13.404h1.75v-7.8H3.2v7.8z"></path></svg> <p>564</p></div>
+
+                                        <div class="dislike">
+                                        <svg class="ui-pdp-reviews__comments__review-comment__likes__dislike" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" fill-rule="nonzero" d="M6.957 12.536l.861.334L10.383 18l1.017-.509a3 3 0 0 0 1.473-3.719l-.286-.777h2.8a2.4 2.4 0 0 0 2.242-3.256L16.425 6.58a4.2 4.2 0 0 0-4.682-2.635l-3.546.65h-1.24v-1.2h-4.15v10.2h4.15v-1.06zm0-1.288V5.795h1.294l.109-.01 3.6-.66a3 3 0 0 1 3.343 1.883l1.205 3.159a1.2 1.2 0 0 1-1.121 1.628h-4.52l.88 2.392a1.8 1.8 0 0 1-.828 2.202l-2.234-4.47-1.728-.67zm-2.95-6.652h1.75v7.8h-1.75v-7.8z"></path></svg> <p>104</p></div>
+                                                </div>
+                                                <div class="nota">                                    
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 11 10"><path fill="#EFEFEF" fill-rule="evenodd" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>
+                                    <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 11 10"><path fill="#EFEFEF" fill-rule="evenodd" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>
+                                    <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 11 10"><path fill="#EFEFEF" fill-rule="evenodd" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>
+                                        <p class="title">Produto com pouca captação de canais livres.</p>
+                                        <p>Me decepcionei, porque esperava que ela pegasse os 2 canais que eu tinha na tv phillips antiga, e mais algum, sem precisar de antena externa. Depois de instalada descobri que ela "somente" pega a globo e nenhum outro canal, e nem com a instalação de antena externa consegui que isso melhorasse. Então meu filho me deu uma assinatura de netflix.</p>
+                                        <div class="like-dislike">
+                                        <div class="like">
+                                        <svg class="like-svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" d="M6.15 5.464l.86-.334L9.576 0l1.017.509a3 3 0 0 1 1.473 3.719l-.286.777h2.8a2.4 2.4 0 0 1 2.243 3.256l-1.205 3.159a4.2 4.2 0 0 1-4.682 2.635l-3.546-.65H6.15v1.2H2v-10.2h4.15v1.06zm0 1.288v5.453h1.294l.108.01 3.6.66a3 3 0 0 0 3.343-1.883L15.7 7.833a1.2 1.2 0 0 0-1.12-1.628h-4.52l.88-2.392a1.8 1.8 0 0 0-.829-2.202l-2.234 4.47-1.728.67zM3.2 13.404h1.75v-7.8H3.2v7.8z"></path></svg> <p>0</p></div>
+
+                                        <div class="dislike">
+                                        <svg class="ui-pdp-reviews__comments__review-comment__likes__dislike" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" fill-rule="nonzero" d="M6.957 12.536l.861.334L10.383 18l1.017-.509a3 3 0 0 0 1.473-3.719l-.286-.777h2.8a2.4 2.4 0 0 0 2.242-3.256L16.425 6.58a4.2 4.2 0 0 0-4.682-2.635l-3.546.65h-1.24v-1.2h-4.15v10.2h4.15v-1.06zm0-1.288V5.795h1.294l.109-.01 3.6-.66a3 3 0 0 1 3.343 1.883l1.205 3.159a1.2 1.2 0 0 1-1.121 1.628h-4.52l.88 2.392a1.8 1.8 0 0 1-.828 2.202l-2.234-4.47-1.728-.67zm-2.95-6.652h1.75v7.8h-1.75v-7.8z"></path></svg> <p>3</p></div>
+                                                </div>
+                                </div>
+                                    
+                                </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input class="tab-toggle" id="tab-2" type="radio" name="toggle" />
+                                <label class="tab" for="tab-2">Positivas</label> 
+                                <ul class="tab-content-container">
+                                <li class="tab-content">
+                                     <div class="nota">                                    
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                        <p class="title">TV simples e bem completa por um preço bom</p>
+                                        <p>É uma tv custo-benefício e que atende muito bem em vários quesitos. Gosto muito do visual dela e os pézinhos são bem firmes. Qualidade de construção é boa e o controle tem muitas funções. Tem os principais apps de streaming, incluindo disney+ e o webos mais recente funciona bem rápido nessa tv. Acho ótimo que tem wifi e também que tem av pra eu jogar super nintendo. Com duas hdmis também atende bem para minhas necessidades. Pra filmes e jogos em geral é ótima, mas como monitor nem tanto, já que a resolução hd não é tão boa pra usar no computador. Mas quebra um galho, pelo preço vale a pena! parabéns a lg pelo produto que atende em vários pontos!.</p>
+                                        <div class="like-dislike">
+                                        <div class="like">
+                                        <svg class="like-svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" d="M6.15 5.464l.86-.334L9.576 0l1.017.509a3 3 0 0 1 1.473 3.719l-.286.777h2.8a2.4 2.4 0 0 1 2.243 3.256l-1.205 3.159a4.2 4.2 0 0 1-4.682 2.635l-3.546-.65H6.15v1.2H2v-10.2h4.15v1.06zm0 1.288v5.453h1.294l.108.01 3.6.66a3 3 0 0 0 3.343-1.883L15.7 7.833a1.2 1.2 0 0 0-1.12-1.628h-4.52l.88-2.392a1.8 1.8 0 0 0-.829-2.202l-2.234 4.47-1.728.67zM3.2 13.404h1.75v-7.8H3.2v7.8z"></path></svg> <p>50</p></div>
+
+                                        <div class="dislike">
+                                        <svg class="ui-pdp-reviews__comments__review-comment__likes__dislike" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" fill-rule="nonzero" d="M6.957 12.536l.861.334L10.383 18l1.017-.509a3 3 0 0 0 1.473-3.719l-.286-.777h2.8a2.4 2.4 0 0 0 2.242-3.256L16.425 6.58a4.2 4.2 0 0 0-4.682-2.635l-3.546.65h-1.24v-1.2h-4.15v10.2h4.15v-1.06zm0-1.288V5.795h1.294l.109-.01 3.6-.66a3 3 0 0 1 3.343 1.883l1.205 3.159a1.2 1.2 0 0 1-1.121 1.628h-4.52l.88 2.392a1.8 1.8 0 0 1-.828 2.202l-2.234-4.47-1.728-.67zm-2.95-6.652h1.75v7.8h-1.75v-7.8z"></path></svg> <p>50</p></div>
+                                                </div>
+                                </div>
+                                    
+                                </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input class="tab-toggle" id="tab-3" type="radio" name="toggle"/>        
+                                <label class="tab" for="tab-3">Negativas</label> 
+                                <ul class="tab-content-container">
+                                <li class="tab-content">
+                                    <div class="nota">                                    
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <img src="assets/images/star-fill-blue.svg" alt="">
+                                    <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 11 10"><path fill="#EFEFEF" fill-rule="evenodd" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>
+                                    <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 11 10"><path fill="#EFEFEF" fill-rule="evenodd" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>
+                                    <svg class="ui-pdp-reviews__comments__review-comment__rating__star" width="16.8" height="16" viewBox="0 0 11 10"><path fill="#EFEFEF" fill-rule="evenodd" d="M5.256 8L2.131 9.648l.597-3.49L.2 3.684l3.494-.509L5.256 0l1.562 3.176 3.494.51-2.528 2.471.597 3.491z"></path></svg>
+                                        <p class="title">Produto com pouca captação de canais livres.</p>
+                                        <p>Me decepcionei, porque esperava que ela pegasse os 2 canais que eu tinha na tv phillips antiga, e mais algum, sem precisar de antena externa. Depois de instalada descobri que ela "somente" pega a globo e nenhum outro canal, e nem com a instalação de antena externa consegui que isso melhorasse. Então meu filho me deu uma assinatura de netflix.</p>
+                                        <div class="like-dislike">
+                                        <div class="like">
+                                        <svg class="like-svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" d="M6.15 5.464l.86-.334L9.576 0l1.017.509a3 3 0 0 1 1.473 3.719l-.286.777h2.8a2.4 2.4 0 0 1 2.243 3.256l-1.205 3.159a4.2 4.2 0 0 1-4.682 2.635l-3.546-.65H6.15v1.2H2v-10.2h4.15v1.06zm0 1.288v5.453h1.294l.108.01 3.6.66a3 3 0 0 0 3.343-1.883L15.7 7.833a1.2 1.2 0 0 0-1.12-1.628h-4.52l.88-2.392a1.8 1.8 0 0 0-.829-2.202l-2.234 4.47-1.728.67zM3.2 13.404h1.75v-7.8H3.2v7.8z"></path></svg> <p>0</p></div>
+
+                                        <div class="dislike">
+                                        <svg class="ui-pdp-reviews__comments__review-comment__likes__dislike" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#333" fill-rule="nonzero" d="M6.957 12.536l.861.334L10.383 18l1.017-.509a3 3 0 0 0 1.473-3.719l-.286-.777h2.8a2.4 2.4 0 0 0 2.242-3.256L16.425 6.58a4.2 4.2 0 0 0-4.682-2.635l-3.546.65h-1.24v-1.2h-4.15v10.2h4.15v-1.06zm0-1.288V5.795h1.294l.109-.01 3.6-.66a3 3 0 0 1 3.343 1.883l1.205 3.159a1.2 1.2 0 0 1-1.121 1.628h-4.52l.88 2.392a1.8 1.8 0 0 1-.828 2.202l-2.234-4.47-1.728-.67zm-2.95-6.652h1.75v7.8h-1.75v-7.8z"></path></svg> <p>3</p></div>
+                                                </div>
+                                    
+                                </li>
+                                </ul>    
+                            </li>
+                        </ul>
+                    </div>   
 
         </div>
                 </section>

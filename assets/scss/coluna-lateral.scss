@@ -26,10 +26,21 @@
         flex-direction: column;
         justify-content: space-around;
         /*  */
+        .large-img-lateral{
+                display: none;
+                }
+        #col_descicao_cor_lateral {
+            display: none;
+        }
+
+        #col_descicao_voltagem_lateral{
+            display: none;
+        }
         #col_novo_usado {
             color: rgba(0, 0, 0, .55);
             font-size: 14px;
             font-weight: 400;
+            margin-bottom: 10px;
         }
         #col_titulo {
             display: flex;
@@ -364,6 +375,12 @@
             color: #3483fa;
             margin-top: 24px;
         }
+
+        .caracteristicas-do-produto-lateral {
+            display: none;            
+        }
+
+        
     }
     /* ================= */
     #col_devolucao {
@@ -448,6 +465,14 @@
         }
         #col_ver_mais_pagamentos {
             margin-top: 25px;
+        }
+
+        .pergunstas-respostas-lateral {
+            display: none;
+        }
+
+        .comentarios-lateral {
+            display: none;
         }
     }
 }
